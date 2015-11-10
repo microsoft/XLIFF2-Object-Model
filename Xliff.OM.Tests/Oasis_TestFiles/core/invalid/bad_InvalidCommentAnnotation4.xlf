@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+ <file id="f1">
+  <group id='g1'>
+   <notes>
+    <note id='n1'>note</note>
+   </notes>
+   <unit id="1">
+    <segment id="1"> <!-- Not a reference to a note of the unit -->
+     <source><mrk id="2" type="comment" ref="#g=g1/n=n1">text</mrk></source>
+    </segment>
+   </unit>
+  </group>
+ </file>
+</xliff>

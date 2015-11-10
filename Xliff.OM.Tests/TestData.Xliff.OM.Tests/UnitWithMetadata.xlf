@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0" srcLang="" version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0">
+    <file id="f1">
+        <unit id="u1">
+            <mda:metadata>
+                <mda:metaGroup appliesTo="source" category="category">
+                    <mda:meta type="type">text</mda:meta>
+                </mda:metaGroup>
+            </mda:metadata>
+        </unit>
+    </file>
+</xliff>

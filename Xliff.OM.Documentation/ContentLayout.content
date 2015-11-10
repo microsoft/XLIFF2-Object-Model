@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Topics>
+  <Topic id="5d8afa1a-8c34-4c53-9034-54d99f5cb83e" visible="True" isDefault="true" title="Welcome to the Xliff 2.0 Object Model Documentation Library" />
+  <Topic id="1870cad8-1a42-4fcb-bc0a-f43dca2cdead" visible="True" isSelected="true" apiParentMode="InsertAsChild" title="API Documentation" />
+  <Topic id="c9de932f-3df6-49b8-8755-dbe8e8f3f856" visible="True" noFile="true" isExpanded="true" title="Samples">
+    <Topic id="b688ad7c-c6ee-4d50-857f-167a6da89fe4" visible="True" title="Sample Code" />
+    <Topic id="fe11f2df-71fb-45aa-ab6c-9f305394bfc5" visible="True" title="Extension Attribute" />
+    <Topic id="8ef60eed-3236-4832-9949-e958f7e55147" visible="True" title="Extension Element" />
+    <Topic id="b2272303-8095-4348-87d0-5de3e581a7e2" visible="True" title="Extension" />
+    <Topic id="d56d978e-7e17-4343-ab80-c85bc339647e" visible="True" title="Extension Handler" />
+  </Topic>
+</Topics>

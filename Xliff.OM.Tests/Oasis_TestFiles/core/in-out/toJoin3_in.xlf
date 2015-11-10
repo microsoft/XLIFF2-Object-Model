@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+ <file id="f1">
+  <unit id="1">
+   <segment id="s1" state="translated" subState="my:value1">
+    <source><sc id='1'/>a1 </source>
+    <target><sc id='1'/>a1 </target>
+   </segment>
+   <segment id="s2" state="translated" subState="my:value2">
+    <source xml:space="preserve">b2[  ] <ec startRef='1'/> </source>
+    <target order="3" xml:space="preserve">B3[  ] <ec startRef='1'/> </target>
+   </segment>
+   <segment id="s3" state="translated">
+    <source xml:space="preserve">c3 </source>
+    <target order="2" xml:space="preserve">C2 </target>
+   </segment>
+   <segment id="s4" state="translated">
+    <source>d4.</source>
+    <target>D4.</target>
+   </segment>
+  </unit>
+ </file>
+</xliff>

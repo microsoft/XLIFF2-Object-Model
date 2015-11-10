@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+ <file id="1">
+  <unit id="1">
+   <segment>
+    <source><ph id='1' canDelete="no"/>Text1. </source>
+    <target></target> <!-- Not OK if there is a target 9even an empty one) -->
+   </segment>
+  </unit>
+ </file>
+</xliff>

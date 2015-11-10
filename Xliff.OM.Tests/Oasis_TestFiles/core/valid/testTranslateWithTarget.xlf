@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+ <file id="f1">
+  <unit id="1" translate="no">
+   <segment id="s1">
+    <source>Sentence 1.</source>
+    <target>Sentence 1.</target>
+   </segment>
+   <ignorable>
+    <source> <sm id='m1' translate='yes'/></source>
+    <target order="4"> <sm id='m1' translate='yes'/></target>
+   </ignorable>
+   <segment id="s2">
+    <source>Sentence 2.</source>
+    <target order="5">Phrase 2-3.</target>
+   </segment>
+   <ignorable>
+    <source> <sm id='m2' translate='no'/></source>
+    <target order="2"> <sm id='m2' translate='no'/></target>
+   </ignorable>
+   <segment id="s3">
+    <source>Sentence 3.<em startRef='m2'/></source>
+    <target order="3">Sentence 3.<em startRef='m2'/></target>
+   </segment>
+   <ignorable>
+    <source><em startRef='m1'/></source>
+    <target><em startRef='m1'/></target>
+   </ignorable>
+  </unit>
+  <group id='g1' translate="yes">
+   <unit id='2'>
+    <segment>
+     <source>t1 <sm id='1' translate='no'/>t2 <sm id='2' translate='yes'/></source>
+     <target>t1 <sm id='1' translate='no'/>t2 <sm id='2' translate='yes'/></target>
+    </segment>
+    <segment>
+     <source>t3 <em startRef='2'/>t4 </source>
+     <target>t3 <em startRef='2'/>t4 </target>
+    </segment>
+    <segment>
+     <source><em startRef='1'/>t5</source>
+     <target><em startRef='1'/>t5</target>
+    </segment>
+   </unit>
+  </group>
+ </file>
+</xliff>

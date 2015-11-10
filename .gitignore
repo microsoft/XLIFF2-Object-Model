@@ -1,0 +1,17 @@
+*.psess 
+*.vsp 
+*.log 
+*.err 
+*.wrn 
+*.suo 
+*.sdf 
+*.user 
+*.vspscc 
+*.cache 
+*.lastbuildstate 
+*.ilk 
+bin
+debug
+release
+obj
+

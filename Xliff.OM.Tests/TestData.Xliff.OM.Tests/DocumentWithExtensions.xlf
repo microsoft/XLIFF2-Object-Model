@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns:pre1="namespace1" xmlns:pre2="namespace2" srcLang="en-us" version="2.0" pre1:attribute1="attribute 1" pre1:attribute2="attribute 2" pre2:attribute1="attribute 3" pre2:attribute2="attribute 4" xmlns="urn:oasis:names:tc:xliff:document:2.0">
+    <file id="f1" pre1:attribute1="attribute 5" pre1:attribute2="attribute 6" pre2:attribute1="attribute 7" pre2:attribute2="attribute 8">
+        <pre1:element1 pre1:attribute1="attribute 9" pre1:attribute2="attribute 10">
+            <pre1:element2 pre1:attribute3="attribute 11">
+                <source xml:lang="de-de" xml:space="preserve" />
+            </pre1:element2>
+        </pre1:element1>
+        <pre1:element1 pre1:attribute1="attribute 12" pre1:attribute2="attribute 13">
+            <pre1:element2 pre1:attribute3="attribute 14">text 1</pre1:element2>
+        </pre1:element1>
+        <pre1:element1 pre1:attribute1="attribute 15" pre1:attribute2="attribute 16" pre2:attribute1="attribute 17">
+            <pre2:element1 pre1:attribute2="attribute 18">text 3</pre2:element1>
+        </pre1:element1>
+        <pre2:element1 pre2:attribute1="attribute 19" pre2:attribute2="attribute 20">
+            <pre2:element2 pre2:attribute3="attribute 21">
+                <target />
+            </pre2:element2>
+        </pre2:element1>
+        <pre2:element1 pre2:attribute1="attribute 22" pre2:attribute2="attribute 23">
+            <pre2:element2 pre2:attribute3="attribute 24">text 2</pre2:element2>
+        </pre2:element1>
+        <unit id="u1">
+            <segment state="initial" id="s1">
+                <source />
+            </segment>
+        </unit>
+    </file>
+</xliff>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0"
+xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0"
+xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0"
+srcLang="en-us" version="2.0" trgLang="de">
+<file id="f1">
+	<mda:metadata id="md1">
+		<mda:metaGroup id="mg1">
+			<mda:meta type="type" appliesTo="bad_value">data</mda:meta>
+		</mda:metaGroup>
+	</mda:metadata>
+	<unit id="u1">
+		<segment id="s1">
+			<source>source</source>
+            <target>target</target>
+		</segment>
+	</unit>
+</file>
+</xliff>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0"
+xmlns:xmrk="urn:xmarker"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0"
+xmlns:mtc="urn:oasis:names:tc:xliff:matches:2.0"
+xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0"
+xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0"
+xmlns:res="urn:oasis:names:tc:xliff:resourcedata:2.0"
+xmlns:ctr="urn:oasis:names:tc:xliff:changetracking:2.0"
+xmlns:slr="urn:oasis:names:tc:xliff:sizerestriction:2.0"
+xmlns:val="urn:oasis:names:tc:xliff:validation:2.0"
+xmlns:xhtml="http://www.w3.org/1999/xhtml"
+xmlns:svg="http://www.w3.org/2000/svg" srcLang="en-us" version="2.0"
+trgLang="de">
+<file id="f216">
+      <unit id="xmrk_000_concept">
+
+         <gls:glossary>
+            <gls:glossEntry id="ge1">
+               <gls:term source="SnowTerms">snow</gls:term>
+               <gls:translation id="t1" source="SnowTerms">Schnee</gls:translation
+>
+               <gls:definition source="SnowTermsDefinitions">atmospheric water vapor frozen into ice crystals and falling in light white flakes or lying on the ground as a white layer.</gls:definition
+>
+            </gls:glossEntry>
+            <gls:glossEntry id="ge2"><!-- invalid 5.2.4.3 contraint: 
+               A <glossEntry> element MUST contain a <translation> or a <definition> element to be valid.
+               -->
+               <gls:term>slushy</gls:term>
+            </gls:glossEntry>
+         </gls:glossary>
+         <segment id="xmrk_001_title">
+            <source xml:lang="en-us" xml:space="default">Skiing</source>
+            <target xml:lang="de">Skiing</target>
+         </segment>
+      </unit>
+   </file>
+</xliff>

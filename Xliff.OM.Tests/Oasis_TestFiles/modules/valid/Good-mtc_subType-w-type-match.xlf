@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0"
+xmlns:xmrk="urn:xmarker"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0"
+xmlns:mtc="urn:oasis:names:tc:xliff:matches:2.0"
+xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0"
+xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0"
+xmlns:res="urn:oasis:names:tc:xliff:resourcedata:2.0"
+xmlns:ctr="urn:oasis:names:tc:xliff:changetracking:2.0"
+xmlns:slr="urn:oasis:names:tc:xliff:sizerestriction:2.0"
+xmlns:val="urn:oasis:names:tc:xliff:validation:2.0"
+xmlns:xhtml="http://www.w3.org/1999/xhtml"
+xmlns:svg="http://www.w3.org/2000/svg" srcLang="en-us" version="2.0"
+trgLang="de">
+<file id="f216">
+      <unit id="xmrk_000_concept">
+         <mtc:matches>
+            <mtc:match id="mtc111" type="mt" subType="xyz-trans:exact" ref="#m1"><!--
+5.1.6.8 subType
+Constraints
+If the attribute subtype is used, the attribute type MUST be specified as well.
+--><!-- valid, @subType w @type -->
+             <source>He is my best friend3.</source>
+             <target>Il est mon meilleur ami.</target>
+            </mtc:match>
+         </mtc:matches>
+         <segment id="m1">
+            <source xml:lang="en-us" xml:space="default">Skiing</source>
+            <target xml:lang="de">Skiing</target>
+         </segment>
+      </unit>
+   </file>
+</xliff>

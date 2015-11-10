@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ArgValidator_ElementReused_Format" xml:space="preserve">
+    <value>The operation cannot be completed because the {0} element is already a child of another XliffElement.</value>
+  </data>
+  <data name="ArgValidator_InvalidId_Format" xml:space="preserve">
+    <value>The Id '{0}' contains some invalid characters. The Id must be an NMTOKEN.</value>
+  </data>
+  <data name="ArgValidator_InvalidTypeOfMany_Format" xml:space="preserve">
+    <value>The type {0} is not a valid type.</value>
+  </data>
+  <data name="ArgValidator_InvalidType_Format" xml:space="preserve">
+    <value>The type {0} is not a type of {1}.</value>
+  </data>
+  <data name="ConverterBase_ValueNotImplemented_Format" xml:space="preserve">
+    <value>The value '{0}' is not supported by {1}.</value>
+  </data>
+  <data name="XliffElement_InvalidElement_Format" xml:space="preserve">
+    <value>The type '{0}' is not a valid child type for '{1}'.</value>
+  </data>
+  <data name="StandardValidator_CodeBaseTypeNotSpecified" xml:space="preserve">
+    <value>The value for Type must be specified.</value>
+  </data>
+  <data name="StandardValidator_DocumentTargetLanguageNotSpecified" xml:space="preserve">
+    <value>The document target language should be present only when Target elements are present. Check that both are present or neither are present.</value>
+  </data>
+  <data name="StandardValidator_DocumentVersionNotSpecified" xml:space="preserve">
+    <value>The document Version cannot be null or empty string.</value>
+  </data>
+  <data name="StandardValidator_DuplicateId_Format" xml:space="preserve">
+    <value>The Id '{0}' is a duplicate across siblings.</value>
+  </data>
+  <data name="StandardValidator_DuplicateOrder_Format" xml:space="preserve">
+    <value>The Order '{0}' is a duplicate across siblings.</value>
+  </data>
+  <data name="StandardValidator_DuplicateReference_Format" xml:space="preserve">
+    <value>A duplicate reference to a {0} with Id {1} cannot be used.</value>
+  </data>
+  <data name="StandardValidator_ElementNotFound_Format" xml:space="preserve">
+    <value>A {0} with Id {1} was not found.</value>
+  </data>
+  <data name="StandardValidator_EmptyString_Format" xml:space="preserve">
+    <value>The value for {0} must not contain only whitespace.</value>
+  </data>
+  <data name="StandardValidator_HRefNotSpecified" xml:space="preserve">
+    <value>The HRef should be present only when NonTranslatableText elements are not present. Check that either HRef is specified or NonTranslatableText, but not both.</value>
+  </data>
+  <data name="StandardValidator_IdNotSpecified" xml:space="preserve">
+    <value>The Id cannot be null or empty string.</value>
+  </data>
+  <data name="StandardValidator_InvalidDataReference_Format" xml:space="preserve">
+    <value>The value for {0} ({1}) does not refer to a valid Data element.</value>
+  </data>
+  <data name="StandardValidator_InvalidMarkedSpanType" xml:space="preserve">
+    <value>The Type value must be either "comment", "generic", "term", or a be in the format of 'prefix:value' where prefix must not be 'xlf' and prefix and value must not be empty strings.</value>
+  </data>
+  <data name="StandardValidator_InvalidOrder_Format" xml:space="preserve">
+    <value>The value for Order must be greater than 0 and less than {0}.</value>
+  </data>
+  <data name="StandardValidator_InvalidPrefix_Format" xml:space="preserve">
+    <value>The value for {0} must be null or be in the format of 'prefix:value' where prefix must not be 'xlf' and prefix and value must not be empty strings.</value>
+  </data>
+  <data name="StandardValidator_InvalidPriority_Format" xml:space="preserve">
+    <value>The value for Priority must be between {0} and {1}.</value>
+  </data>
+  <data name="StandardValidator_InvalidResourceStringContent_Format" xml:space="preserve">
+    <value>The type {0} is not a supported type of ResourceStringContent.</value>
+  </data>
+  <data name="StandardValidator_InvalidXliffSubTypeValue" xml:space="preserve">
+    <value>The value for SubType must be null or be in the format of 'prefix:value' prefix and value must not be empty strings. If prefix is "xlf" then the value must be one of "b", "i", "lb", "pb", or "u".</value>
+  </data>
+  <data name="StandardValidator_LanguageMismatch" xml:space="preserve">
+    <value>The Target language must match the document language.</value>
+  </data>
+  <data name="StandardValidator_LanguageNotSpecified" xml:space="preserve">
+    <value>The document source language cannot be null or empty string.</value>
+  </data>
+  <data name="StandardValidator_NoElements_Format" xml:space="preserve">
+    <value>The element must contain one or more {0}.</value>
+  </data>
+  <data name="StandardValidator_NonPositiveIndex" xml:space="preserve">
+    <value>The value for Index must be greater than 0.</value>
+  </data>
+  <data name="StandardValidator_SourceNotSpecified" xml:space="preserve">
+    <value>The element must contain a Source element.</value>
+  </data>
+  <data name="StandardValidator_TargetNotSpecified" xml:space="preserve">
+    <value>The element must contain a Target element.</value>
+  </data>
+  <data name="StandardValidator_Space_Not_Preserve" xml:space="preserve">
+    <value>The value for Space is restricted to Preserve.</value>
+  </data>
+  <data name="StandardValidator_PropertyNotSpecified_Format" xml:space="preserve">
+    <value>The {0} cannot be null or empty string.</value>
+  </data>
+  <data name="StandardValidator_SubflowNotFound_Format" xml:space="preserve">
+    <value>A Unit matching the {0} value of {1} was not found.</value>
+  </data>
+  <data name="StandardValidator_UnhandledException" xml:space="preserve">
+    <value>An unexpected exception occurred. See InnerException for details.</value>
+  </data>
+  <data name="StandardValidator_XliffSubTypeMismatchFormatting" xml:space="preserve">
+    <value>The Type value must be set to Formatting when the SubType is one of "xlf:b", "xlf:i", "xlf:lb", "xlf:"pb", "xlf:u".</value>
+  </data>
+  <data name="StandardValidator_XliffSubTypeMismatchUserInterface" xml:space="preserve">
+    <value>The Type value must be set to UserInterface when the SubType is "xlf:var".</value>
+  </data>
+  <data name="StandardValidator_ValueNotInRange_Format" xml:space="preserve">
+    <value>The value for {0} is not in the range of {1} - {2}.</value>
+  </data>
+  <data name="XliffElement_UnknownElement_Format" xml:space="preserve">
+    <value>The element named '{0}' is an invalid child for the {1} element.</value>
+  </data>
+  <data name="XliffReader_InvalidAttributeName_Format" xml:space="preserve">
+    <value>The attribute '{0}' is not supported on the {1} element.</value>
+  </data>
+  <data name="StandardValidator_NoMatchingSourceReference_Format" xml:space="preserve">
+    <value>The SourceReference {0} does not refer to a valid Source span.</value>
+  </data>
+  <data name="Codec_ElementNotDescendant_Format" xml:space="preserve">
+    <value>The specified {0} is not a descendant of one of: {1}.</value>
+  </data>
+  <data name="XliffWriter_CannotSerializeElement_Format" xml:space="preserve">
+    <value>Cannot serialize the object of type {0} because it is not part of a document.</value>
+  </data>
+  <data name="Codec_ElementsNotDescendantOfSame_Format" xml:space="preserve">
+    <value>The specified {0} elements are not all descendants of the same {1}.</value>
+  </data>
+  <data name="Codec_TextCannotForElementBeNull_Format" xml:space="preserve">
+    <value>The text for the {0} cannot be null.</value>
+  </data>
+  <data name="XliffDocument_SetIdNotSupported" xml:space="preserve">
+    <value>The Id cannot be set on this element.</value>
+  </data>
+  <data name="XliffWriter_ExtensionTypeNotSupported_Format" xml:space="preserve">
+    <value>The {0} element does not support {1} extensions.</value>
+  </data>
+  <data name="XmlNameInfo_InvalidLocalName" xml:space="preserve">
+    <value>LocalName must not contain ':' characters.</value>
+  </data>
+  <data name="XliffReader_ExtensionAlreadyRegistered_Format" xml:space="preserve">
+    <value>A handler for namespace {0} is already registered.</value>
+  </data>
+  <data name="XliffElement_AttributeAlreadyRegistered_Format" xml:space="preserve">
+    <value>An attribute with the name '{0}' is already registered.</value>
+  </data>
+  <data name="StandardValidator_PropertyNotNMTOKEN_Format" xml:space="preserve">
+    <value>The {0} contains some characters that do not conform to an NMTOKEN.</value>
+  </data>
+  <data name="StandardValidator_CopyOfNotFound_Format" xml:space="preserve">
+    <value>The value of {0}.CopyOf does not refer to a valid {0}.</value>
+  </data>
+  <data name="StandardValidator_InvalidCopyOfElement_Format" xml:space="preserve">
+    <value>The value of {0}.CopyOf ({1}) refers to an invalid element or an element of another type.</value>
+  </data>
+  <data name="Utilities_TargetMustHaveSource" xml:space="preserve">
+    <value>Target must have corresponding Source.</value>
+  </data>
+  <data name="Data_SpaceRestriction" xml:space="preserve">
+    <value>The value for Space is restricted to Preserve.</value>
+  </data>
+  <data name="StandardValidator_DuplicateIdWithinHierarchy_Format" xml:space="preserve">
+    <value>The Id '{0}' for the {1} is a duplicate within the elements of the {2}.</value>
+  </data>
+  <data name="StandardValidator_GlossaryEntryMissingChildren" xml:space="preserve">
+    <value>The glossary entry must contain at least a translation or a definition.</value>
+  </data>
+  <data name="XliffWriter_PrefixInUse_Format" xml:space="preserve">
+    <value>The prefix {0} is already registered for a different namespace ({1}).</value>
+  </data>
+  <data name="XmlWriter_InvalidXmlSpecifier_Format" xml:space="preserve">
+    <value>A valid XML prefix, namespace, and local name must be specified for the entity named '{0}'.</value>
+  </data>
+  <data name="CodePoint_InvalidCode" xml:space="preserve">
+    <value>Code-point U+{0:X4} is valid in XML and must not be encoded with &lt;cp/&gt;.</value>
+  </data>
+  <data name="CodePoint_OutOfRange" xml:space="preserve">
+    <value>Invalid code-point value: {0}.</value>
+  </data>
+  <data name="ArgValidator_StringDoesNotStartWith_Format" xml:space="preserve">
+    <value>The specified string '{0}' must start with '{1}'.</value>
+  </data>
+  <data name="StandardValidator_InlineTagsDontMatch_Format" xml:space="preserve">
+    <value>The Target contains a {0} tag with Id '{1}' that is not equivalent to the type of tag in Source ({2}) with the same Id.</value>
+  </data>
+  <data name="Xml_ProcessingInstruction_InvalidName_Format" xml:space="preserve">
+    <value>The name for the XML processing instruction does not conform to the XML specification.</value>
+  </data>
+  <data name="StandardValidator_CanDeleteFailure_Format" xml:space="preserve">
+    <value>The inline tag of type '{0}' with Id '{1}' has CanDelete set to false yet was deleted in the target. A tag matching the type and Id must be present in the target.</value>
+  </data>
+  <data name="StandardValidator_SequenceCannotBeginWithNo" xml:space="preserve">
+    <value>A sequence of inline tags cannot begin with one whose CanReorder value is set to No. The first inline tag in a sequence must begin with FirstNo.</value>
+  </data>
+  <data name="StandardValidator_CanCopyFailure_Format" xml:space="preserve">
+    <value>The inline tag of type '{0}' with Id '{1}' has CanCopy set to false yet was copied in the target.</value>
+  </data>
+  <data name="StandardValidator_CanCopyOrDeleteInvalidForCanReorder" xml:space="preserve">
+    <value>The value for CanCopy and CanDelete must be set to false if CanReorder is not set to Yes.</value>
+  </data>
+  <data name="StandardValidator_SequenceNotFound_Format" xml:space="preserve">
+    <value>A sequence of inline tags starting with type '{0}' and Id '{1}' was not found in the target.</value>
+  </data>
+  <data name="StandardValidator_SequenceDoesntMatch_Format" xml:space="preserve">
+    <value>A sequence of inline tags starting with type '{0}' and Id '{1}' was found in the target but it doesn't contain the same element types and Ids as that defined in the source. Expected to find {2}.</value>
+  </data>
+  <data name="StandardValidator_SequenceEntry_Format" xml:space="preserve">
+    <value>(Type:'{0}', Id:'{1}'),</value>
+  </data>
+  <data name="StandardValidator_MarkedSpanReferenceAndValueSpecified" xml:space="preserve">
+    <value>The Match must have either a valid Reference or a Value, but not both.</value>
+  </data>
+  <data name="StandardValidator_InvalidMarkedSpanReference_Format" xml:space="preserve">
+    <value>The Reference ({0}) must refer to a valid {1} within the enclosing Unit.</value>
+  </data>
+  <data name="StandardValidator_StartEndPropertyMismatch_Format" xml:space="preserve">
+    <value>The value of {0} must be the same between the {1} and the {2}.</value>
+  </data>
+  <data name="StandardValidator_StartTagOccursAfterEndTag_Format" xml:space="preserve">
+    <value>The {0} is placed after its corresponding {1}.</value>
+  </data>
+  <data name="XliffElement_ElementOutOfOrder_Format" xml:space="preserve">
+    <value>The order of elements in the {0} is invalid starting with the element of type {1} ({2}:{3}).</value>
+  </data>
+  <data name="StandardValidator_SpanningCodeEndIslatedAndStartRef" xml:space="preserve">
+    <value>The SpanningCodeEnd cannot have Isolated set to true because it has a StartReference.</value>
+  </data>
+  <data name="StandardValidator_SpanningCodeEndNotIslatedOrStartRef" xml:space="preserve">
+    <value>The SpanningCodeEnd cannot have Isolated set to false because it does not have a StartReference.</value>
+  </data>
+  <data name="StandardValidator_SpanningCodeStartIslatedWithRef_Format" xml:space="preserve">
+    <value>The SpanningCodeStart cannot have Isolated set to true because it is referred to by a SpanningCodeEnd ({0}).</value>
+  </data>
+  <data name="XliffReader_INoteContainerMissingNote_Format" xml:space="preserve">
+    <value>The notes element within the element with selector path '{0}' must contain at least one note element.</value>
+  </data>
+  <data name="XliffReader_OriginalDataMissingData" xml:space="preserve">
+    <value>The originalData element within the element with selector path '{0}' must contain at least one data element.</value>
+  </data>
+  <data name="XliffElement_ChildAlreadyExists_Format" xml:space="preserve">
+    <value>"The {0} already contains a value for {1} and cannot store another instance.</value>
+  </data>
+  <data name="StandardValidator_SourceLanguageMismatch" xml:space="preserve">
+    <value>The Source language must match the document source language.</value>
+  </data>
+  <data name="StandardValidator_TargetLanguageMismatch" xml:space="preserve">
+    <value>The Target language must match the document target language.</value>
+  </data>
+  <data name="StandardValidator_SpanningCodeStartNotIslated" xml:space="preserve">
+    <value>The SpanningCodeStart must have Isolated set to true because there are no SpanningCodeEnd elements that reference the element.</value>
+  </data>
+  <data name="StandardValidator_ExplicitDependencyMissing_Format" xml:space="preserve">
+    <value>A value for {0} must be specified when a value for {1} is specified.</value>
+  </data>
+  <data name="StandardValidator_LanguageInvalid_Format" xml:space="preserve">
+    <value>The {0} is not BCP-47 compliant. Refer to http://tools.ietf.org/html/bcp47 for more information.</value>
+  </data>
+  <data name="StandardValidator_CodeBaseWithCopyOfAndDataRef_Format" xml:space="preserve">
+    <value>The {0} cannot have a CopyOf reference and an original data reference.</value>
+  </data>
+  <data name="StandardValidator_DifferentSequenceHierarchy" xml:space="preserve">
+    <value>The sequence is invalid because the element doesn't have the same hierarchy as that of the source.</value>
+  </data>
+  <data name="StandardValidator_SequenceAncestorNotInHierarchy" xml:space="preserve">
+    <value>The sequence is invalid because the element's selectable ancestor is outside the hierarchy of the element that starts the sequence.</value>
+  </data>
+  <data name="StandardValidator_DuplicateExtensionId_Format" xml:space="preserve">
+    <value>The Id '{0}' for extension '{1}' (xmlns='{2}') is a duplicate across siblings.</value>
+  </data>
+  <data name="SubFormatStyleConverter_BackslashInKey" xml:space="preserve">
+    <value>A backslash (\) is not a valid character in the key portion of a format style. If a backslash is desired, it must be escaped using a backslash (ie. "\\")</value>
+  </data>
+  <data name="SubFormatStyleConverter_CommaInValue_Format" xml:space="preserve">
+    <value>A comma (,) is not a valid character in the value portion of a format style (key='{0}'). If a comma is desired, it must be escaped using a backslash (ie. "\,")</value>
+  </data>
+  <data name="SubFormatStyleConverter_InvalidKey_Format" xml:space="preserve">
+    <value>The key ({0}) for the format style is invalid because it does not represent a valid Xml name. See the inner exception for details.</value>
+  </data>
+  <data name="SubFormatStyleConverter_KeyWithoutValue_Format" xml:space="preserve">
+    <value>The format style (key='{0}') is malformed because a value is not present. The style must contain a key and a value separated by a comma (,).</value>
+  </data>
+  <data name="XliffElement_PropertyNotSupported_Format" xml:space="preserve">
+    <value>The property {0} is not supported.</value>
+  </data>
+  <data name="StandardValidator_FormatStyleSubFormatWithoutFormat" xml:space="preserve">
+    <value>A value for SubFormatStyle cannot be present unless a value for FormatStyle is specified.</value>
+  </data>
+  <data name="StandardValidator_FormatStyleWithSpanEndNotIsolated" xml:space="preserve">
+    <value>A value for FormatStyle cannot be present on a SpanningCodeEnd unless the Isolated value is set to true.</value>
+  </data>
+  <data name="StandardValidator_HRefNotSpecifiedWhenEmpty_Format" xml:space="preserve">
+    <value>The HRef should be present only when the {0} is empty. Check that either HRef is specified or {0} is empty, but not both.</value>
+  </data>
+  <data name="StandardValidator_HRefNotSpecifiedWhenRequired" xml:space="preserve">
+    <value>The HRef cannot be null or empty string.</value>
+  </data>
+  <data name="StandardValidator_MimeTypeRequired" xml:space="preserve">
+    <value>A value for MimeType is required because the Source and Target elements are both empty.</value>
+  </data>
+  <data name="StandardValidator_ResourceItemRefInvalidReference_Format" xml:space="preserve">
+    <value>A ResourceItem element with Id '{0}' was not found. Check that the Reference is valid and refers to a valid ResourceItem.</value>
+  </data>
+  <data name="StandardValidator_RuleDefinitionInvalid" xml:space="preserve">
+    <value>The Rule must have exactly one of EndsWith, IsNotPresent, IsPresent, StartsWith, or a custom rule defined in an extension attribute.</value>
+  </data>
+  <data name="StandardValidator_RuleExistsInSourceInvalid" xml:space="preserve">
+    <value>The Rule must have exactly one of EndsWith, IsPresent, StartsWith when ExistsInSource is set to true.</value>
+  </data>
+  <data name="StandardValidator_ValueMustBeNOrGreater_Format" xml:space="preserve">
+    <value>The value for {0} must be {1} or greater.</value>
+  </data>
+  <data name="StandardValidator_ProfileNotSpecified" xml:space="preserve">
+    <value>The Profile value in the ProfileData cannot be null or empty string.</value>
+  </data>
+  <data name="StandardValidator_SameSizeInfoAndSizeInfoReferencePresence" xml:space="preserve">
+    <value>The SizeInfoReference should be present only when SizeInfo is not present. Check that either SizeInfoReference is specified or SizeInfo, but not both.</value>
+  </data>
+  <data name="StandardValidator_SizeRestrictionAttributeWithSpanEndNotIsolated_Format" xml:space="preserve">
+    <value>A value for {0} cannot be present on a SpanningCodeEnd unless the Isolated value is set to true.</value>
+  </data>
+  <data name="StandardValidator_InvalidMarkedSpanReferenceSelectorPath_Format" xml:space="preserve">
+    <value>The Reference ({0}) is not a well-formed selector path.</value>
+  </data>
+  <data name="StandardValidator_StartEndCanReorderMismatch" xml:space="preserve">
+    <value>The value of CanReorder must be equivalent between the SpanningCodeStart and the SpanningCodeEnd. If CanReorder in the SpanningCodeStart is set to FirstNo or No, then the value for SpanningCodeEnd must be set to No. Otherwise the value must be set to Yes.</value>
+  </data>
+  <data name="StandardValidator_ItemPropertyNull" xml:space="preserve">
+    <value>The Property value on the Item must be 'content' or the name of an attribute relating to the revision data.</value>
+  </data>
+  <data name="StandardValidator_ResourceDataMissingItems" xml:space="preserve">
+    <value>The ResourceData must contain at least one ResourceItem or ResourceItemRef.</value>
+  </data>
+  <data name="StandardValidator_ResourceItemMissingChildren" xml:space="preserve">
+    <value>The ResourceItem must contain at least one of Source, Target, or Reference.</value>
+  </data>
+  <data name="StandardValidator_ResourceItemSourceMissingWithNoContext" xml:space="preserve">
+    <value>The ResourceItem must have a valid Source when Context is set to false.</value>
+  </data>
+  <data name="XliffElement_InnerTextNotSupported_Format" xml:space="preserve">
+    <value>The {0} does not support inner text.</value>
+  </data>
+</root>

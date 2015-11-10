@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+ <file id="f1">
+  <unit id="1">
+   <originalData>
+    <data id="d1">code1</data>
+    <data id="d2">code2</data>
+   </originalData>
+   <segment>
+    <source><ph id="1" dataRef="d1"/><ph id="2" dataRef="bad"/></source>
+   </segment>
+  </unit>
+ </file>
+</xliff>

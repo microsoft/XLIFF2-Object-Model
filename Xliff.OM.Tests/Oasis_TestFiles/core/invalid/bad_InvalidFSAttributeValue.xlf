@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en"
+ xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0">
+ <file id="f1">
+  <group id="g1" fs:fs="BadValue">
+   <unit id="1">
+    <segment>
+     <source>source</source>
+    </segment>
+   </unit>
+  </group>
+ </file>
+</xliff>

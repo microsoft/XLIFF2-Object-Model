@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+ <file id="f1">
+ 
+  <unit id="1">
+   <segment>
+    <source>
+	 <pc id="1" canReorder="firstNo" canDelete="no" canCopy="no">
+	  text
+	  <ph id="2" canReorder="no" canDelete="no" canCopy="no"/>
+	 </pc>
+	 <ph id="3"/>
+    </source>
+    <target>
+	 <ph id="3"/>
+	 <pc id="1" canReorder="firstNo" canDelete="no" canCopy="no">
+	  text
+	  <ph id="2" canReorder="no" canDelete="no" canCopy="no"/>
+	 </pc>
+	</target>
+   </segment>
+  </unit>
+ 
+  <unit id="2">
+   <segment>
+    <source>
+	 <pc id="1" canReorder="firstNo" canDelete="no" canCopy="no">
+	  text
+	  <ph id="2" canReorder="no" canDelete="no" canCopy="no"/>
+	 </pc>
+	 <ph id="3"/>
+    </source>
+    <target>
+	 <pc id="1" canReorder="firstNo" canDelete="no" canCopy="no">
+	  <mrk id="m1" type="term">text</mrk>
+	  <ph id="2" canReorder="no" canDelete="no" canCopy="no"/>
+	 </pc>
+	</target>
+   </segment>
+  </unit>
+  
+  <unit id="3"> <!-- Two sequences are swapped -->
+   <segment>
+    <source>
+	 <ph id="1" canReorder="firstNo" canDelete="no" canCopy="no"/>
+	 <ph id="2" canReorder="no" canDelete="no" canCopy="no"/>
+	 <ph id="c1"/>
+	 </source>
+    <target order="3">
+	 <ph id="1" canReorder="firstNo" canDelete="no" canCopy="no"/>
+	 <ph id="2" canReorder="no" canDelete="no" canCopy="no"/>
+	</target>
+   </segment>
+   <segment>
+    <source>
+	 <ph id="extra"/>
+	 </source>
+    <target>
+	 <ph id="extra"/>
+	</target>
+   </segment>
+   <segment>
+    <source>
+	 <ph id="3" canReorder="firstNo" canDelete="no" canCopy="no"/>
+	 <ph id="4" canReorder="no" canDelete="no" canCopy="no"/>
+	 </source>
+    <target order="1">
+	 <ph id="3" canReorder="firstNo" canDelete="no" canCopy="no"/>
+	 <ph id="4" canReorder="no" canDelete="no" canCopy="no"/>
+	</target>
+   </segment>
+  </unit>
+  
+  <unit id="4"> <!-- Two sequences are moved side by side -->
+   <segment>
+    <source>
+	 <ph id="1" canReorder="firstNo" canDelete="no" canCopy="no"/>
+	 <ph id="2" canReorder="no" canDelete="no" canCopy="no"/>
+	 <ph id="c1"/>
+	 </source>
+    <target>
+	 <ph id="1" canReorder="firstNo" canDelete="no" canCopy="no"/>
+	 <ph id="2" canReorder="no" canDelete="no" canCopy="no"/>
+	</target>
+   </segment>
+   <segment>
+    <source>
+	 <ph id="extra"/>
+	 </source>
+    <target order="3">
+	 <ph id="extra"/>
+	</target>
+   </segment>
+   <segment>
+    <source>
+	 <ph id="3" canReorder="firstNo" canDelete="no" canCopy="no"/>
+	 <ph id="4" canReorder="no" canDelete="no" canCopy="no"/>
+	 </source>
+    <target order="2">
+	 <ph id="3" canReorder="firstNo" canDelete="no" canCopy="no"/>
+	 <ph id="4" canReorder="no" canDelete="no" canCopy="no"/>
+	</target>
+   </segment>
+  </unit>
+ 
+  <unit id="5">
+   <segment>
+    <source>
+	 <ph id="c1" canReorder="firstNo" canDelete="no" canCopy="no"/>
+	 <ph id="c2" canReorder="no" canDelete="no" canCopy="no"/>
+	 <ph id="c3" canReorder="firstNo" canDelete="no" canCopy="no"/>
+	 <ph id="c4" canReorder="no" canDelete="no" canCopy="no"/>
+	 <ph id="c5"/>
+	 </source>
+    <target>
+	 <ph id="c1" canReorder="firstNo" canDelete="no" canCopy="no"/>
+	 <ph id="c2" canReorder="no" canDelete="no" canCopy="no"/>
+	 <ph id="c5"/>
+	 <ph id="c3" canReorder="firstNo" canDelete="no" canCopy="no"/>
+	 <ph id="c4" canReorder="no" canDelete="no" canCopy="no"/>
+	</target>
+   </segment>
+  </unit>
+
+  </file>
+</xliff>

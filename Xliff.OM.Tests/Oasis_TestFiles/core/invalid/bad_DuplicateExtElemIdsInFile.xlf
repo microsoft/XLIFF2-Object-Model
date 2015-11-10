@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en"
+ xmlns:my="myNS">
+ <file id="f1">
+  <my:elem1 id="e1">
+   <my:elem2 id="x1">f-elem1</my:elem2>
+   <my:elem2 xml:id="x1">f-elem2</my:elem2>
+  </my:elem1>
+  <group id="g1">
+   <my:elem1 id="e1">
+    <my:elem2 id="x1">g-elem1</my:elem2>
+    <my:elem2 id="x2">g-elem2</my:elem2>
+   </my:elem1>
+   <unit id="1">
+    <my:elem1 id="e1">
+     <my:elem2 id="x1">u-elem1</my:elem2>
+     <my:elem2 id="x2">u-elem2</my:elem2>
+    </my:elem1>
+    <segment>
+     <source>text</source>
+    </segment>
+   </unit>
+  </group>
+ </file>
+</xliff>

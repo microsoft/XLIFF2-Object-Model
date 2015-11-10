@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+ <file id="f1">
+  <unit id="1">
+   <segment>
+    <source>
+	 <pc id="1" type="fmt">text</pc>
+	 <pc id="2" type="ui">text</pc>
+	 <pc id="3" type="quote">text</pc>
+	 <pc id="4" type="link">text</pc>
+	 <ph id="5" type="image"/>
+	 <pc id="6" type="other">text</pc>
+	 <pc id="7" type="badType">text</pc>
+	</source>
+   </segment>
+  </unit>
+ </file>
+</xliff>

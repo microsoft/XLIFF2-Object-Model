@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0"
+xmlns:xmrk="urn:xmarker"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0"
+xmlns:mtc="urn:oasis:names:tc:xliff:matches:2.0"
+xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0"
+xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0"
+xmlns:res="urn:oasis:names:tc:xliff:resourcedata:2.0"
+xmlns:ctr="urn:oasis:names:tc:xliff:changetracking:2.0"
+xmlns:slr="urn:oasis:names:tc:xliff:sizerestriction:2.0"
+xmlns:val="urn:oasis:names:tc:xliff:validation:2.0"
+xmlns:xhtml="http://www.w3.org/1999/xhtml"
+xmlns:svg="http://www.w3.org/2000/svg" srcLang="en-us" version="2.0"
+trgLang="de">
+<file id="rd333b">
+      <res:resourceData>
+         <res:resourceItem id="r1" mimeType="image/jpeg" context="yes"
+>
+            <res:source xml:lang="en-us"
+href="resources\en\registryconfig1.resources.jpg"></res:source>
+            <res:target xml:lang="lb-lu"
+href="resources\lb\registryconfig1.resources.jpg"></res:target>
+            <res:reference xml:lang="de-de"
+href="resources\de\registryconfig1.resources.jpg"/>
+         </res:resourceItem>
+         <res:resourceItem id="r1" mimeType="image/jpeg" context="yes"
+> <!--
+5.5.4.3 resourceItemRef
+5.5.4.4 resourceItem
+Constraints
+The value of the OPTIONAL id attribute MUST be unique among all <resourceItem> and <resourceItemRef> elements of the immediate enclosing <file> or <unit> element.
+-->
+           <!-- violation not unique -->
+            <res:source xml:lang="en-us"
+href="resources\en\registryconfig2.resources.jpg"></res:source>
+            <res:target xml:lang="lb-lu"
+href="resources\lb\registryconfig2.resources.jpg"></res:target>
+         </res:resourceItem>
+      </res:resourceData>
+      
+      <unit id="1">
+         <res:resourceData>
+            <res:resourceItemRef ref="r1"/>
+            <res:resourceItemRef ref="r2" id="rr1"/>
+            <res:resourceItem id="rr1" mimeType="image/jpeg"
+context="yes"><!-- violation not unique -->
+               <res:source xml:lang="en-us"
+href="resources\en\registryconfig2.resources.jpg"></res:source>
+               <res:target xml:lang="lb-lu"
+href="resources\lb\registryconfig2.resources.jpg"></res:target>
+            </res:resourceItem>
+         </res:resourceData>
+         <segment id="1" state="translated">
+            <source>Remove Registry Config</source>
+            <target>Registrierungskonfiguration entfernen</target
+>
+         </segment>
+      </unit>
+   </file>
+</xliff>

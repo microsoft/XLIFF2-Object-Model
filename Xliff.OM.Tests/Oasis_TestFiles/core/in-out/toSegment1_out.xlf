@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+<file id="f1">
+<unit id="1">
+<originalData>
+<data id="d1">[b]</data>
+<data id="d2">[/b]</data>
+</originalData>
+<segment id="s1" state="initial" subState="my:value">
+<source>Sentence 1. </source>
+</segment>
+<segment id="s5" state="initial" subState="my:value">
+<source><sm id="1" type="comment" value="my comment"/>Sentence 2. </source>
+</segment>
+<segment id="s6" state="initial" subState="my:value">
+<source>Sentence 3.<em startRef="1"/> Sentence 4.</source>
+</segment>
+<ignorable>
+<source> </source>
+</ignorable>
+<segment id="s2" state="translated">
+<source xml:space="preserve">Sentence  5. </source>
+<target xml:space="preserve">Phrase  5. </target>
+</segment>
+<segment id="s7" state="translated">
+<source xml:space="preserve">Sentence  6. </source>
+<target xml:space="preserve">Phrase  6. </target>
+</segment>
+<segment id="s3" canResegment="no">
+<source>Sentence 7. Sentence 8.</source>
+</segment>
+<ignorable>
+<source> </source>
+</ignorable>
+<segment id="s4">
+<source><sc id="2" canOverlap="no" type="fmt" subType="xlf:b" dataRef="d1"/>Sentence 9. </source>
+</segment>
+<segment id="s8">
+<source>Sentence 10<ec startRef="2" canOverlap="no" type="fmt" subType="xlf:b" dataRef="d2"/>.</source>
+</segment>
+</unit>
+</file>
+</xliff>

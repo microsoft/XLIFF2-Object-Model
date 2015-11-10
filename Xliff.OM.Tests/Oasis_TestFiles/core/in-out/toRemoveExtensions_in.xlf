@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr"
+ xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0"
+ xmlns:my="privateNamespace"
+ my:attr1="value1">
+ <file id="f1" my:attr2="value2">
+  <unit id="1" my:attr3="value3" fs:fs="p">
+   <my:elem1>
+    <my:item>data1</my:item>
+    <my:item>data2</my:item>
+   </my:elem1>
+   <segment id="s1">
+    <source><mrk id="m1" type="my:info" value="some info" fs:fs="u">text <sm id="m2" type="my:info" value="more info" fs:fs="b"/>part 1;</mrk></source>
+    <target><mrk id="m1" type="my:info" value="source target info" fs:fs="u">texte <sm id="m2" type="my:info" value="more target info" fs:fs="b"/>partie 1;</mrk></target>
+   </segment>
+   <ignorable>
+    <source> </source>
+   </ignorable>
+   <segment id="s2">
+    <source>and part 2.<em startRef="m2"/></source>
+    <target>et partie 2.<em startRef="m2"/></target>
+   </segment>
+  </unit>
+  <unit id="2" my:attr3="value3" fs:fs="p">
+   <segment id="s1">
+    <source><pc id="1" fs:fs="u">text <sc id="2" fs:fs="b"/>part 1;</pc> </source>
+    <target><pc id="1" fs:fs="u">texte <sc id="2" fs:fs="b"/>partie 1;</pc> </target>
+   </segment>
+   <segment id="s2">
+    <source>and part 2.<ec startRef="2"/></source>
+    <target>et partie 2.<ec startRef="2"/></target>
+   </segment>
+  </unit>
+ </file>
+</xliff>

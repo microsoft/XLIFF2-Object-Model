@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+ <file id="f1">
+  <unit id="1">
+   <notes>
+    <note id='n1'>note</note>
+   </notes>
+   <segment id="1">
+    <source>
+	 <mrk id="4" type="comment" value="this is also valid" ref="#n=n1">text</mrk>
+	</source>
+   </segment>
+  </unit>
+ </file>
+</xliff>

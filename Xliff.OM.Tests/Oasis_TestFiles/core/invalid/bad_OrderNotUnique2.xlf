@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+ <file id="f1">
+  <unit id="1">
+   <segment>
+    <source>s1</source>
+    <target order="2">t1</target>
+   </segment>
+   <segment>
+    <source>s2</source>
+    <target>t2</target> <!-- Implicit 2 -->
+   </segment>
+  </unit>
+ </file>
+</xliff>

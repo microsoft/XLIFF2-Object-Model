@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr" xmlns:my="myNS" xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0" xmlns:val="urn:oasis:names:tc:xliff:validation:2.0">
+ <file id="f1" my:attr="val">
+  <skeleton>data<my:elem/></skeleton>
+  <my:elem id="my1">data</my:elem>
+  <notes>
+   <note my:attr="val" id="n1">note-file</note>
+  </notes>
+  <group id="g123" my:attr="val" fs:fs="p">
+    <notes>
+     <note id="n1" my:attr="val">note-group</note>
+    </notes>
+   <unit id="1" my:attr="val">
+	<my:elem>data</my:elem>
+    <notes>
+     <note id="n1" my:attr="val">note-unit</note>
+    </notes>
+    <originalData>
+     <data id="d1">[code/]</data>
+    </originalData>
+    <segment>
+     <source>
+	  <ph id="1" dataRef="d1" fs:fs="b"/>
+	  <pc id="2" fs:fs="b">text</pc>
+	  <sc id="3" fs:fs="b"/>
+	   <sm id="m1" translate="yes" my:attr="val"/>
+	    text
+		<cp hex="0001"/>
+	   <ec startRef="3"/>
+	  <em startRef="m1"/>
+	  <mrk id="m2" type="my:type" my:attr="val">text</mrk>
+	 </source>
+    </segment>
+   </unit>
+   <unit id="2" my:attr="val">
+    <my:elem>data</my:elem>
+    <notes>
+     <note my:attr="val">note</note>
+    </notes>
+    <segment>
+     <source>text<ec id='1' isolated='yes' fs:fs='b'/></source>
+     <target>texte<ec id='1' isolated='yes' fs:fs='b'/><ph id='trgOnly'/></target>
+	</segment>
+   </unit>
+   <unit id="3">
+    <val:validation>
+     <val:rule isPresent="loja" occurs="2" />
+    </val:validation>
+    <segment id="1">
+     <source>Choose a store option in the online store.</source>
+    </segment>
+   </unit>
+  </group>
+ </file>
+</xliff>

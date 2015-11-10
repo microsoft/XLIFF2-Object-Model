@@ -1,0 +1,61 @@
+﻿<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="pt"
+ xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0">
+ <file id="f1">
+  <martif type="TBX" xml:lang="en" xmlns="urn:iso:std:iso:30042:ed-1:v1:en">
+   <martifHeader>
+    <fileDesc>
+     <sourceDesc>
+      <p>From the TaaS Terminology Annotation Service</p>
+     </sourceDesc>
+     </fileDesc>
+     <encodingDesc>
+      <p type="XCSURI">http://www.ttt.org/oscarstandards/tbx/TBXXCS.xcs</p>
+     </encodingDesc>
+    </martifHeader>
+    <text>
+     <body>
+      <termEntry xml:id="tbx44">
+       <descrip type="subjectField">TaaS-1001</descrip>
+       <langSet xml:lang="en">
+        <ntig>
+         <termGrp>
+          <term>sustainable agriculture</term>
+          <termNote type="termExtractionScore">0.31</termNote>
+          <termNote type="MSD">JJ NN</termNote>
+          <termCompList type="lemma">
+           <termCompGrp>
+            <termComp>sustainable</termComp>
+            <termNote type="partOfSpeech">adjective</termNote>
+           </termCompGrp>
+           <termCompGrp>
+            <termComp>agriculture</termComp>
+            <termNote type="partOfSpeech">noun</termNote>
+            <termNote type="grammaticalNumber">singular</termNote>
+           </termCompGrp>
+          </termCompList>
+         </termGrp>
+        <transacGrp>
+         <transac type="transactionType">origination</transac>
+         <transacNote type="responsibility">Manual example</transacNote>
+         <date>2013-12-23</date>
+        </transacGrp>
+        <xref target="http://taas.eurotermbank.com/extractor" type="xSource" />
+        <descripGrp>
+         <descrip type="context">growing support for<hi>sustainable agriculture</hi></descrip>
+         <admin target="07d2dbae-31d3-4c67-9bdf-3cd8498a8356.output.step1.completed" type="sourceIdentifier" />
+        </descripGrp>
+        <xref target="http://www.eurotermbank.com/Collection.aspx?collectionid=301" type="xSource">Europos žodynas</xref>
+       </ntig>
+      </langSet>
+     </termEntry>
+    </body>
+   </text>
+  </martif>
+  <unit id="1">
+   <segment>
+    <source>There is growing support for <mrk id="t1" ref="#f=f1/tbx=tbx44" type="term">sustainable agriculture</mrk>.</source>
+   </segment>
+  </unit>
+ </file>
+</xliff>

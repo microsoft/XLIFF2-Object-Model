@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr" xmlns:my="myNamespace" xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0" my:attr="value1">
+ <file id="f1" canResegment="no" translate="no" srcDir="rtl" trgDir="rtl" original="myfile" my:attr="value2" xml:space="preserve">
+  <skeleton>
+   Some non-standard data
+  </skeleton>
+  <mda:metadata xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0">
+   <mda:metaGroup category="someCat">
+    <mda:meta type="mtype1">info-mtype1</mda:meta>
+    <mda:metaGroup category="subCat">
+     <mda:meta type="mtype2">info-mtype2</mda:meta>
+    </mda:metaGroup>
+   </mda:metaGroup>
+  </mda:metadata>
+  <notes>
+   <note id="note1" appliesTo="source" priority="2" category="mycat" my:attr="value3">Text of note1</note>
+  </notes>
+  <unit id="tu1" canResegment="yes" translate="yes" srcDir="ltr" trgDir="ltr" name="unit1" type="z:typeu" my:attr="value5">
+   <segment id="1" canResegment="no" state="translated" subState="my:state">
+    <source>Sample segment.</source>
+    <target order="3">Exemple de segment.</target>
+   </segment>
+   <ignorable>
+    <source> </source>
+   </ignorable>
+   <segment id="2">
+    <source xml:space="default">Segment's content.</source>
+    <target xml:space="default" order="1">Contenu du segment.</target>
+   </segment>
+  </unit>
+  <group id="g1" canResegment="yes" translate="yes" srcDir="ltr" trgDir="ltr" name="group1" type="z:typeg" my:attr="value4">
+   <notes>
+    <note id="note-g1" appliesTo="source" priority="2" category="mycat" my:attr="value3">Text of note-g1</note>
+   </notes>
+   <unit id="tu3">
+    <segment id="1">
+     <source>Bolded text</source>
+    </segment>
+   </unit>
+   <unit id="tu3end">
+    <segment id="1">
+     <source>Extra stuff</source>
+    </segment>
+   </unit>
+   <unit id="tu2">
+    <originalData>
+     <data id="d1">[b [#$tu3]   ]</data>
+     <data id="d2">[/b [#t3end]   ]</data>
+     <data id="d3" dir="rtl">[rtl-data   ]</data>
+    </originalData>
+    <segment id="s1">
+     <source><pc id="1" subFlowsStart="tu3" subFlowsEnd="tu3end" dataRefEnd="d2" dataRefStart="d1">special text</pc> and more
+<ph id="2" canDelete="no" canReorder="firstNo" canCopy="no" dataRef="d3"/>.</source>
+    </segment>
+   </unit>
+  </group>
+ </file>
+</xliff>

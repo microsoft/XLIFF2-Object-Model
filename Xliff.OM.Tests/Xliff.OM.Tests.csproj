@@ -1,0 +1,1171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{381519C4-F501-4A4A-8A47-6AB3420F773D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Localization.Xliff.OM.Tests</RootNamespace>
+    <AssemblyName>Xliff.OM.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="Modules\Metadata\MetadataDefaultValueTests.cs" />
+    <Compile Include="Modules\ResourceData\ResourceDataDefaultValueTests.cs" />
+    <Compile Include="Modules\SizeRestriction\SizeRestrictionDefaultValueTests.cs" />
+    <Compile Include="Modules\TranslationCandidates\TranslationCandidatesDefaultValueTests.cs" />
+    <Compile Include="Modules\Validation\ValidationDefaultValueTests.cs" />
+    <Compile Include="Modules\Glossary\GlossaryDefaultValueTests.cs" />
+    <Compile Include="Converters\UIntConverterTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Modules\ChangeTracking\ChangeTrackingDefaultValueTests.cs" />
+    <Compile Include="FileBasedTests.cs" />
+    <Compile Include="Extensibility\CustomElement1.cs" />
+    <Compile Include="Extensibility\CustomElement2.cs" />
+    <Compile Include="Extensibility\CustomExtension.cs" />
+    <Compile Include="Extensibility\CustomHandler.cs" />
+    <Compile Include="Extensibility\ExtensibilityTests.cs" />
+    <Compile Include="Extensibility\XliffData.cs" />
+    <Compile Include="Extensibility\XliffDataList.cs" />
+    <Compile Include="Modules\ChangeTracking\RevisionsContainerTests.cs" />
+    <Compile Include="Modules\ChangeTracking\RevisionTests.cs" />
+    <Compile Include="Modules\ChangeTracking\ItemTests.cs" />
+    <Compile Include="Modules\ChangeTracking\ChangeTrackTests.cs" />
+    <Compile Include="Modules\Glossary\DefinitionTests.cs" />
+    <Compile Include="Modules\Glossary\GlossaryTests.cs" />
+    <Compile Include="Modules\Glossary\GlossaryEntryTests.cs" />
+    <Compile Include="Modules\Glossary\TermTests.cs" />
+    <Compile Include="Modules\Glossary\TranslationTests.cs" />
+    <Compile Include="Modules\Metadata\MetadataContainerTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Modules\Metadata\MetaTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Modules\Metadata\MetaGroupTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Modules\ResourceData\ResourceItemTargetTests.cs" />
+    <Compile Include="Modules\ResourceData\ResourceItemSourceTests.cs" />
+    <Compile Include="Modules\ResourceData\ResourceItemRefTests.cs" />
+    <Compile Include="Modules\ResourceData\ResourceItemTests.cs" />
+    <Compile Include="Modules\ResourceData\ResourceDataTests.cs" />
+    <Compile Include="Modules\ResourceData\ReferenceTests.cs" />
+    <Compile Include="Modules\SizeRestriction\NormalizationTests.cs" />
+    <Compile Include="Modules\SizeRestriction\ProfileDataTests.cs" />
+    <Compile Include="Modules\SizeRestriction\ProfilesTests.cs" />
+    <Compile Include="Modules\TranslationCandidates\MatchTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\AttributeDataTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\ProcessingInstructionTagTests.cs" />
+    <Compile Include="Core\CDataTagTests.cs" />
+    <Compile Include="Core\InlineTags\MarkedSpanStartTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\InlineTags\MarkedSpanEndTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\InlineTags\MarkedSpanTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\InlineTags\SpanningCodeTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\InlineTags\SpanningCodeEndTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\InlineTags\SpanningCodeStartTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\InlineTags\StandaloneCodeTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\DataTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\OriginalDataTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\CommentTagTests.cs" />
+    <Compile Include="Core\XliffElementTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\UnitTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\NoteContainerTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\TargetTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\SourceTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\SkeletonTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\SegmentTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\PlainTextTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\NoteTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\IgnorableTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\GroupTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\FileTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\InlineTags\CodePointTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Core\XliffDocumentTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Modules\Validation\ValidationTests.cs" />
+    <Compile Include="Modules\Validation\RuleTests.cs" />
+    <Compile Include="ReflectorTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Serialization\TestData.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Serialization\XliffReaderTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Serialization\XliffWriterTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="TestUtilities.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="DefaultValueTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Validators\ValidationErrorTests.cs" />
+    <Compile Include="Validators\StandardValidatorTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="XliffElementPropertiesTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Attributes\ConverterAttributeTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Attributes\SchemaChildAttributeTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Attributes\SchemaEntityAttributeTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Converters\TranslationSubjectConverterTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Converters\TranslationStateConverterTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Converters\PreservationConverterTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Converters\IntConverterTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Converters\HexConverterTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Converters\BoolConverterTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Converters\ContentDirectionalityConverterTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="ParentAttachedListTests.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xliff.OM\Xliff.OM.csproj">
+      <Project>{f72462db-976c-4e91-a82f-960b5d89ae1c}</Project>
+      <Name>Xliff.OM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Oasis_TestFiles\core\in-out\toJoin1_in.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toJoin1_out.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toJoin2_in.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toJoin2_out.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toJoin3_in.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toJoin3_out.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toJoin4_in.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toJoin4_out.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toRemoveAnnotations_in.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toRemoveAnnotations_out.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toRemoveExtensions_in.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toRemoveExtensions_out.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toRewrite1_in.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toRewrite1_out.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toRewrite2_in.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toRewrite2_out.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toSegment1_in.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\in-out\toSegment1_out.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_canReorderContext1.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_canReorderContext2.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_canReorderContext3.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_CommentWithValueAndRef.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_ConfusedIsolatedOnEc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_CopyOfWithBadReference.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_CopyOfWithNoCopyReference.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_CopyOfWithOriginalData.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DataIdNotUnique.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DataRefWithoutOriginalData.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DifferentCanCopyInScAndEc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DifferentCanDeleteInScAndEc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DifferentCanOverlapInScAndEc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DifferentCanReorderInScAndEc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DifferentCopyOfInScAndEc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DifferentDirInScAndEc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DifferentSubTypeInScAndEc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DifferentTypeInScAndEc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DifferentXmlSpace.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DuplicateExtElemIdsInFile.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DuplicateExtElemIdsInGroup.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DuplicateExtElemIdsInUnit.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DuplicateNoteIdsInFile.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DuplicateNoteIdsInGroup.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_DuplicateNoteIdsInUnit.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_EcBeforeSc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_EmBeforeSm.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_EmptySkeletonWithoutHref.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_FileIdNotUnique.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_GroupIdNotUnique.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_GroupWithoutId.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_IgnorableIdNotUnique.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_IgnorableWithoutSource.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidCommentAnnotation1.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidCommentAnnotation2.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidCommentAnnotation3.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidCommentAnnotation4.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidDataRef.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidDataRefEnd.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidDataRefStart.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidDirAttributeOnSource.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidExtensionAttributeOnPc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidExtensionAttributeOnSegment.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidExtensionAttributeOnSource.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidExtensionAttributeOnTarget.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidExtensionElementInData.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidExtensionElementInFile.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidExtensionElementInOriginalData.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidExtensionElementInSegment.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidExtensionElementOutsideFile.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidFragIdBadOrder.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidFragIdDuplicatedPrefix.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidFragIdMissplacedLeaf.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidFragIdNoSingleLeaf.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidFragIdPrefixNotNmtoken.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidFragIdPrefixTooShort.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidFragIdSyntax.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidFragIdUnknownPrefix.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidFSAttribute.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidFSAttributeOnEc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidFSAttributeValue.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidHexRangeOnCp.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidHexValueOnCp.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidId1.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidId2.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidId3.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidIsolatedOnEc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidIsolatedOnSc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidNoteRefInUnit.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidNotesInFile.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidNotesInGroup.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidNotesInUnit.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidStateValue.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidTranslateInSegment.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidTypeSubTypeValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidTypeValue.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidValidation.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidXmlLangInheritedFromFile.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidXmlLangInheritedFromGroup.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidXmlLangInheritedFromUnit.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidXmlLangOnFile.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidXmlLangOnGroup.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_InvalidXmlLangOnUnit.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_IsolatedEcWithId.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_MissingIsolatedOnEc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_MissingIsolatedOnSc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_MissingNonRemovable1.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_MissingNonRemovable2.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_MissingReorderFirstNo.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_NoFile.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_NonEmptySkeletonWithHref.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_NonIsolatedEcWithoutStartRef.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_NonIsolatedEcWithStartRef.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_NotesWithoutNote.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_NoTrgLang.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_NoTrgLangWithIgnorable.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_NoUnitOrGroupInFile.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_OrderNotUnique1.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_OrderNotUnique2.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_OriginalDataWithoutData.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_PartIdNotUnique.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_RefAndValueInComment.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_SegmentIdNotUnique.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_SegmentWithoutSource.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_SrcLangNotWellFormed.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_SubFlowWithInvalidReference.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_SubFlowWithInvalidValue.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_SubStateWithoutState.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_SubTypeWithoutType.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_TrgLangNotWellFormed.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_TwoSourceInUnit.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_UnitWithoutSegment.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_UnknownDataRefEndValue.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_UnknownDataRefStartValue.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_UnknownDataRefValue.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_WrongLangOnTarget.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_WrongReordering1.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_WrongReordering2.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_WrongSourceLang.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_WrongTargetLang.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_XmlLangNotWellFormed.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\invalid\bad_YesCanReorderInEcForFirstNoInSc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\allExtensions.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\almostEmpty.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\emptySkeletonWithHref.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\everything-core.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\extra-prefixes.properties" />
+    <None Include="Oasis_TestFiles\core\valid\nonEmptySkeletonWithoutHref.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\sample1.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\sourceOnly.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\testTranslateWithTarget.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\toJoin.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\toSegment.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\toSegmentAndOrder.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\typeSubTypeValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\withCDataSections.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\withCommentAnnotations.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\withGlossary.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\withMatches.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\withModulesAttributesInEc.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\withNotes.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\withReferences.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\withReorderedCodes.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\withTBXExtension.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\withValidation.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\withXmlLang.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\core\valid\withXmlSpace.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-ctr-property-not-legit-category.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-ctr_appliesTo-not-using-ref-to-resolvableID.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-ctr_property-not-content-or-valid-attribute-ref.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-ctr_ref-not-pointed-to-resolvableID.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-ctr_revisions-not-using-ref-to-resolvableID.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-fs_fs-not-valid-HTML.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-fs_subFs-not-allowed-w-o-fs.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-gls_glossEntry-and-translation-not-unique-in-glossary.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-gls_glossEntry-w-o-translation-or-definition.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-mda_meta-missing-type.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-mda_meta-missplaced-appliesTo.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-mda_metadata-id-not-nmtoken.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-mda_metaGroup-id-not-nmtoken.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-mda_metaGroup-id-not-unique.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-mda_metaGroup-invalid-appliesTo.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-mda_missing-metaGroup.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-mtc_id-not-nmtoken.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-mtc_match-has-xml_lang.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-mtc_match-ID-not-unique.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-mtc_subType-w-o-type-match.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-mtc_type-value-not-in-list.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-mtc_wrong-ref-syntax.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-mtc_wrong-ref-value.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-res_resourceItem-not-unique.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-res_resourceItemRef-not-unique.xlf">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-res_source-has-content-and-href.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-res_source-xml_lang-not-same-as-xliff.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-res_target-xml_lang-not-same-as-xliff.xlf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-slr_equivStorage-ec-not-isolated.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-slr_equivStorage-not-integer.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-slr_sizeInfo-ec-not-isolated.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-slr_sizeInfo-not-integer.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-slr_sizeInfo-with-sizeInfoRef.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-slr_sizeInfoRef-ec-not-isolated.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-slr_sizeInfoRef-has-no-data-sib.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-slr_sizeInfoRef-with-sizeInfo.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-slr_sizeRestriction-patterns.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-slr_storageRestriction-patterns.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-val_ExactlyOneAttributeOnRule.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-val_existsInSourcePatternOnRule.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-val_invalid-caseSensitive.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-val_invalid-normalization.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\invalid\Bad-val_invalid-occurs.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-ctr-property-legit-category.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-ctr_appliesTo-using-ref-to-resolvableID.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-ctr_property-content-or-valid-attribute-ref.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-ctr_ref-pointed-to-resolvableID.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-ctr_revisions-using-ref-to-resolvableID.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-ctr_storageRestriction-patterns.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-fs_fs-with-valid-HTML.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-fs_subFs-has-fs.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-gls_glossEntry-and-translation-unique-in-glossary.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-gls_glossEntry-w-translation-or-definition.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-mtc_match-has-no-xml_lang.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-mtc_match-ID-unique.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-mtc_reference-lang.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-mtc_subType-w-type-match.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-mtc_type-type-not-on-list.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-res_resourceItem-unique.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-res_resourceItemRef-unique.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-res_source-has-no-content-and-href.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-res_source-xml_lang-same-as-xliff.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-slr_equivStorage-ec-not-isolated.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-slr_equivStorage-is-integer.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-slr_sizeInfo-is-integer.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-slr_sizeInfo-not-with-sizeInfoRef.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-slr_sizeInfoRef-ec-isolated.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-slr_sizeInfoRef-has-data-sib.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-slr_sizeInfoRef-not-with-sizeInfo.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-slr_sizeRestriction-patterns.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-val_ExactlyOneAttributeOnRule.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-val_existsInSourcePatternOnRule.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Good-val_extension-rule.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Oasis_TestFiles\modules\valid\Goodslr_sizeRestriction-isolated.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\DataWithValidValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\DataWithEmptyValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\DocumentWithExtensions.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\DocumentWithXmlPrefix.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\EmptyFile.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\DataWithDefaultValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\FileWithResourceData.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\FileWithValidation.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\FileWithProfileData.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\FileWithProfiles.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\FileWithChangeTrack.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\GlossaryWithValidValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\InheritanceWithMinimalOutput.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\UnitWithMetadata.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\OriginalDataWithValidValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\OriginalDataWithDefaultValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\ValidDocument.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\InvalidFile.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\FileNoteWithValidValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\FileNoteWithDefaultValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\FileNoteWithEmptyValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\FullDocument.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\GroupWithValidValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\GroupWithEmptyValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\GroupWithDefaultValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\IgnorableWithDefaultValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\IgnorableWithEmptyValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\IgnorableWithValidValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\TargetWithDefaultValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\TargetWithEmptyValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\TargetWithValidValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\SourceWithValidValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\SourceWithEmptyValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\SourceWithDefaultValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\UnitNoteWithDefaultValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\UnitNoteWithEmptyValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\UnitNoteWithValidValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\SegmentWithDefaultValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\SegmentWithEmptyValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\SegmentWithValidValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\UnitWithDefaultValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\UnitWithEmptyValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\UnitWithValidValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\SkeletonWithValidValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\SkeletonWithEmptyValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\SkeletonWithDefaultValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\FileWithValidValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\FileWithEmptyValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\DocumentWithValidValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\DocumentWithEmptyValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\DocumentWithDefaultValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\FileWithDefaultValues.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TestData.Xliff.OM.Tests\DocumentWithEverything.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FileBasedTests.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Oasis_TestFiles\readme.html" />
+    <Content Include="Oasis_TestFiles\readme.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

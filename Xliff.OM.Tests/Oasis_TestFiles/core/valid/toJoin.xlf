@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+ <file id="f1">
+  <unit id="1">
+   <segment id="s1" state="translated" subState="my:value1">
+    <source><sc id='1'/>Sentence 1.</source>
+    <target><sc id='1'/>Phrase 1.</target>
+   </segment>
+   <ignorable>
+    <source> </source>
+   </ignorable>
+   <segment id="s2" state="translated" subState="my:value2">
+    <source xml:space="preserve">Sentence [  ] 2.<ec startRef='1'/> </source>
+    <target xml:space="preserve">Phrase [  ] 2.<ec startRef='1'/> </target>
+   </segment>
+   <ignorable>
+    <source> </source>
+   </ignorable>
+   <segment id="s3" state="final">
+    <source xml:space="preserve">Sentence 3. </source>
+    <target xml:space="preserve">sentence 3. </target>
+   </segment>
+   <segment id="s4" canResegment="no">
+    <source>Sentence 4.</source>
+    <target>Phrase 4.</target>
+   </segment>
+   <ignorable>
+    <source> </source>
+   </ignorable>
+   <segment id="s5">
+    <source>Sentence 5.</source>
+    <target>Phrase 5.</target>
+   </segment>
+  </unit>
+ </file>
+</xliff>

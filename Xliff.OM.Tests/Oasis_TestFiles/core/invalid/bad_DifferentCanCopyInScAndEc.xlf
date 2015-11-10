@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+ <file id="f1">
+  <unit id="1">
+   <segment>
+    <source><sc id="1" canCopy="no"/>text. </source>
+   </segment>
+   <segment>
+    <source><ec startRef="1" canCopy="yes"/></source>
+   </segment>
+  </unit>
+ </file>
+</xliff>

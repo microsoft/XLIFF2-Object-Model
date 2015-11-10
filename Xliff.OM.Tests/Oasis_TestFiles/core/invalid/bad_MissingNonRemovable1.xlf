@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+ <file id="1">
+  <unit id="1">
+   <segment>
+    <source><ph id='1' canDelete="no"/>Text1. </source>
+    <!-- OK if there is no target -->
+   </segment>
+   <segment>
+    <source><ph id='2' canDelete="no"/>Text2. </source>
+    <target><ph id='2' canDelete="no"/>Texte2. <ph id='3' canDelete="no"/></target>
+   </segment>
+   <segment>
+    <source><ph id='3' canDelete="no"/>Text3. </source>
+    <target>Texte3. </target><!-- OK because the code is in another segment -->
+   </segment>
+   <segment>
+    <source><ph id='4' canDelete="no"/>Text4. </source>
+    <target>Texte4. </target><!-- NOT OK -->
+   </segment>
+  </unit>
+ </file>
+</xliff>

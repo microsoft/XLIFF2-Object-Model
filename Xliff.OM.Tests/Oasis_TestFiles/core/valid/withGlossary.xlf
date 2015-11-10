@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr"
+ xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0">
+ <file id="f1">
+  <unit id="1">
+   <gls:glossary>
+    <gls:glossEntry id="g1" ref="#m1" xmlns:my="myNamespace" my:attr1="value1">
+     <gls:term source="term-source" my:attr2="value2">doppelgänger</gls:term>
+     <gls:translation id="trans1" ref="#t=m3" source="trans1-source" my:attr3="value3">double</gls:translation>
+     <gls:translation id="trans2" ref="#m2" source="trans2-source" my:attr4="value4">alter-ego</gls:translation>
+     <gls:definition source="dictionary.com">A ghostly double or counterpart of a living person.</gls:definition>
+     <my:elem attr1="value1"/>
+    </gls:glossEntry>
+   </gls:glossary>
+   <segment>
+    <source>He is my <mrk id="m1" type="term">doppelgänger</mrk>. </source>
+    <target>Il est mon <mrk id="m1" type="term">alter ego</mrk>. </target>
+   </segment>
+   <segment> <!-- using different references (on purpose: trans2 refers to the source (it is allowed))-->
+    <source>Another <mrk id="m2" type="term">doppelgänger</mrk>.</source>
+    <target>Un autre <mrk id="m3" type="term">double</mrk>.</target>
+   </segment>
+  </unit>
+ </file>
+</xliff>

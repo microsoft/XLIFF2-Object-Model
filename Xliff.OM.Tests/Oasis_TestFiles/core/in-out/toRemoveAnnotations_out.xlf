@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+<file id="f1">
+<unit id="1">
+<notes>
+<note id="n1">text of note n1</note>
+</notes>
+<segment id="s1">
+<source>text part 1;</source>
+<target>texte partie 1;</target>
+</segment>
+<ignorable>
+<source> </source>
+</ignorable>
+<segment id="s2">
+<source>and part2.</source>
+<target>et partie 2.</target>
+</segment>
+</unit>
+</file>
+</xliff>

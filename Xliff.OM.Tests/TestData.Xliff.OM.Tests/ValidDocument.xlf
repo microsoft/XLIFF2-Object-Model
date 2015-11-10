@@ -1,0 +1,357 @@
+﻿<xliff srcLang="en-us" trgLang="de-de" version="2.0" xml:space="default" xmlns="urn:oasis:names:tc:xliff:document:2.0" xmlns:mtc="urn:oasis:names:tc:xliff:matches:2.0" xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0">
+    <file canResegment="yes" id="f1" original="original" srcDir="ltr" trgDir="rtl" translate="yes" xml:space="preserve">
+        <skeleton href="href" />
+        <notes>
+            <note appliesTo="source" category="category" id="n1" priority="2">text</note>
+            <note>text2</note>
+        </notes>
+        <group canResegment="no" id="g1" name="prefix:value" srcDir="ltr" trgDir="rtl" translate="no" type="prefix:value" xml:space="default">
+            <unit canResegment="no" id="u1" name="prefix:value" srcDir="rtl" trgDir="ltr" translate="no" type="prefix:value" xml:space="preserve">
+                <gls:glossary>
+                    <gls:glossEntry id ="entry1" ref="#s1">
+                        <gls:term source="termSource">term text</gls:term>
+                        <gls:translation id="trans1" source="translationSource" />
+                        <gls:definition source="definitionSource" />
+                    </gls:glossEntry>
+                    <gls:glossEntry id="entry2" ref="#s1">
+                        <gls:term source="termSource">term text</gls:term>
+                        <gls:translation id="trans2" source="translationSource" />
+                        <gls:definition source="definitionSource" />
+                    </gls:glossEntry>
+                </gls:glossary>
+                <notes>
+                    <note id="n1">text2</note>
+                    <note id="n2">text2</note>
+                </notes>
+                <originalData>
+                  <data dir="rtl" id="id1" xml:space="preserve">data1<cp hex="10" /></data>
+                  <data dir="ltr" id="id2" xml:space="preserve">data2<cp hex="10" /></data>
+                </originalData>
+                <ignorable id="i1">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <ignorable id="i2">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s1">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="10" />text
+                    </source>
+                    <target order="4" xml:lang="de-de" xml:space="default">
+                        <cp hex="10" />text2
+                    </target>
+                </segment>
+                <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s2">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="10" />text
+                    </source>
+                    <target order="3" xml:lang="de-de" xml:space="default">
+                        <cp hex="10" />text2
+                    </target>
+                </segment>
+            </unit>
+            <unit canResegment="no" id="u2" name="prefix:value" srcDir="rtl" trgDir="ltr" translate="no" type="prefix:value" xml:space="preserve">
+                <notes>
+                    <note id="n1">text2</note>
+                    <note id="n2">text2</note>
+                </notes>
+                <originalData>
+                  <data dir="rtl" id="id1" xml:space="preserve">data1<cp hex="10" /></data>
+                  <data dir="ltr" id="id2" xml:space="preserve">data2<cp hex="12" /></data>
+                </originalData>
+                <ignorable id="i1">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <ignorable id="i2">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s1">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="10" />text
+                    </source>
+                    <target order="4" xml:lang="de-de" xml:space="default">
+                        <cp hex="11" />text2
+                    </target>
+                </segment>
+                <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s2">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="10" />text
+                    </source>
+                    <target order="3" xml:lang="de-de" xml:space="default">
+                        <cp hex="11" />text2
+                    </target>
+                </segment>
+            </unit>
+        </group>
+        <group canResegment="no" id="g2" name="prefix:value" srcDir="ltr" trgDir="rtl" translate="no" type="prefix:value" xml:space="default">
+            <unit canResegment="no" id="u3" name="prefix:value" srcDir="rtl" trgDir="ltr" translate="no" type="prefix:value" xml:space="preserve">
+                <notes>
+                    <note id="n1">text2</note>
+                    <note id="n2">text2</note>
+                </notes>
+                <ignorable id="i1">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <ignorable id="i2">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s1">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="10" />text
+                    </source>
+                    <target order="4" xml:lang="de-de" xml:space="default">
+                        <cp hex="11" />text2
+                    </target>
+                </segment>
+                <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s2">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="10" />text
+                    </source>
+                    <target order="3" xml:lang="de-de" xml:space="default">
+                        <cp hex="11" />text2
+                    </target>
+                </segment>
+            </unit>
+            <unit canResegment="no" id="u4" name="prefix:value" srcDir="rtl" trgDir="ltr" translate="no" type="prefix:value" xml:space="preserve">
+                <notes>
+                    <note id="n1">text2</note>
+                    <note id="n2">text2</note>
+                </notes>
+                <ignorable id="i1">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <ignorable id="i2">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s1">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="10" />text
+                    </source>
+                    <target order="4" xml:lang="de-de" xml:space="default">
+                        <cp hex="11" />text2
+                    </target>
+                </segment>
+                <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s2">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="10" />text
+                    </source>
+                    <target order="3" xml:lang="de-de" xml:space="default">
+                        <cp hex="11" />text2
+                    </target>
+                </segment>
+            </unit>
+        </group>
+        <unit canResegment="no" id="u5" name="prefix:value" srcDir="rtl" trgDir="ltr" translate="no" type="prefix:value" xml:space="preserve">
+            <notes>
+                <note id="n1">text2</note>
+                <note id="n2">text2</note>
+            </notes>
+            <ignorable id="i1">
+                <source>text</source>
+                <target>text</target>
+            </ignorable>
+            <ignorable id="i2">
+                <source>text</source>
+                <target>text</target>
+            </ignorable>
+            <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s1">
+                <source xml:lang="en-us" xml:space="default">
+                    <cp hex="10" />text
+                </source>
+                <target order="4" xml:lang="de-de" xml:space="default">
+                    <cp hex="11" />text2
+                </target>
+            </segment>
+            <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s2">
+                <source xml:lang="en-us" xml:space="default">
+                    <cp hex="10" />text
+                </source>
+                <target order="3" xml:lang="de-de" xml:space="default">
+                    <cp hex="11" />text2
+                </target>
+            </segment>
+        </unit>
+    </file>
+    <file canResegment="yes" id="f2" original="original" srcDir="ltr" trgDir="rtl" translate="yes" xml:space="preserve">
+        <skeleton href="href" />
+        <notes>
+            <note appliesTo="source" category="category" id="n1" priority="2">text</note>
+            <note>text2</note>
+        </notes>
+        <group canResegment="no" id="g3" name="prefix:value" srcDir="ltr" trgDir="rtl" translate="no" type="prefix:value" xml:space="default">
+            <unit canResegment="no" id="u6" name="prefix:value" srcDir="rtl" trgDir="ltr" translate="no" type="prefix:value" xml:space="preserve">
+                <notes>
+                    <note id="n1">text2</note>
+                    <note id="n2">text2</note>
+                </notes>
+                <ignorable id="i1">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <ignorable id="i2">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s1">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="10" />text
+                    </source>
+                    <target order="3" xml:lang="de-de" xml:space="default">
+                        <cp hex="11" />text2
+                    </target>
+                </segment>
+                <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s2">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="10" />text
+                    </source>
+                    <target order="4" xml:lang="de-de" xml:space="default">
+                        <cp hex="11" />text2
+                    </target>
+                </segment>
+            </unit>
+            <unit canResegment="no" id="u7" name="prefix:value" srcDir="rtl" trgDir="ltr" translate="no" type="prefix:value" xml:space="preserve">
+                <notes>
+                    <note id="n1">text2</note>
+                    <note id="n2">text2</note>
+                </notes>
+                <ignorable id="i1">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <ignorable id="i2">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s1">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="10" />text
+                    </source>
+                    <target order="4" xml:lang="de-de" xml:space="default">
+                        <cp hex="11" />text2
+                    </target>
+                </segment>
+                <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s2">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="10" />text
+                    </source>
+                    <target order="3" xml:lang="de-de" xml:space="default">
+                        <cp hex="11" />text2
+                    </target>
+                </segment>
+            </unit>
+        </group>
+        <group canResegment="no" id="g4" name="prefix:value" srcDir="ltr" trgDir="rtl" translate="no" type="prefix:value" xml:space="default">
+            <unit canResegment="no" id="u8" name="prefix:value" srcDir="rtl" trgDir="ltr" translate="no" type="prefix:value" xml:space="preserve">
+                <notes>
+                    <note id="n1">text2</note>
+                    <note id="n2">text2</note>
+                </notes>
+                <ignorable id="i1">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <ignorable id="i2">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s1">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="10" />text
+                    </source>
+                    <target order="4" xml:lang="de-de" xml:space="default">
+                        <cp hex="11" />text2
+                    </target>
+                </segment>
+                <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s2">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="10" />text
+                    </source>
+                    <target order="3" xml:lang="de-de" xml:space="default">
+                        <cp hex="11" />text2
+                    </target>
+                </segment>
+            </unit>
+            <unit canResegment="no" id="u9" name="prefix:value" srcDir="rtl" trgDir="ltr" translate="no" type="prefix:value" xml:space="preserve">
+                <notes>
+                    <note id="n1">text2</note>
+                    <note id="n2">text2</note>
+                </notes>
+                <ignorable id="i1">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <ignorable id="i2">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s1">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="10" />text
+                    </source>
+                    <target order="4" xml:lang="de-de" xml:space="default">
+                        <cp hex="11" />text2
+                    </target>
+                </segment>
+                <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s2">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="10" />text
+                    </source>
+                    <target order="3" xml:lang="de-de" xml:space="default">
+                        <cp hex="11" />text2
+                    </target>
+                </segment>
+            </unit>
+        </group>
+        <unit canResegment="no" id="u10" name="prefix:value" srcDir="rtl" trgDir="ltr" translate="no" type="prefix:value" xml:space="preserve">
+            <mtc:matches>
+                <mtc:match ref="#pc1">
+                    <source xml:lang="en-us" xml:space="default">
+                        text
+                    </source>
+                    <target order="2" xml:lang="de-de" xml:space="default">
+                        text
+                    </target>
+                </mtc:match>
+            </mtc:matches>
+            <notes>
+                <note id="n1">text2</note>
+                <note id="n2">text2</note>
+            </notes>
+            <originalData>
+                <data id="d1">text </data>
+            </originalData>
+            <ignorable id="i1">
+                <source>text</source>
+                <target>text</target>
+            </ignorable>
+            <ignorable id="i2">
+                <source>text</source>
+                <target>text</target>
+            </ignorable>
+            <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s1">
+                <source xml:lang="en-us" xml:space="default">
+                    <cp hex="10" />text
+                </source>
+                <target order="4" xml:lang="de-de" xml:space="default">
+                    <cp hex="11" />text2
+                </target>
+            </segment>
+            <segment canResegment="yes" state="reviewed" subState="prefix:value" id="s2">
+                <source xml:lang="en-us" xml:space="default">
+                    <cp hex="10" />text<pc id="pc1" type="other" dataRefStart="d1" dataRefEnd="d1">text</pc>
+                </source>
+                <target order="3" xml:lang="de-de" xml:space="default">
+                    <cp hex="11" />text2
+                </target>
+            </segment>
+        </unit>
+    </file>
+</xliff>

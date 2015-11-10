@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0"
+xmlns:xmrk="urn:xmarker"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0"
+xmlns:mtc="urn:oasis:names:tc:xliff:matches:2.0"
+xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0"
+xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0"
+xmlns:res="urn:oasis:names:tc:xliff:resourcedata:2.0"
+xmlns:ctr="urn:oasis:names:tc:xliff:changetracking:2.0"
+xmlns:slr="urn:oasis:names:tc:xliff:sizerestriction:2.0"
+xmlns:val="urn:oasis:names:tc:xliff:validation:2.0"
+xmlns:xhtml="http://www.w3.org/1999/xhtml"
+xmlns:svg="http://www.w3.org/2000/svg" srcLang="en-us" version="2.0"
+trgLang="de">
+<file id="f-val-1">
+      <val:validation>
+         <val:rule  isNotPresent="artic"/>
+      </val:validation>
+      <unit id="4">
+         <val:validation>
+            <val:rule existsInSource="yes" isNotPresent="text"/><!-- violation 5.8.5.6 existsInSource
+                When existsInSource is specified, exactly one of
+                isPresent
+                startsWith
+                endsWith
+            -->
+         </val:validation>
+         <segment id="s1">
+            <source>This:</source>
+            <target>Das:</target>	
+         </segment>
+      </unit>
+      <unit id="9">
+         <val:validation>
+            <val:rule isNotPresent="yes" existsInSource="yes"/>
+            <!--  5.8.5.6 existsInSource
+                When existsInSource is specified, exactly one of
+                isPresent
+                startsWith
+                endsWith
+				
+				-->
+            <!-- violation -->
+         </val:validation>
+         <segment id="s1">
+            <source>This:</source>
+            <target>Das:</target>	
+         </segment>
+      </unit>	  
+      <unit id="5">
+         <val:validation>
+            <val:rule existsInSource="yes" endsWith=":"/><!-- valid per constraint-->
+         </val:validation>
+         <segment id="s1">
+            <source>This:</source>
+            <target>Das:</target>	
+         </segment>
+      </unit>
+   </file>
+</xliff>

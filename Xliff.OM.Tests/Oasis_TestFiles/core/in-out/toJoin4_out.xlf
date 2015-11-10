@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+<file id="f1">
+<unit id="1">
+<segment id="s1" state="translated" subState="my:value1">
+<source xml:space="preserve"><pc id="1" canOverlap="yes">a1 c3 b2[  ] </pc> </source>
+<target xml:space="preserve"><pc id="1" canOverlap="yes">a1 C2 B3[  ] </pc> </target>
+</segment>
+<segment id="s4" canResegment="no" state="translated">
+<source>d4 </source>
+<target>D4 </target>
+</segment>
+<segment id="s6" state="reviewed">
+<source>f6 e5 </source>
+<target order="3">F6 E5 </target>
+</segment>
+</unit>
+</file>
+</xliff>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+ <file id="f1">
+  <unit id="1">
+   <segment id="s1">
+    <source>Sentence 1-t7. Sentence 2-t8.</source>
+    <target order="6">Phrase 1-t7. Phrase 2-t8.</target>
+   </segment>
+   <ignorable>
+    <source> </source>
+    <target></target>
+   </ignorable>
+   <segment id="s2">
+    <source>Sentence 3-t1. Sentence 4-t2. </source>
+    <target order="1">Phrase 3-t1. Phrase 4-t2. </target>
+   </segment>
+   <segment id="s3">
+    <source>Sentence 5-t5. Sentence 6-t6.</source>
+   </segment>
+   <ignorable>
+    <source> </source>
+   </ignorable>
+   <segment id="s4">
+    <source>Sentence 7-t3. Sentence 8-t4.</source>
+    <target order="3">Phrase 7-t3. Phrase 8-t4. </target>
+   </segment>
+  </unit>
+ </file>
+</xliff>

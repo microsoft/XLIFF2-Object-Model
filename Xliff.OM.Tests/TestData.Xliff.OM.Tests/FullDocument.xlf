@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff srcLang="en-us" trgLang="de-de" version="version" xml:space="default" xmlns="urn:oasis:names:tc:xliff:document:2.0">
+    <file canResegment="yes" id="id" original="original" srcDir="ltr" xml:space="preserve" trgDir="rtl" translate="yes">
+        <skeleton href="href">text</skeleton>
+        <notes>
+            <note appliesTo="source" category="category" id="id" priority="2">text</note>
+            <note>text2</note>
+        </notes>
+        <group canResegment="yes" id="id" name="name" srcDir="rtl" xml:space="preserve" trgDir="auto" translate="yes" type="type" />
+        <group canResegment="no" id="id2" name="name2" srcDir="ltr" xml:space="default" trgDir="rtl" translate="no" type="type2">
+            <unit canResegment="no" id="id" name="name" srcDir="ltr" xml:space="default" trgDir="auto" translate="yes" type="type">
+                <notes>
+                    <note>text</note>
+                </notes>
+                <originalData>
+                    <data dir="rtl" id="id" xml:space="preserve">data1<cp hex="0001" /></data>
+                </originalData>
+            </unit>
+            <unit canResegment="no" id="id2" name="name2" srcDir="rtl" xml:space="preserve" trgDir="ltr" translate="no" type="type2">
+                <notes>
+                    <note>text2</note>
+                </notes>
+                <originalData>
+                    <data dir="ltr" id="id1" xml:space="preserve">data1<cp hex="0002" /></data>
+                    <data dir="rtl" id="id2" xml:space="preserve">data2<cp hex="0001" /></data>
+                </originalData>
+                <ignorable id="id">
+                    <source>text</source>
+                    <target>text</target>
+                </ignorable>
+                <segment canResegment="yes" state="reviewed" subState="substate" id="id">
+                    <source xml:lang="en-us" xml:space="default">
+                        <cp hex="0001" />text</source>
+                    <target order="100" xml:lang="en-us" xml:space="default">
+                        <cp hex="000C" />text2</target>
+                </segment>
+            </unit>
+        </group>
+    </file>
+    <file canResegment="no" id="id2" original="original2" srcDir="auto" xml:space="default" trgDir="ltr" translate="no">
+        <skeleton href="href">text</skeleton>
+        <notes>
+            <note>text</note>
+        </notes>
+    </file>
+</xliff>

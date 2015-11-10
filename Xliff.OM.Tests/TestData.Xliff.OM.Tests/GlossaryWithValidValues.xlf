@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0" srcLang="en-us" version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0">
+    <file id="f1">
+        <unit id="u1">
+            <gls:glossary>
+                <gls:glossEntry id="entry1" ref="#m1">
+                    <gls:term source="termSource">term text</gls:term>
+                    <gls:translation id="trans1" ref="#m1" source="transSource">translation text</gls:translation>
+                    <gls:definition source="definitionSource">definition text</gls:definition>
+                </gls:glossEntry>
+            </gls:glossary>
+            <segment state="initial">
+                <source>
+                    <mrk id="m1" type="term">text</mrk>
+                </source>
+            </segment>
+        </unit>
+    </file>
+</xliff>

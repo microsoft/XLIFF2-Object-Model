@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+ <file id="f1">
+  <notes>
+   <note id="n1">f-note1</note>
+   <note id="n1">f-note2</note>
+  </notes>
+  <group id="g1">
+   <notes>
+    <note id="n1">g-note1</note>
+    <note id="n2">g-note2</note>
+   </notes>
+   <unit id="1">
+    <notes>
+     <note id="n1">u-note1</note>
+     <note id="n2">u-note2</note>
+    </notes>
+    <segment>
+     <source>text</source>
+    </segment>
+   </unit>
+  </group>
+ </file>
+</xliff>

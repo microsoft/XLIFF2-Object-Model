@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-us" trgLang="fr-fr">
+ <file id="351d0b92-afc0-4172-a4a6-55f06f5e8dca">
+  <unit id="tu1">
+   <segment id="0">
+    <source>Sample document</source>
+   </segment>
+  </unit>
+  <unit id="tu3">
+   <segment id="0">
+    <source>Bolded text</source>
+   </segment>
+  </unit>
+  <unit id="tu2">
+   <originalData>
+    <data id="d1">&lt;b [#$tu3]></data>
+    <data id="d2">&lt;/b></data>
+   </originalData>
+   <segment id="0">
+    <source>This paragraph has 3 sentences. <pc id="1" subFlowsStart="badRef" dataRefEnd="d2" dataRefStart="d1">This is the second sentence.</pc> This is the last sentence.</source>
+   </segment>
+  </unit>
+ </file>
+</xliff>

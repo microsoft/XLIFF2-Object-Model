@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+ <file id="f1">
+  <unit id="1">
+   <segment id="s1" state="reviewed" subState="my:info">
+    <source><sm id="m1" type="comment" value="My comment"/><sc id="1" type="fmt"/>Sentence 1.</source>
+    <target>Phrase 1.</target>
+   </segment>
+   <ignorable>
+    <source> </source>
+    <target> </target>
+   </ignorable>
+   <segment id="s2">
+    <source>Sentence 2.<ec startRef="1" type="fmt"/><em startRef="m1"/></source>
+    <target>Phrase 2.</target>
+   </segment>
+  </unit>
+  <unit id="2">
+   <segment id="s1" canResegment="no">
+    <source>Sentence 1. </source>
+    <target>Phrase 1. </target>
+   </segment>
+   <segment id="s2" canResegment="no">
+    <source>Sentence 2.</source>
+    <target>Phrase 2.</target>
+   </segment>
+  </unit>
+ </file>
+</xliff>

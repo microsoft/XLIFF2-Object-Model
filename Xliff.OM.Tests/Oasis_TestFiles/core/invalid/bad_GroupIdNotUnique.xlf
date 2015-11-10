@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+ <file id="1twice">
+  <group id="1twice">
+   <group id="1twice">
+    <unit id="1">
+     <segment>
+      <source>source</source>
+     </segment>
+    </unit>
+   </group>
+  </group>
+ </file>
+</xliff>

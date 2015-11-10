@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0"
+xmlns:xmrk="urn:xmarker"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0"
+xmlns:mtc="urn:oasis:names:tc:xliff:matches:2.0"
+xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0"
+xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0"
+xmlns:res="urn:oasis:names:tc:xliff:resourcedata:2.0"
+xmlns:ctr="urn:oasis:names:tc:xliff:changetracking:2.0"
+xmlns:slr="urn:oasis:names:tc:xliff:sizerestriction:2.0"
+xmlns:val="urn:oasis:names:tc:xliff:validation:2.0"
+xmlns:xhtml="http://www.w3.org/1999/xhtml"
+xmlns:svg="http://www.w3.org/2000/svg" srcLang="en-us" version="2.0"
+trgLang="de">
+<file id="f-val-1">
+      <val:validation>
+         <val:rule/><!-- violation
+            5.8.4.3 rule
+     Exactly one of the following attributes:
+        isPresent
+        isNotPresent
+        startsWith
+        endsWith
+        a custom rule defined by attributes from any namespace
+
+    is REQUIRED in any one <rule> element.
+            -->
+      </val:validation>
+      <unit id="1">
+         <val:validation>
+            <val:rule isNotPresent="artic" xmrk:isValid="test"/><!-- violation: only one can exist -->
+         </val:validation>
+         <segment id="s1">
+            <source></source>
+            <target></target>	
+         </segment>
+         <segment id="s2">
+            <source></source>
+            <target></target>	
+         </segment>
+      </unit>
+      <unit id="2">
+         <val:validation>
+            <val:rule isNotPresent="artic" startsWith="snow"/><!-- violation: only one can exist -->
+         </val:validation>
+         <segment id="s1">
+            <source>snow</source>
+            <target>snow</target>	
+         </segment>
+      </unit>
+      <unit id="3">
+         <val:validation>
+            <val:rule isNotPresent="artic" occurs="1"/><!-- valid per constraint-->
+         </val:validation>
+         <segment id="s1">
+            <source></source>
+            <target></target>	
+         </segment>
+      </unit>
+   </file>
+</xliff>

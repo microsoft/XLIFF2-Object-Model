@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0"
+xmlns:xmrk="urn:xmarker"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0"
+xmlns:mtc="urn:oasis:names:tc:xliff:matches:2.0"
+xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0"
+xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0"
+xmlns:res="urn:oasis:names:tc:xliff:resourcedata:2.0"
+xmlns:ctr="urn:oasis:names:tc:xliff:changetracking:2.0"
+xmlns:slr="urn:oasis:names:tc:xliff:sizerestriction:2.0"
+xmlns:val="urn:oasis:names:tc:xliff:validation:2.0"
+xmlns:xhtml="http://www.w3.org/1999/xhtml"
+xmlns:svg="http://www.w3.org/2000/svg" srcLang="en-us" version="2.0"
+trgLang="de">
+<file id="rd333b">
+      <unit id="1">
+         <res:resourceData>
+            <res:resourceItemRef ref="r1"/>
+            <res:resourceItemRef ref="rr1-temp" id="rr1"/>
+            <res:resourceItem id="rr1-temp" mimeType="image/jpeg"
+context="yes">
+               <res:source xml:lang="en-us"
+href="resources\en\registryconfig2.resources.jpg"></res:source>
+               <res:target xml:lang="de"
+href="resources\lb\registryconfig2.resources.jpg"></res:target>
+            </res:resourceItem>
+            <res:resourceItem id="non-empty-and-href"
+mimeType="image/jpeg" context="yes">
+               <res:source xml:lang="en-us"
+href="resources\en\registryconfig2.resources.jpg" /><!--
+5.5.4.5 source
+Constraints
+
+The attribute href is REQUIRED if and only if <source> is empty.
+
+--><!--valid  is empty and has href -->
+               <res:target xml:lang="de"
+href="resources\lb\registryconfig2.resources.jpg"></res:target>
+            </res:resourceItem>
+         </res:resourceData>
+         <segment id="1" state="translated">
+            <source>Remove Registry Config</source>
+            <target>Registrierungskonfiguration entfernen</target>
+         </segment>
+      </unit>
+   </file>
+</xliff>

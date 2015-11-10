@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr" xmlns:my="myNS">
+ <file id="f1" my:okAttr="val">
+  <group id="g1" my:okAttr="val">
+   <unit id="1" my:okAttr="val">
+    <segment id="1">
+     <source>text</source>
+     <target my:badAttr="val">texte</target>
+    </segment>
+   </unit>
+  </group>
+ </file>
+</xliff>

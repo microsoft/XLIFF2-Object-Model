@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+ <file id="f1">
+  <unit id="1">
+   <segment>
+    <source>
+	 <ph id="1" type="ui" subType="xlf:var"/>
+	 <ph id="2" type="fmt" subType="xlf:lb"/>
+	 <ph id="3" type="fmt" subType="xlf:pb"/>
+	 <ph id="4" type="fmt" subType="xlf:b"/>
+	 <ph id="5" type="fmt" subType="xlf:i"/>
+	 <ph id="6" type="fmt" subType="xlf:u"/>
+	 <ph id="7" type="quote" subType="abc:ref"/>
+	 <ph id="8" type="link" subType="xyz:toHTML"/>
+	</source>
+   </segment>
+  </unit>
+ </file>
+</xliff>

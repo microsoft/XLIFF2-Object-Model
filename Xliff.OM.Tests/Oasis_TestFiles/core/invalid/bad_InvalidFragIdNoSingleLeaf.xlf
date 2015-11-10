@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en"
+ xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0">
+ <file id="f1">
+  <unit id="u1">
+   <segment>
+    <source><mrk id='m1' type='my:type' ref='#c1/c2'><pc id='c1'><ph id='c2'/></pc>text</mrk></source>
+   </segment>
+  </unit>
+ </file>
+</xliff>

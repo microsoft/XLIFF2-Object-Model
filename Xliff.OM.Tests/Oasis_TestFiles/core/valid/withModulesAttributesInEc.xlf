@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en"
+ xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0">
+ <file id="f1">
+  <unit id="1" xmlns:slr="urn:oasis:names:tc:xliff:sizerestriction:2.0">
+   <segment>
+    <source><sc id='1' fs:fs="b" slr:sizeInfo="some info"/>text </source>
+   </segment>
+   <segment>
+    <source><ec isolated='yes' id='2' fs:fs="b" slr:sizeInfo="some info"/>text<ec startRef='1'/></source>
+   </segment>
+  </unit>
+ </file>
+</xliff>

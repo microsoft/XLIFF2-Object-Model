@@ -1,0 +1,10 @@
+*.aml           -text
+*.content       -text
+*.cs	        eol=crlf
+*.csproj        -text
+*.resx          -text
+*.shfbproj      -text
+*.sln           -text
+*.xml           -text
+*.xlf           -text
+*.xsd           -text

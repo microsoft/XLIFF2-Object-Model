@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0"
+xmlns:xmrk="urn:xmarker"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0"
+xmlns:mtc="urn:oasis:names:tc:xliff:matches:2.0"
+xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0"
+xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0"
+xmlns:res="urn:oasis:names:tc:xliff:resourcedata:2.0"
+xmlns:ctr="urn:oasis:names:tc:xliff:changetracking:2.0"
+xmlns:slr="urn:oasis:names:tc:xliff:sizerestriction:2.0"
+xmlns:val="urn:oasis:names:tc:xliff:validation:2.0"
+xmlns:xhtml="http://www.w3.org/1999/xhtml"
+xmlns:svg="http://www.w3.org/2000/svg" srcLang="en-us" version="2.0"
+trgLang="de">
+<file id="bad-filesize">         
+      <slr:profiles generalProfile="xliff:codepoints"
+storageProfile="xliff:utf8">
+         <slr:normalization general="nfc" storage="nfc"/>
+      </slr:profiles>
+      <group id="slr-test" slr:sizeRestriction="22">      
+         <group id="g1" slr:storageRestriction="255"
+slr:sizeRestriction="90"><!-- valid, ninety would be incorrect--><!-- 5.7.6.1.1 sizeRestriction
+Must be one of the following patterns:
+"*" or 
+"0" (where 0 means integer) or 
+"0,0" or "0,*"
+-->
+            <unit id="u1" slr:sizeRestriction="*"><!-- valid, *6 would be incorrect -->
+               <segment>
+                  <source>This is a small <pc id="slr1"
+slr:equivStorage="7" slr:sizeRestriction="25,100"><!-- valid, 25,100.5 would be incorrect-->size restriction</pc
+> example.</source>
+               </segment>
+            </unit>
+            <unit id="u2" slr:sizeRestriction="35,*"><!-- valid, 35,star would be incorrect -->
+               <segment>
+                  <source>With a group structure.</source>
+               </segment>
+            </unit>
+         </group>
+      </group>
+   </file>
+</xliff>

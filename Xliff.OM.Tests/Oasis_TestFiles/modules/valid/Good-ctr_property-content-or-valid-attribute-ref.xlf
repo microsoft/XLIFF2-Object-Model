@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0"
+xmlns:xmrk="urn:xmarker"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0"
+xmlns:mtc="urn:oasis:names:tc:xliff:matches:2.0"
+xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0"
+xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0"
+xmlns:res="urn:oasis:names:tc:xliff:resourcedata:2.0"
+xmlns:ctr="urn:oasis:names:tc:xliff:changetracking:2.0"
+xmlns:slr="urn:oasis:names:tc:xliff:sizerestriction:2.0"
+xmlns:val="urn:oasis:names:tc:xliff:validation:2.0"
+xmlns:xhtml="http://www.w3.org/1999/xhtml"
+xmlns:svg="http://www.w3.org/2000/svg" srcLang="en-us" version="2.0"
+trgLang="de">
+<file id="crt01">
+      <unit id="property-attribute-testing">
+         <!-- 
+            5.6.5.6 property "The value MUST be either content to signify the content of an element, 
+            or the name of the attribute relating to the revision data."
+         -->
+         <ctr:changeTrack>
+            <ctr:revisions appliesTo="note" ref="nn11">
+               <ctr:revision>
+                  <ctr:item property="content">old note</ctr:item><!-- good, I'll just assume the content of 
+                                                                       the previous note[@id='nn1'] was "old note" -->
+               </ctr:revision>
+            </ctr:revisions>
+         </ctr:changeTrack>
+         <notes>
+            <note category="riddles" id="nn111" priority="1">Set the priority</note>
+            <note id="nn22"></note>
+			<note id="nn11">This note.</note>
+         </notes>
+         <segment>
+            <source>Yes</source>
+            <target>Ja</target>
+         </segment>
+      </unit>
+   </file>
+</xliff>

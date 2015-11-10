@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns:val="urn:oasis:names:tc:xliff:validation:2.0" srcLang="" version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0">
+    <file id="f1">
+        <val:validation>
+            <val:rule caseSensitive="yes" disabled="no" endsWith="endswith" existsInSource="yes" normalization="nfc" occurs="2" />
+            <val:rule caseSensitive="yes" disabled="no" existsInSource="yes" isNotPresent="isnotpresent" normalization="nfc" occurs="2" />
+            <val:rule caseSensitive="yes" disabled="no" existsInSource="yes" isPresent="ispresent" normalization="nfc" occurs="2" />
+            <val:rule caseSensitive="yes" disabled="no" existsInSource="yes" normalization="nfc" occurs="2" startsWith="startswith" />
+        </val:validation>
+    </file>
+</xliff>

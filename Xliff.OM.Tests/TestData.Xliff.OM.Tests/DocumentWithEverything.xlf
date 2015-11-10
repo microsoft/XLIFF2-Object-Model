@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns:ext="ext:namespace" xmlns:ctr="urn:oasis:names:tc:xliff:changetracking:2.0" xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0" xmlns:slr="urn:oasis:names:tc:xliff:sizerestriction:2.0" xmlns:res="urn:oasis:names:tc:xliff:resourcedata:2.0" xmlns:val="urn:oasis:names:tc:xliff:validation:2.0" xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0" xmlns:mtc="urn:oasis:names:tc:xliff:matches:2.0" srcLang="en-us" trgLang="de-de" version="2.0" xml:space="default" xmlns="urn:oasis:names:tc:xliff:document:2.0">
+  <file canResegment="yes" fs:fs="a" id="f1" original="original" slr:sizeInfo="size" slr:sizeRestriction="restriction" srcDir="auto" xml:space="default" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" trgDir="auto" translate="yes" ext:attr2="value" xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0">
+    <skeleton>text<ext:extelement ext:attr1="value" /></skeleton>
+    <ctr:changeTrack>
+      <ctr:revisions appliesTo="source" currentVersion="ver1" ref="1" ext:attr2="value">
+        <ctr:revision author="author" datetime="2015-01-02T03:04:05.0000000" version="ver1" ext:attr2="value">
+          <ctr:item property="content" ext:attr2="value">text</ctr:item>
+        </ctr:revision>
+      </ctr:revisions>
+    </ctr:changeTrack>
+    <mda:metadata id="metadata9">
+      <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup17">
+        <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup18">
+          <mda:meta type="pre:type">text</mda:meta>
+        </mda:metaGroup>
+        <mda:meta type="pre:type">text</mda:meta>
+      </mda:metaGroup>
+    </mda:metadata>
+    <slr:data profile="profile" ext:attr2="value">
+      <ext:extelement ext:attr1="value" />
+    </slr:data>
+    <slr:profiles generalProfile="profile" storageProfile="profile">
+      <slr:normalization general="nfc" storage="nfc" />
+      <ext:extelement ext:attr1="value" />
+    </slr:profiles>
+    <res:resourceData>
+      <res:resourceItemRef id="rif4" ref="ri4" ext:attr2="value" />
+      <res:resourceItem context="yes" id="ri4" mimeType="mime" ext:attr2="value">
+        <res:source href="resource" xml:lang="en-us" />
+        <res:target href="resource" xml:lang="de-de" />
+        <res:reference href="resource" xml:lang="de-de" ext:attr2="value" />
+      </res:resourceItem>
+    </res:resourceData>
+    <val:validation ext:attr2="value">
+      <val:rule caseSensitive="yes" disabled="no" existsInSource="yes" isPresent="ispresent" normalization="nfc" occurs="1" />
+    </val:validation>
+    <ext:extelement ext:attr1="value" />
+    <notes>
+      <note appliesTo="source" category="category" fs:fs="a" id="n1" priority="1" fs:subFs="key1,value1\key2,value2">note</note>
+    </notes>
+    <group canResegment="yes" fs:fs="a" id="g1" name="group" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" srcDir="ltr" xml:space="default" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" trgDir="rtl" translate="no" type="pre:type" ext:attr2="value">
+      <ctr:changeTrack>
+        <ctr:revisions appliesTo="source" currentVersion="ver1" ref="1" ext:attr2="value">
+          <ctr:revision author="author" datetime="2015-01-02T03:04:05.0000000" version="ver1" ext:attr2="value">
+            <ctr:item property="content" ext:attr2="value">text</ctr:item>
+          </ctr:revision>
+        </ctr:revisions>
+      </ctr:changeTrack>
+      <mda:metadata id="metadata6">
+        <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup11">
+          <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup12">
+            <mda:meta type="pre:type">text</mda:meta>
+          </mda:metaGroup>
+          <mda:meta type="pre:type">text</mda:meta>
+        </mda:metaGroup>
+      </mda:metadata>
+      <slr:data profile="profile" ext:attr2="value">
+        <ext:extelement ext:attr1="value" />
+      </slr:data>
+      <val:validation ext:attr2="value">
+        <val:rule caseSensitive="yes" disabled="no" existsInSource="yes" isPresent="ispresent" normalization="nfc" occurs="1" />
+      </val:validation>
+      <ext:extelement ext:attr1="value" />
+      <notes>
+        <note appliesTo="source" category="category" fs:fs="a" id="n2" priority="1" fs:subFs="key1,value1\key2,value2">note</note>
+      </notes>
+      <group canResegment="yes" fs:fs="a" id="g2" name="group" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" srcDir="ltr" xml:space="default" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" trgDir="rtl" translate="no" type="pre:type" ext:attr2="value">
+        <ctr:changeTrack>
+          <ctr:revisions appliesTo="source" currentVersion="ver1" ref="1" ext:attr2="value">
+            <ctr:revision author="author" datetime="2015-01-02T03:04:05.0000000" version="ver1" ext:attr2="value">
+              <ctr:item property="content" ext:attr2="value">text</ctr:item>
+            </ctr:revision>
+          </ctr:revisions>
+        </ctr:changeTrack>
+        <mda:metadata id="metadata3">
+          <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup5">
+            <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup6">
+              <mda:meta type="pre:type">text</mda:meta>
+            </mda:metaGroup>
+            <mda:meta type="pre:type">text</mda:meta>
+          </mda:metaGroup>
+        </mda:metadata>
+        <slr:data profile="profile" ext:attr2="value">
+          <ext:extelement ext:attr1="value" />
+        </slr:data>
+        <val:validation ext:attr2="value">
+          <val:rule caseSensitive="yes" disabled="no" existsInSource="yes" isPresent="ispresent" normalization="nfc" occurs="1" />
+        </val:validation>
+        <ext:extelement ext:attr1="value" />
+        <notes>
+          <note appliesTo="source" category="category" fs:fs="a" id="n3" priority="1" fs:subFs="key1,value1\key2,value2">note</note>
+        </notes>
+        <unit canResegment="yes" fs:fs="a" id="u1" name="unit" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" srcDir="rtl" xml:space="preserve" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" trgDir="ltr" translate="no" type="pre:type" ext:attr2="value">
+          <ctr:changeTrack>
+            <ctr:revisions appliesTo="source" currentVersion="ver1" ref="1" ext:attr2="value">
+              <ctr:revision author="author" datetime="2015-01-02T03:04:05.0000000" version="ver1" ext:attr2="value">
+                <ctr:item property="content" ext:attr2="value">text</ctr:item>
+              </ctr:revision>
+            </ctr:revisions>
+          </ctr:changeTrack>
+          <gls:glossary>
+            <gls:glossEntry id="entry1" ref="#s1">
+              <gls:term source="termSource">term text</gls:term>
+              <gls:translation id="trans1" ref="#s1" source="translationSource">translation text</gls:translation>
+              <gls:definition source="definitionSource">definition text</gls:definition>
+            </gls:glossEntry>
+          </gls:glossary>
+          <mda:metadata id="metadata2">
+            <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup3">
+              <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup4">
+                <mda:meta type="pre:type">text</mda:meta>
+              </mda:metaGroup>
+              <mda:meta type="pre:type">text</mda:meta>
+            </mda:metaGroup>
+          </mda:metadata>
+          <slr:data profile="profile" ext:attr2="value">
+            <ext:extelement ext:attr1="value" />
+          </slr:data>
+          <res:resourceData>
+            <res:resourceItemRef id="rif1" ref="ri1" ext:attr2="value" />
+            <res:resourceItem context="yes" id="ri1" mimeType="mime" ext:attr2="value">
+              <res:source href="resource" xml:lang="en-us" />
+              <res:target href="resource" xml:lang="de-de" />
+              <res:reference href="resource" xml:lang="de-de" ext:attr2="value" />
+            </res:resourceItem>
+          </res:resourceData>
+          <mtc:matches>
+            <mtc:match reference="yes" id="match1" matchQuality="1" matchSuitability="1" origin="origin" similarity="1" ref="#s1" subType="pre:subtype" type="am" ext:attr2="value">
+              <mda:metadata id="metadata1">
+                <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup1">
+                  <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup2">
+                    <mda:meta type="pre:type">text</mda:meta>
+                  </mda:metaGroup>
+                  <mda:meta type="pre:type">text</mda:meta>
+                </mda:metaGroup>
+              </mda:metadata>
+              <originalData>
+                <data dir="auto" id="d1" xml:space="preserve">datatext<cp hex="0018" />text<cp hex="0019" /></data>
+              </originalData>
+              <source>
+                <cp hex="0018" />
+                <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph5" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+                <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph5" slr:equivStorage="storage" fs:fs="a" id="ph6" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+                <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc5" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+                <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc5" slr:equivStorage="storage" fs:fs="a" id="pc6" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+                <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc5" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+                <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc5" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec7" subType="pre:subtype" type="fmt" />
+                <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec8" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+                <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc5" slr:equivStorage="storage" fs:fs="a" id="sc6" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+                <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc6" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec7" id="ec9" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk3" ref="#n=n4" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm3" ref="#n=n4" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm3" /></source>
+              <target order="1" xml:lang="de-de" xml:space="preserve">
+                <cp hex="0018" />
+                <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph5" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+                <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph5" slr:equivStorage="storage" fs:fs="a" id="ph6" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+                <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc5" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+                <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc5" slr:equivStorage="storage" fs:fs="a" id="pc6" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+                <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc5" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+                <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc5" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec7" subType="pre:subtype" type="fmt" />
+                <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec8" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+                <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc5" slr:equivStorage="storage" fs:fs="a" id="sc6" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+                <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc6" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec7" id="ec9" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk3" ref="#n=n4" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm3" ref="#n=n4" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm3" /></target>
+              <ext:extelement ext:attr1="value" />
+            </mtc:match>
+          </mtc:matches>
+          <val:validation ext:attr2="value">
+            <val:rule caseSensitive="yes" disabled="no" existsInSource="yes" isPresent="ispresent" normalization="nfc" occurs="1" />
+          </val:validation>
+          <ext:extelement ext:attr1="value" />
+          <notes>
+            <note appliesTo="source" category="category" fs:fs="a" id="n4" priority="1" fs:subFs="key1,value1\key2,value2">note</note>
+          </notes>
+          <originalData>
+            <data dir="auto" id="d1" xml:space="preserve">datatext<cp hex="0018" />text<cp hex="0019" /></data>
+          </originalData>
+          <segment canResegment="no" state="initial" subState="pre:substate" id="s1">
+            <source>
+              <cp hex="0018" />
+              <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph1" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+              <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph1" slr:equivStorage="storage" fs:fs="a" id="ph2" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+              <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc1" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+              <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc1" slr:equivStorage="storage" fs:fs="a" id="pc2" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+              <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc1" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc1" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec1" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec2" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc1" slr:equivStorage="storage" fs:fs="a" id="sc2" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc2" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec1" id="ec3" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk1" ref="#n=n4" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm1" ref="#n=n4" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm1" /></source>
+            <target order="1" xml:lang="de-de" xml:space="preserve">
+              <cp hex="0018" />
+              <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph1" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+              <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph1" slr:equivStorage="storage" fs:fs="a" id="ph2" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+              <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc1" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+              <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc1" slr:equivStorage="storage" fs:fs="a" id="pc2" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+              <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc1" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc1" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec1" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec2" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc1" slr:equivStorage="storage" fs:fs="a" id="sc2" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc2" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec1" id="ec3" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk1" ref="#n=n4" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm1" ref="#n=n4" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm1" /></target>
+          </segment>
+          <ignorable id="i1">
+            <source>
+              <cp hex="0018" />
+              <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph3" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+              <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph3" slr:equivStorage="storage" fs:fs="a" id="ph4" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+              <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc3" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+              <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc3" slr:equivStorage="storage" fs:fs="a" id="pc4" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+              <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc3" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc3" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec4" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec5" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc3" slr:equivStorage="storage" fs:fs="a" id="sc4" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc4" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec4" id="ec6" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk2" ref="#n=n4" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm2" ref="#n=n4" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm2" /></source>
+            <target order="2" xml:lang="de-de" xml:space="preserve">
+              <cp hex="0018" />
+              <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph3" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+              <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph3" slr:equivStorage="storage" fs:fs="a" id="ph4" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+              <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc3" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+              <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc3" slr:equivStorage="storage" fs:fs="a" id="pc4" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+              <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc3" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc3" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec4" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec5" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc3" slr:equivStorage="storage" fs:fs="a" id="sc4" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc4" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec4" id="ec6" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk2" ref="#n=n4" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm2" ref="#n=n4" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm2" /></target>
+          </ignorable>
+        </unit>
+      </group>
+      <unit canResegment="yes" fs:fs="a" id="u2" name="unit" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" srcDir="rtl" xml:space="preserve" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" trgDir="ltr" translate="no" type="pre:type" ext:attr2="value">
+        <ctr:changeTrack>
+          <ctr:revisions appliesTo="source" currentVersion="ver1" ref="1" ext:attr2="value">
+            <ctr:revision author="author" datetime="2015-01-02T03:04:05.0000000" version="ver1" ext:attr2="value">
+              <ctr:item property="content" ext:attr2="value">text</ctr:item>
+            </ctr:revision>
+          </ctr:revisions>
+        </ctr:changeTrack>
+        <gls:glossary>
+          <gls:glossEntry id="entry2" ref="#s2">
+            <gls:term source="termSource">term text</gls:term>
+            <gls:translation id="trans2" ref="#s2" source="translationSource">translation text</gls:translation>
+            <gls:definition source="definitionSource">definition text</gls:definition>
+          </gls:glossEntry>
+        </gls:glossary>
+        <mda:metadata id="metadata5">
+          <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup9">
+            <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup10">
+              <mda:meta type="pre:type">text</mda:meta>
+            </mda:metaGroup>
+            <mda:meta type="pre:type">text</mda:meta>
+          </mda:metaGroup>
+        </mda:metadata>
+        <slr:data profile="profile" ext:attr2="value">
+          <ext:extelement ext:attr1="value" />
+        </slr:data>
+        <res:resourceData>
+          <res:resourceItemRef id="rif2" ref="ri2" ext:attr2="value" />
+          <res:resourceItem context="yes" id="ri2" mimeType="mime" ext:attr2="value">
+            <res:source href="resource" xml:lang="en-us" />
+            <res:target href="resource" xml:lang="de-de" />
+            <res:reference href="resource" xml:lang="de-de" ext:attr2="value" />
+          </res:resourceItem>
+        </res:resourceData>
+        <mtc:matches>
+          <mtc:match reference="yes" id="match2" matchQuality="1" matchSuitability="1" origin="origin" similarity="1" ref="#s2" subType="pre:subtype" type="am" ext:attr2="value">
+            <mda:metadata id="metadata4">
+              <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup7">
+                <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup8">
+                  <mda:meta type="pre:type">text</mda:meta>
+                </mda:metaGroup>
+                <mda:meta type="pre:type">text</mda:meta>
+              </mda:metaGroup>
+            </mda:metadata>
+            <originalData>
+              <data dir="auto" id="d1" xml:space="preserve">datatext<cp hex="0018" />text<cp hex="0019" /></data>
+            </originalData>
+            <source>
+              <cp hex="0018" />
+              <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph11" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+              <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph11" slr:equivStorage="storage" fs:fs="a" id="ph12" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+              <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc11" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+              <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc11" slr:equivStorage="storage" fs:fs="a" id="pc12" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+              <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc11" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc11" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec16" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec17" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc11" slr:equivStorage="storage" fs:fs="a" id="sc12" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc12" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec16" id="ec18" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk6" ref="#n=n5" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm6" ref="#n=n5" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm6" /></source>
+            <target order="1" xml:lang="de-de" xml:space="preserve">
+              <cp hex="0018" />
+              <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph11" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+              <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph11" slr:equivStorage="storage" fs:fs="a" id="ph12" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+              <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc11" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+              <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc11" slr:equivStorage="storage" fs:fs="a" id="pc12" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+              <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc11" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc11" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec16" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec17" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc11" slr:equivStorage="storage" fs:fs="a" id="sc12" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+              <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc12" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec16" id="ec18" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk6" ref="#n=n5" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm6" ref="#n=n5" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm6" /></target>
+            <ext:extelement ext:attr1="value" />
+          </mtc:match>
+        </mtc:matches>
+        <val:validation ext:attr2="value">
+          <val:rule caseSensitive="yes" disabled="no" existsInSource="yes" isPresent="ispresent" normalization="nfc" occurs="1" />
+        </val:validation>
+        <ext:extelement ext:attr1="value" />
+        <notes>
+          <note appliesTo="source" category="category" fs:fs="a" id="n5" priority="1" fs:subFs="key1,value1\key2,value2">note</note>
+        </notes>
+        <originalData>
+          <data dir="auto" id="d1" xml:space="preserve">datatext<cp hex="0018" />text<cp hex="0019" /></data>
+        </originalData>
+        <segment canResegment="no" state="initial" subState="pre:substate" id="s2">
+          <source>
+            <cp hex="0018" />
+            <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph7" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+            <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph7" slr:equivStorage="storage" fs:fs="a" id="ph8" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+            <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc7" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+            <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc7" slr:equivStorage="storage" fs:fs="a" id="pc8" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+            <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc7" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc7" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec10" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec11" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc7" slr:equivStorage="storage" fs:fs="a" id="sc8" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc8" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec10" id="ec12" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk4" ref="#n=n5" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm4" ref="#n=n5" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm4" /></source>
+          <target order="1" xml:lang="de-de" xml:space="preserve">
+            <cp hex="0018" />
+            <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph7" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+            <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph7" slr:equivStorage="storage" fs:fs="a" id="ph8" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+            <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc7" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+            <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc7" slr:equivStorage="storage" fs:fs="a" id="pc8" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+            <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc7" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc7" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec10" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec11" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc7" slr:equivStorage="storage" fs:fs="a" id="sc8" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc8" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec10" id="ec12" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk4" ref="#n=n5" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm4" ref="#n=n5" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm4" /></target>
+        </segment>
+        <ignorable id="i2">
+          <source>
+            <cp hex="0018" />
+            <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph9" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+            <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph9" slr:equivStorage="storage" fs:fs="a" id="ph10" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+            <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc9" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+            <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc9" slr:equivStorage="storage" fs:fs="a" id="pc10" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+            <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc9" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc9" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec13" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec14" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc9" slr:equivStorage="storage" fs:fs="a" id="sc10" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc10" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec13" id="ec15" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk5" ref="#n=n5" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm5" ref="#n=n5" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm5" /></source>
+          <target order="2" xml:lang="de-de" xml:space="preserve">
+            <cp hex="0018" />
+            <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph9" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+            <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph9" slr:equivStorage="storage" fs:fs="a" id="ph10" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+            <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc9" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+            <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc9" slr:equivStorage="storage" fs:fs="a" id="pc10" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+            <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc9" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc9" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec13" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec14" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc9" slr:equivStorage="storage" fs:fs="a" id="sc10" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc10" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec13" id="ec15" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk5" ref="#n=n5" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm5" ref="#n=n5" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm5" /></target>
+        </ignorable>
+      </unit>
+    </group>
+    <unit canResegment="yes" fs:fs="a" id="u3" name="unit" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" srcDir="rtl" xml:space="preserve" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" trgDir="ltr" translate="no" type="pre:type" ext:attr2="value">
+      <ctr:changeTrack>
+        <ctr:revisions appliesTo="source" currentVersion="ver1" ref="1" ext:attr2="value">
+          <ctr:revision author="author" datetime="2015-01-02T03:04:05.0000000" version="ver1" ext:attr2="value">
+            <ctr:item property="content" ext:attr2="value">text</ctr:item>
+          </ctr:revision>
+        </ctr:revisions>
+      </ctr:changeTrack>
+      <gls:glossary>
+        <gls:glossEntry id="entry3" ref="#s3">
+          <gls:term source="termSource">term text</gls:term>
+          <gls:translation id="trans3" ref="#s3" source="translationSource">translation text</gls:translation>
+          <gls:definition source="definitionSource">definition text</gls:definition>
+        </gls:glossEntry>
+      </gls:glossary>
+      <mda:metadata id="metadata8">
+        <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup15">
+          <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup16">
+            <mda:meta type="pre:type">text</mda:meta>
+          </mda:metaGroup>
+          <mda:meta type="pre:type">text</mda:meta>
+        </mda:metaGroup>
+      </mda:metadata>
+      <slr:data profile="profile" ext:attr2="value">
+        <ext:extelement ext:attr1="value" />
+      </slr:data>
+      <res:resourceData>
+        <res:resourceItemRef id="rif3" ref="ri3" ext:attr2="value" />
+        <res:resourceItem context="yes" id="ri3" mimeType="mime" ext:attr2="value">
+          <res:source href="resource" xml:lang="en-us" />
+          <res:target href="resource" xml:lang="de-de" />
+          <res:reference href="resource" xml:lang="de-de" ext:attr2="value" />
+        </res:resourceItem>
+      </res:resourceData>
+      <mtc:matches>
+        <mtc:match reference="yes" id="match3" matchQuality="1" matchSuitability="1" origin="origin" similarity="1" ref="#s3" subType="pre:subtype" type="am" ext:attr2="value">
+          <mda:metadata id="metadata7">
+            <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup13">
+              <mda:metaGroup appliesTo="ignorable" category="category" id="metagroup14">
+                <mda:meta type="pre:type">text</mda:meta>
+              </mda:metaGroup>
+              <mda:meta type="pre:type">text</mda:meta>
+            </mda:metaGroup>
+          </mda:metadata>
+          <originalData>
+            <data dir="auto" id="d1" xml:space="preserve">datatext<cp hex="0018" />text<cp hex="0019" /></data>
+          </originalData>
+          <source>
+            <cp hex="0018" />
+            <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph17" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+            <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph17" slr:equivStorage="storage" fs:fs="a" id="ph18" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+            <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc17" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+            <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc17" slr:equivStorage="storage" fs:fs="a" id="pc18" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+            <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc17" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc17" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec25" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec26" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc17" slr:equivStorage="storage" fs:fs="a" id="sc18" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc18" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec25" id="ec27" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk9" ref="#n=n6" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm9" ref="#n=n6" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm9" /></source>
+          <target order="1" xml:lang="de-de" xml:space="preserve">
+            <cp hex="0018" />
+            <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph17" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+            <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph17" slr:equivStorage="storage" fs:fs="a" id="ph18" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+            <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc17" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+            <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc17" slr:equivStorage="storage" fs:fs="a" id="pc18" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+            <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc17" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc17" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec25" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec26" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc17" slr:equivStorage="storage" fs:fs="a" id="sc18" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+            <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc18" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec25" id="ec27" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk9" ref="#n=n6" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm9" ref="#n=n6" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm9" /></target>
+          <ext:extelement ext:attr1="value" />
+        </mtc:match>
+      </mtc:matches>
+      <val:validation ext:attr2="value">
+        <val:rule caseSensitive="yes" disabled="no" existsInSource="yes" isPresent="ispresent" normalization="nfc" occurs="1" />
+      </val:validation>
+      <ext:extelement ext:attr1="value" />
+      <notes>
+        <note appliesTo="source" category="category" fs:fs="a" id="n6" priority="1" fs:subFs="key1,value1\key2,value2">note</note>
+      </notes>
+      <originalData>
+        <data dir="auto" id="d1" xml:space="preserve">datatext<cp hex="0018" />text<cp hex="0019" /></data>
+      </originalData>
+      <segment canResegment="no" state="initial" subState="pre:substate" id="s3">
+        <source>
+          <cp hex="0018" />
+          <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph13" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+          <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph13" slr:equivStorage="storage" fs:fs="a" id="ph14" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+          <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc13" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+          <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc13" slr:equivStorage="storage" fs:fs="a" id="pc14" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+          <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc13" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+          <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc13" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec19" subType="pre:subtype" type="fmt" />
+          <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec20" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+          <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc13" slr:equivStorage="storage" fs:fs="a" id="sc14" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+          <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc14" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec19" id="ec21" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk7" ref="#n=n6" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm7" ref="#n=n6" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm7" /></source>
+        <target order="1" xml:lang="de-de" xml:space="preserve">
+          <cp hex="0018" />
+          <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph13" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+          <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph13" slr:equivStorage="storage" fs:fs="a" id="ph14" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+          <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc13" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+          <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc13" slr:equivStorage="storage" fs:fs="a" id="pc14" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+          <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc13" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+          <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc13" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec19" subType="pre:subtype" type="fmt" />
+          <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec20" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+          <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc13" slr:equivStorage="storage" fs:fs="a" id="sc14" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+          <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc14" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec19" id="ec21" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk7" ref="#n=n6" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm7" ref="#n=n6" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm7" /></target>
+      </segment>
+      <ignorable id="i3">
+        <source>
+          <cp hex="0018" />
+          <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph15" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+          <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph15" slr:equivStorage="storage" fs:fs="a" id="ph16" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+          <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc15" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+          <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc15" slr:equivStorage="storage" fs:fs="a" id="pc16" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+          <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc15" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+          <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc15" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec22" subType="pre:subtype" type="fmt" />
+          <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec23" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+          <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc15" slr:equivStorage="storage" fs:fs="a" id="sc16" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+          <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc16" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec22" id="ec24" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk8" ref="#n=n6" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm8" ref="#n=n6" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm8" /></source>
+        <target order="2" xml:lang="de-de" xml:space="preserve">
+          <cp hex="0018" />
+          <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ph15" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+          <ph disp="display" equiv="equiv" subFlows="u1" canCopy="yes" canDelete="no" canReorder="yes" copyOf="ph15" slr:equivStorage="storage" fs:fs="a" id="ph16" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" type="image" />
+          <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="pc15" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+          <pc canOverlap="yes" dir="auto" dispEnd="end" dispStart="start" equivEnd="equivend" equivStart="equivstart" subFlowsEnd="u1" subFlowsStart="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="pc15" slr:equivStorage="storage" fs:fs="a" id="pc16" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt">text</pc>
+          <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="sc15" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+          <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc15" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" id="ec22" subType="pre:subtype" type="fmt" />
+          <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="yes" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" slr:equivStorage="storage" fs:fs="a" id="ec23" slr:sizeInfo="size" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+          <sc canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="sc15" slr:equivStorage="storage" fs:fs="a" id="sc16" slr:sizeInfoRef="sizeref" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" subType="pre:subtype" type="fmt" />
+          <ec canOverlap="yes" dir="auto" disp="display" equiv="equiv" isolated="no" startRef="sc16" subFlows="u1" canCopy="yes" canDelete="yes" canReorder="yes" copyOf="ec22" id="ec24" subType="pre:subtype" type="fmt" />text<![CDATA[cdata text]]><!--comment text--><?instruction instruction text?><mrk fs:fs="a" id="mrk8" ref="#n=n6" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><sm fs:fs="a" id="sm8" ref="#n=n6" slr:sizeRestriction="restriction" slr:storageRestriction="restriction" fs:subFs="key1,value1\key2,value2" translate="yes" type="pre:type" value="value" /><em startRef="sm8" /></target>
+      </ignorable>
+    </unit>
+  </file>
+</xliff>

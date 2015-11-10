@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0"
+xmlns:xmrk="urn:xmarker"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0"
+xmlns:mtc="urn:oasis:names:tc:xliff:matches:2.0"
+xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0"
+xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0"
+xmlns:res="urn:oasis:names:tc:xliff:resourcedata:2.0"
+xmlns:ctr="urn:oasis:names:tc:xliff:changetracking:2.0"
+xmlns:slr="urn:oasis:names:tc:xliff:sizerestriction:2.0"
+xmlns:val="urn:oasis:names:tc:xliff:validation:2.0"
+xmlns:xhtml="http://www.w3.org/1999/xhtml"
+xmlns:svg="http://www.w3.org/2000/svg" srcLang="en-us" version="2.0"
+trgLang="de">
+<file id="f216">
+      <unit id="xmrk_000_concept">
+         <gls:glossary>
+            <gls:glossEntry id="ge1">
+               <gls:term source="SnowTerms">snow</gls:term>
+               <gls:translation id="t1" source="SnowTerms">Schnee</gls:translation
+>
+               <gls:definition source="SnowTermsDefinitions">atmospheric water vapor frozen into ice crystals and falling in light white flakes or lying on the ground as a white layer.</gls:definition
+>
+            </gls:glossEntry>
+            <gls:glossEntry id="ge11"><!-- 5.2.5.1 id
+Constraints
+
+The values of id attributes MUST be unique among all <glossEntry> and <translation> elements within the given enclosing <glossary> element. 
+--><!-- valid, unique. -->
+            <gls:term source="SnowTerms">slush</gls:term>
+               <gls:translation id="t11" source="SnowTerms">Schneematsch</gls:translation>
+            <gls:definition source="SnowTermsDefinitions">a slurry mixture of small ice crystals (e.g., snow) and liquid water.</gls:definition><!-- valid, unique. -->
+           </gls:glossEntry>
+         </gls:glossary>
+
+         <segment id="xmrk_003_p">
+            <source>I like to ski. And Ctrl+C=<cp hex="0003"/>
+            </source>
+            <target>I like to ski. And Ctrl+C=<cp hex="0003"/>
+            </target> 
+	     </segment>
+      </unit>
+   </file>
+</xliff>

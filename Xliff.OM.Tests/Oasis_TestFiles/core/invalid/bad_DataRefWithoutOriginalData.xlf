@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+ <file id="f1">
+  <unit id="u1">
+   <segment id="s1">
+    <source><ph id='1' dataRef='d1'/>source</source>
+   </segment>
+  </unit>
+ </file>
+</xliff>

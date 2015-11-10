@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr" xmlns:my="myNS" xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0" my:attr="val-in-xliff">
+ <file id="f1" my:attr="val-in-file">
+  <skeleton>
+   <skl:elem xmlns:skl="mySkeletonNS" attr="value">some data</skl:elem>
+   Some text-based data
+   <?myPI info="data1"?>
+  </skeleton>
+  <my:elem id="my1" xml:space="preserve">data [   ]</my:elem>
+  <?myPI info="data2"?>
+  <notes>
+   <note id="n1" my:attr="val-in-note">note-file</note>
+  </notes>
+  <group id="g123" my:attr="val-in-group" fs:fs="p">
+   <?myPI info="data3"?>
+   <notes>
+    <note id="n1" my:attr="val-in-note">note-group</note>
+   </notes>
+   <unit id="1" my:attr="val-in-unit">
+	<my:elem>data</my:elem>
+    <?myPI info="data4"?>
+    <notes>
+     <note id="n1" my:attr="val-in-note">note-unit</note>
+    </notes>
+    <originalData>
+     <data id="d1">[code [   ]]</data>
+    </originalData>
+    <segment>
+     <source>
+	  <ph id="1" dataRef="d1" fs:fs="b"/>
+	  <pc id="2" fs:fs="b">text</pc>
+	  <sc id="3" fs:fs="b"/>
+	   <sm id="m1" translate="yes" my:attr="val"/>
+	    text
+		<cp hex="0001"/>
+	   <ec startRef="3"/>
+	  <em startRef="m1"/>
+	  <mrk id="m2" type="my:type" my:attr="val-in-mrk">text</mrk>
+	 </source>
+    </segment>
+   </unit>
+   <unit id="2" my:attr="val-in-unit" xml:space="preserve">
+    <my:elem>data [   ]</my:elem>
+    <notes>
+     <note my:attr="val-in-note">note</note>
+    </notes>
+    <segment>
+     <source>text<ec id="1" isolated="yes" fs:fs="b"/>[   ]</source>
+     <target>texte<ec id="1" isolated="yes" fs:fs="b"/>[   ]<ph id="trgOnly"/></target>
+	</segment>
+   </unit>
+  </group>
+ </file>
+</xliff>

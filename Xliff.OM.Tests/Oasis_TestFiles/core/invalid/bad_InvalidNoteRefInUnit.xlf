@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+ <file id="f1">
+  <notes>
+   <note id='n1'>file note</note>
+  </notes>
+  <unit id="1">
+   <notes>
+    <note id='n1'>unit note</note>
+   </notes>
+   <segment>
+    <source><mrk id='m1' type='comment' ref='#f=f1/n=n1'>text</mrk></source>
+   </segment>
+  </unit>
+ </file>
+</xliff>

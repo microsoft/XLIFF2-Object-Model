@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="5d8afa1a-8c34-4c53-9034-54d99f5cb83e" revisionNumber="1">
+    <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <introduction>
+            <para>
+                The XLIFF 2.0 Object Model contains classes and methods for generating and manipulating XLIFF 2.0 documents as described in the
+                <externalLink>
+                    <linkText>XLIFF 2.0 Standard</linkText>
+                    <linkUri>http://docs.oasis-open.org/xliff/xliff-core/v2.0/xliff-core-v2.0.html</linkUri>
+                </externalLink>. The library is built using the
+                <externalLink>
+                    <linkText>Portable Class Library</linkText>
+                    <linkUri>https://msdn.microsoft.com/en-us/library/vstudio/gg597391(v=vs.100).aspx</linkUri>
+                </externalLink> enabling developers to generate XLIFF documents using various platforms.
+            </para>
+
+            <para>
+                The library includes classes for all the Core elements as well as all the module elements as described in the standard including:
+                <list class="bullet">
+                    <listItem>Core Elements (xliff, file, group, etc)</listItem>
+                    <listItem>Change Tracking Module</listItem>
+                    <listItem>Format Style Module</listItem>
+                    <listItem>Glossary Module</listItem>
+                    <listItem>Metadata Module</listItem>
+                    <listItem>Resource Data Module</listItem>
+                    <listItem>Size and Length Restriction Module</listItem>
+                    <listItem>Translation Candidates Module</listItem>
+                    <listItem>Validation Module</listItem>
+                </list>
+                These classes allow a developer to build up a document in memory and change various properties on the elements before writing the file.
+            </para>
+
+            <para>
+                The library also contains methods for serializing and deserializing documents and validating constraints according to the open standard.
+            </para>
+        </introduction>
+
+        <relatedTopics>
+            <externalLink>
+                <linkText>XLIFF 2.0 Specification</linkText>
+                <linkUri>http://docs.oasis-open.org/xliff/xliff-core/v2.0/xliff-core-v2.0.html</linkUri>
+            </externalLink>
+        </relatedTopics>
+    </developerConceptualDocument>
+</topic>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0"
+       xmlns:val="urn:oasis:names:tc:xliff:validation:2.0"
+       srcLang="en-us" version="2.0">
+<file id="f1">
+	<val:validation>
+		<val:rule isPresent="test" caseSensitive="false"/>
+	</val:validation>
+	<unit id="4">
+		<segment id="s1">
+			<source>test</source>
+		</segment>
+	</unit>
+</file>
+</xliff>

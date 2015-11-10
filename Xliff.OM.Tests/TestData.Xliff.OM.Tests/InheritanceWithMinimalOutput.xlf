@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff srcLang="en-us" version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0">
+    <file id="newfile" translate="no">
+        <unit id="newunit">
+            <segment id="newsegment">
+                <source>
+                    <mrk id="newmrk" translate="yes" />
+                </source>
+            </segment>
+        </unit>
+    </file>
+</xliff>

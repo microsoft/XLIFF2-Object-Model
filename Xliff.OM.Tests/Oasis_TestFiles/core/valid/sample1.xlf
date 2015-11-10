@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="de"
+    xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0">
+    <file id="f1">
+    <unit id="1">
+        <gls:glossary>
+            <gls:glossEntry ref="#m1">
+                <gls:term source="publicTermbase">TAB key</gls:term>
+                <gls:translation id="1" source="myTermbase">Tabstopptaste
+                </gls:translation>
+                <gls:translation ref="#t=m2" source="myTermbase">TAB-TASTE
+                </gls:translation>
+                <gls:definition source="publicTermbase">A keyboard key that is
+                    traditionally used to insert tab characters into a document.
+                </gls:definition>
+            </gls:glossEntry>
+        </gls:glossary>
+        <segment>
+            <source>Press the <mrk id="m1" type="term">TAB key</mrk>.
+            </source>
+            <target>Drücken Sie die <mrk id="m2" type="term">TAB-TASTE</mrk>.
+            </target>
+        </segment>
+    </unit>
+    </file>
+    
+</xliff>

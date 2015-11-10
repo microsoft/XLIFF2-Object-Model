@@ -1,0 +1,23 @@
+﻿<xliff xmlns='urn:oasis:names:tc:xliff:document:2.0' version='2.0' srcLang='en' trgLang='pt'
+ xmlns:val='urn:oasis:names:tc:xliff:validation:2.0'>
+ <file id='1'>
+  <val:validation>
+   <val:rule isPresent="store" />
+  </val:validation>
+  <unit id="1">
+   <segment id="1">
+    <source>Choose an option in the online store:</source>
+    <target>Escolha uma opção na loja online:</target>
+   </segment>
+  </unit>
+  <unit id="2">
+   <val:validation>
+    <val:rule isPresent="store" disabled="yes" />
+   </val:validation>
+   <segment id="1">
+    <source>Choose an option in the application store:</source>
+    <target>Escolha uma opção na application store:</target>
+   </segment>
+  </unit>
+ </file>
+</xliff>

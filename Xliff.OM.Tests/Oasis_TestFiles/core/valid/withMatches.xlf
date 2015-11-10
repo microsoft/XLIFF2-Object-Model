@@ -1,0 +1,31 @@
+﻿<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr"
+ xmlns:mtc="urn:oasis:names:tc:xliff:matches:2.0">
+ <file id="f1">
+  <unit id="1">
+   <mtc:matches xmlns:xlf="urn:oasis:names:tc:xliff:document:2.0">
+    <mtc:match id="1" ref="#m1">
+     <metadata xmlns="urn:oasis:names:tc:xliff:metadata:2.0" >
+      <metaGroup>
+       <meta type="mytype">data</meta>
+      </metaGroup>
+     </metadata>
+     <xlf:originalData>
+      <xlf:data id="d1">[code]</xlf:data>
+     </xlf:originalData>
+     <xlf:source><xlf:ph id='1' dataRef='d1'/>Text</xlf:source>
+     <xlf:target><xlf:ph id='1' dataRef='d1'/>Texte</xlf:target>
+     <my:element xmlns:my="myNs">data</my:element>
+    </mtc:match>
+    <mtc:match id="2" ref="#t=m2"> <!-- Refers to a target (unlikely but allowed) -->
+     <xlf:source>Text2</xlf:source>
+     <xlf:target>Texte2</xlf:target>
+    </mtc:match>
+   </mtc:matches>
+   <segment>
+    <source><mrk id="m1" type="mtc:match">Text</mrk></source>
+    <target><mrk id="m2" type="some:annotation">Texte2</mrk></target>
+   </segment>
+  </unit>
+ </file>
+</xliff>

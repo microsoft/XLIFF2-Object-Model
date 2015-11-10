@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+ <file id="f1" xmlns:res="urn:oasis:names:tc:xliff:resourcedata:2.0">
+  <res:resourceData>
+   <res:resourceItem id="r1" mimeType="text/xml" context="no">
+    <res:source href="resources\en\registryconfig.resources.xml" />
+    <res:target href="resources\fr\registryconfig.resources.xml" />
+   </res:resourceItem>
+  </res:resourceData>
+ <notes>
+   <note id="globalNote1">note for file (f1)</note>
+  </notes>
+  <unit id="u1">
+   <segment>
+    <source>First segment</source>
+   </segment>
+  </unit>
+  <unit id="2" name="130;WIN_DLG_CTRL_">
+   <res:resourceData>
+    <res:resourceItemRef ref="r1" />
+   </res:resourceData>
+   <segment id="1" state="translated">
+    <source><mrk id="m1" type="my:resource" ref="#f=f1/res=r1">Load Registry Config</mrk></source>
+    <target>Chargement du registre de configuration</target>
+   </segment>
+  </unit>
+ </file>
+ <file id="f2">
+  <notes>
+   <note id="n1">note for file (f2)</note>
+  </notes>
+  <group id="g1">
+   <notes>
+    <note id="n1">note for group</note>
+   </notes>
+   <unit id="u1">
+    <notes>
+     <note id="n1">note for unit</note>
+    </notes>
+    <segment id="s1">
+     <source><mrk id='m1' type="comment" ref="#n=n1"><mrk id='m2' type="term" ref="http://en.wikipedia.org/wiki/Comment"><mrk id='m3' type="comment" ref="#n=n1">Sentence 1.</mrk></mrk></mrk></source>
+     <target><mrk id='m4' type="comment" ref="#n=n1"><mrk id='m5' type="xyz:comment" ref="myFile.xml#f=1/n=n1"><mrk id='m6' type='xyz:comment' ref="someFile.xml#id1">Phrase 1.</mrk></mrk></mrk></target>
+    </segment>
+   </unit>
+  </group>
+ </file>
+</xliff>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0"
+xmlns:xmrk="urn:xmarker"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0"
+xmlns:mtc="urn:oasis:names:tc:xliff:matches:2.0"
+xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0"
+xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0"
+xmlns:res="urn:oasis:names:tc:xliff:resourcedata:2.0"
+xmlns:ctr="urn:oasis:names:tc:xliff:changetracking:2.0"
+xmlns:slr="urn:oasis:names:tc:xliff:sizerestriction:2.0"
+xmlns:val="urn:oasis:names:tc:xliff:validation:2.0"
+xmlns:xhtml="http://www.w3.org/1999/xhtml"
+xmlns:svg="http://www.w3.org/2000/svg" srcLang="en-us" version="2.0"
+trgLang="de">
+<file id="sizeInfo-and-sizeInfoRef">
+      <slr:profiles generalProfile="xliff:codepoints"
+storageProfile="xliff:utf8">
+         <slr:normalization general="nfc" storage="nfc"/>
+      </slr:profiles>
+	  <slr:data profile="xliff:codepoints">
+         <svg:sizeData id="sir1">
+            <svg:sub_sizeData id="s2">44</svg:sub_sizeData>
+         </svg:sizeData>
+      </slr:data>
+      <group id="mygroupsizemodule">
+         <!-- test if sizeInfoRef is:
+                                             (1) on an <ec> that is not isolated 5.7.5.10
+											 -->
+         <!-- violation: cannot have @sizeInfoRef on <ec> without @isolated -->
+         <unit id="sm1">
+            <segment id="testsize">
+             <source>Hello <sc id="s1" />size <ec startRef="s1" slr:sizeInfoRef="sir1" />tests.</source>
+            </segment>
+         </unit>
+      </group>
+   </file>
+</xliff>

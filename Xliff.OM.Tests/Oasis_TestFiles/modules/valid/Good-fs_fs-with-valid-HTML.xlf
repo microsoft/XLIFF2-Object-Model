@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" xmlns:xmrk="urn:xmarker"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0"
+       xmlns:mtc="urn:oasis:names:tc:xliff:matches:2.0"
+       xmlns:gls="urn:oasis:names:tc:xliff:glossary:2.0"
+       xmlns:mda="urn:oasis:names:tc:xliff:metadata:2.0"
+       xmlns:res="urn:oasis:names:tc:xliff:resourcedata:2.0"
+       xmlns:ctr="urn:oasis:names:tc:xliff:changetracking:2.0"
+       xmlns:slr="urn:oasis:names:tc:xliff:sizerestriction:2.0"
+       xmlns:val="urn:oasis:names:tc:xliff:validation:2.0"
+       xmlns:xhtml="http://www.w3.org/1999/xhtml"
+       xmlns:svg="http://www.w3.org/2000/svg"
+       srcLang="en-us"
+       version="2.0"
+       xsi:schemaLocation="urn:oasis:names:tc:xliff:document:2.0 file:/C:/Users/bryans/Desktop/presentations/schnabel_demos_under-construction/XLIFF2.0-utils/XLIFF2.0/xliff-core-v2.0-csprd03/schemas/xliff_core_2.0.xsd"
+       trgLang="de">
+ 
+   <file id="bad-filesize2">  
+      <notes>
+      <note category="reconstruction hints" fs:fs="i" id="myNote01" priority="1"
+         xmrk:any="notBound">Any notes in the category of reconstruction hints are only supplied as hints for reconstruction and MUST NOT be included in the translated output. But it is okay to include the hints in the HTML preview.</note>
+      <note category="reconstruction hints" fs:fs="i" id="myNote02" priority="2">The skeleton contains ALL the element and attribute hierarchy required to reconstruct the translated document from this XLIFF.</note>
+         <note id="n3" fs:fs="p"><!-- 5.3.5.1 fs valid, p is a valid value-->This note has an @fs that is not in the table of attribute values in the spec</note>
+         <note id="n4" fs:fs="img" fs:subFs="src,smileface.png">This note has a subFS and fs.</note><!-- 5.3.5.2 subFs
+ valid, If the attribute subFs is used, the attribute fs MUST be specified as well.
+ -->
+      </notes>
+      <group id="slr-test">      
+         <group id="g1" slr:storageRestriction="255"
+            slr:sizeRestriction="90">
+            <unit id="u1" slr:sizeRestriction="*">
+               <segment id="seg1">
+                  <source>Hello world.</source>
+               </segment>
+            </unit>
+         </group>
+      </group>
+   </file>
+</xliff>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="fr">
+<file id="f1">
+<unit id="1">
+<segment id="s1">
+<source><pc id="1" xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0" fs:fs="b">text</pc></source>
+<target><pc id="1" xmlns:fs="urn:oasis:names:tc:xliff:fs:2.0" fs:fs="b">texte</pc></target>
+</segment>
+</unit>
+<unit id="2">
+<validation xmlns="urn:oasis:names:tc:xliff:validation:2.0">
+    <rule isPresent="en-ligne"></rule>
+   </validation>
+<segment id="1">
+<source>Choose an option in the online store.</source>
+</segment>
+</unit>
+</file>
+</xliff>

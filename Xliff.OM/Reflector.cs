@@ -45,16 +45,21 @@
         /// </summary>
         /// <param name="type">The type to reflect on.</param>
         /// <param name="provider">A provider that can return custom values when inheriting values.</param>
-        /// <returns>A dictionary whose type is the CSharp property Name, and the value is the an object that
+        /// <returns>A dictionary whose type is the CSharp property Name, and the value is an object that
         /// stores the attribute data.</returns>
-        public static IDictionary<string, AttributeData> GetSchemaAttributes(Type type, IInheritanceInfoProvider provider)
+        /// <param name="outputResolver">The resolver to use when the output of properties is determined at runtime.
+        /// </param>
+        public static IDictionary<string, AttributeData> GetSchemaAttributes(
+                                                                             Type type,
+                                                                             IInheritanceInfoProvider provider,
+                                                                             IOutputResolver outputResolver)
         {
             Dictionary<string, AttributeData> result;
-            Dictionary<string, IEnumerable<string>> outputDependencyMap;
+            Dictionary<string, IEnumerable<ExplicitOutputDependencyAttribute>> outputDependencyMap;
             IEnumerable<SchemaAttributes> attributes;
 
             result = new Dictionary<string, AttributeData>();
-            outputDependencyMap = new Dictionary<string, IEnumerable<string>>();
+            outputDependencyMap = new Dictionary<string, IEnumerable<ExplicitOutputDependencyAttribute>>();
 
             attributes = ReflectorCache.Instance.GetSchemaAttributes(type);
             foreach (SchemaAttributes entry in attributes)
@@ -120,11 +125,18 @@
 
             // Now that all attributes have been stored, add the explicit output dependencies referencing the
             // attributes directly.
-            foreach (KeyValuePair<string, IEnumerable<string>> pair in outputDependencyMap)
+            foreach (KeyValuePair<string, IEnumerable<ExplicitOutputDependencyAttribute>> pair in outputDependencyMap)
             {
-                foreach (string property in pair.Value)
+                foreach (ExplicitOutputDependencyAttribute attribute in pair.Value)
                 {
-                    result[pair.Key].ExplicitOutputDependencies.Add(property, result[property]);
+                    if (attribute.Property == null)
+                    {
+                        result[pair.Key].OutputResolver = outputResolver;
+                    }
+                    else
+                    {
+                        result[pair.Key].ExplicitOutputDependencies.Add(attribute.Property, result[attribute.Property]);
+                    }
                 }
             }
 

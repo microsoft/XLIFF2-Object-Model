@@ -367,6 +367,11 @@
                                     break;
                                 }
                             }
+
+                            if (!shouldWrite && (attribute.OutputResolver != null))
+                            {
+                                shouldWrite = attribute.OutputResolver.IsOutputRequired(attribute.LocalName);
+                            }
                         }
 
                         if (shouldWrite)

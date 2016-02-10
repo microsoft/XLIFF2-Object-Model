@@ -21,7 +21,7 @@ trgLang="de">
 href="resources\en\registryconfig1.resources.jpg"></res:source>
             <res:target xml:lang="de"
 href="resources\lb\registryconfig1.resources.jpg"></res:target>
-            <res:reference xml:lang="de"
+            <res:reference xml:lang="lb-lu"
 href="resources\de\registryconfig1.resources.jpg"/>
          </res:resourceItem>
          <res:resourceItem id="r1-temp" mimeType="image/jpeg" context="yes"

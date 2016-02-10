@@ -23,8 +23,8 @@
     </mtc:match>
    </mtc:matches>
    <segment>
-    <source><mrk id="m1" type="mtc:match">Text</mrk></source>
-    <target><mrk id="m2" type="some:annotation">Texte2</mrk></target>
+    <source><mrk id="m1" translate="yes" type="mtc:match">Text</mrk></source>
+    <target><mrk id="m2" translate="yes" type="some:annotation">Texte2</mrk></target>
    </segment>
   </unit>
  </file>

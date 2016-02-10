@@ -28,11 +28,11 @@
                                 HasValueIndicatorAttribute hasValueIndicator,
                                 SchemaEntityAttribute schema,
                                 IEnumerable<InheritValueAttribute> inheritanceList,
-                                IEnumerable<string> outputDependencies)
+                                IEnumerable<ExplicitOutputDependencyAttribute> outputDependencies)
         {
             this.Converter = converter;
             this.DefaultValue = defaultValue;
-            this.ExplicitOutputDependencies = new List<string>(outputDependencies);
+            this.ExplicitOutputDependencies = new List<ExplicitOutputDependencyAttribute>(outputDependencies);
             this.HasValueIndicator = hasValueIndicator;
             this.InheritanceList = new List<InheritValueAttribute>(inheritanceList);
             this.Name = name;
@@ -54,7 +54,7 @@
         /// Gets the list of property names that, when written, must be accompanied by the property to which this
         /// attribute is applied.
         /// </summary>
-        public IEnumerable<string> ExplicitOutputDependencies { get; private set; }
+        public IEnumerable<ExplicitOutputDependencyAttribute> ExplicitOutputDependencies { get; private set; }
 
         /// <summary>
         /// Gets the attribute that defines how to determine if the value has data.

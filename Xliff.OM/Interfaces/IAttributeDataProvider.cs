@@ -39,6 +39,11 @@
         string Namespace { get; }
 
         /// <summary>
+        /// Gets a resolver that determines whether properties need to be written to an XLIFF file.
+        /// </summary>
+        IOutputResolver OutputResolver { get; }
+
+        /// <summary>
         /// Gets the prefix of the Xml fragment used to read/write the attribute.
         /// </summary>
         string Prefix { get; }

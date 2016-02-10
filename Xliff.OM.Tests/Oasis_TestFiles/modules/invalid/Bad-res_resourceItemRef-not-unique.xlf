@@ -21,7 +21,7 @@ trgLang="de">
 href="resources\en\registryconfig1.resources.jpg"></res:source>
             <res:target xml:lang="de"
 href="resources\lb\registryconfig1.resources.jpg"></res:target>
-            <res:reference xml:lang="de"
+            <res:reference xml:lang="lb-lu"
 href="resources\de\registryconfig1.resources.jpg"/>
          </res:resourceItem>
          <res:resourceItem id="r1" mimeType="image/jpeg" context="yes"
@@ -41,9 +41,9 @@ href="resources\lb\registryconfig2.resources.jpg"></res:target>
       
       <unit id="1">
          <res:resourceData>
-            <res:resourceItemRef ref="r1"/>
-            <res:resourceItemRef ref="r2" id="rr1"/>
-            <res:resourceItem id="rr1" mimeType="image/jpeg"
+             <res:resourceItemRef ref="r1"/>
+             <res:resourceItemRef ref="r2" id="rr1"/>
+             <res:resourceItem id="rr1" mimeType="image/jpeg"
 context="yes"><!-- violation not unique -->
                <res:source xml:lang="en-us"
 href="resources\en\registryconfig2.resources.jpg"></res:source>

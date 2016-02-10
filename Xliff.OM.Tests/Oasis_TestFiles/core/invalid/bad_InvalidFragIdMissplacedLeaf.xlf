@@ -7,7 +7,7 @@
     <data id='d1'>[br/]</data>
    </originalData>
    <segment>
-    <source><mrk id="m1" type="my:type" ref="#f=f1/d=d1/u=1"><ph id="d1" dataRef="d1"/>text</mrk></source>
+    <source><mrk id="m1" translate="yes" type="my:type" ref="#f=f1/d=d1/u=1"><ph id="d1" dataRef="d1"/>text</mrk></source>
    </segment>
   </unit>
  </file>

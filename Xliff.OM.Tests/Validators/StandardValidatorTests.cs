@@ -677,6 +677,7 @@
 
             Console.WriteLine("Test fs with ec not isolated.");
             this.VerifyValidationException(ValidationError.FormatStyleWithSpanEndNotIsolated);
+            end.Id = "ec1";
             end.Isolated = true;
             end.StartReference = null;
             start.Isolated = true;
@@ -878,6 +879,20 @@
             Console.WriteLine("Test with null type.");
             span.Type = null;
             StandardValidatorTests._validator.Validate(this._document);
+
+            Console.WriteLine("Test a relative path to a note.");
+            span.Reference = "#" + unit.Notes[0].SelectorId;
+            span.Type = MarkedSpanTypes.Comment;
+            span.Value = null;
+            StandardValidatorTests._validator.Validate(this._document);
+
+            Console.WriteLine("Test a full path to a note.");
+            span.Reference = unit.Notes[0].SelectorPath;
+            StandardValidatorTests._validator.Validate(this._document);
+
+            Console.WriteLine("Test a full path to a note outside the unit.");
+            span.Reference = ((Unit)this._document.Files[1].Containers.First(c => c is Unit)).Notes[0].SelectorPath;
+            this.VerifyValidationException(ValidationError.MarkedSpanInvalidReference);
         }
 
         /// <summary>
@@ -980,6 +995,20 @@
             Console.WriteLine("Test with null type.");
             span.Type = null;
             StandardValidatorTests._validator.Validate(this._document);
+
+            Console.WriteLine("Test a relative path to a note.");
+            span.Reference = "#" + unit.Notes[0].SelectorId;
+            span.Type = MarkedSpanTypes.Comment;
+            span.Value = null;
+            StandardValidatorTests._validator.Validate(this._document);
+
+            Console.WriteLine("Test a full path to a note.");
+            span.Reference = unit.Notes[0].SelectorPath;
+            StandardValidatorTests._validator.Validate(this._document);
+
+            Console.WriteLine("Test a full path to a note outside the unit.");
+            span.Reference = ((Unit)this._document.Files[1].Containers.First(c => c is Unit)).Notes[0].SelectorPath;
+            this.VerifyValidationException(ValidationError.MarkedSpanStartInvalidReference);
         }
 
         /// <summary>
@@ -1949,6 +1978,7 @@
 
             span = new SpanningCodeEnd();
             span.Isolated = true;
+            span.Id = "ec1";
 
             Console.WriteLine("Test with null Id.");
             this.DeserializeDocument();
@@ -1959,15 +1989,23 @@
 
             Console.WriteLine("Test with empty Id.");
             span.Id = String.Empty;
-            StandardValidatorTests._validator.Validate(this._document);
+            this.VerifyValidationException(ValidationError.SpanningCodeEndIdNull);
 
             Console.WriteLine("Test with duplicate Id.");
             segment.Id = "duplicateId";
             span.Id = segment.Id;
             this.VerifyValidationException(ValidationError.ElementIdDuplicate);
 
+            Console.WriteLine("Test with startRef and Id.");
+            span.Id = "newSpanId";
+            span.StartReference = "sc1";
+            span.Isolated = false;
+            this.VerifyValidationException(ValidationError.SpanningCodeEndStartRefAndIdSpecified);
+
             Console.WriteLine("Test with item on target not matching source.");
             span.Id = "newSpanId";
+            span.Isolated = true;
+            span.StartReference = null;
             segment.Target.Text.Add(new MarkedSpan("bogus"));
             StandardValidatorTests._validator.Validate(this._document);
 
@@ -2012,6 +2050,7 @@
             segment.Source.Text.Add(startSpan);
             segment.Source.Text.Add(span);
             span.DataReference = "dataId";
+            span.Id = null;
             span.StartReference = "scId";
             StandardValidatorTests._validator.Validate(this._document);
 
@@ -2021,11 +2060,13 @@
 
             Console.WriteLine("Test with StartReference is null.");
             startSpan.Isolated = true;
+            span.Id = "ec1";
             span.Isolated = true;
             span.StartReference = null;
             StandardValidatorTests._validator.Validate(this._document);
 
             Console.WriteLine("Test with StartReference is empty.");
+            span.Id = null;
             span.Isolated = false;
             span.StartReference = String.Empty;
             this.VerifyValidationException(ValidationError.TagStartRefInvalid);

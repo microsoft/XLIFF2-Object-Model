@@ -189,11 +189,11 @@
                         SchemaAttributes listEntry;
                         SchemaEntityAttribute schema;
                         List<InheritValueAttribute> inheritanceList;
-                        List<string> dependencyList;
+                        List<ExplicitOutputDependencyAttribute> dependencyList;
 
                         converter = null;
                         defaultValue = null;
-                        dependencyList = new List<string>();
+                        dependencyList = new List<ExplicitOutputDependencyAttribute>();
                         hasValueIndicator = null;
                         inheritanceList = new List<InheritValueAttribute>();
                         schema = null;
@@ -227,7 +227,7 @@
                             }
                             else if (attributeType == typeof(ExplicitOutputDependencyAttribute))
                             {
-                                dependencyList.Add(((ExplicitOutputDependencyAttribute)attribute).Property);
+                                dependencyList.Add((ExplicitOutputDependencyAttribute)attribute);
                             }
                         }
 

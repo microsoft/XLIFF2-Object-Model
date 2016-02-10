@@ -22,7 +22,7 @@
     <Row path="Oasis_TestFiles\core\invalid\bad_canReorderContext2.xlf"                                         expectedResult="ValidationError" errorNumber="20008" />
     <Row path="Oasis_TestFiles\core\invalid\bad_canReorderContext3.xlf"                                         expectedResult="ValidationError" errorNumber="20008" />
     <Row path="Oasis_TestFiles\core\invalid\bad_CommentWithValueAndRef.xlf"                                     expectedResult="ValidationError" errorNumber="20047" />
-    <Row path="Oasis_TestFiles\core\invalid\bad_ConfusedIsolatedOnEc.xlf"                                       expectedResult="ValidationError" errorNumber="20094" />
+    <Row path="Oasis_TestFiles\core\invalid\bad_ConfusedIsolatedOnEc.xlf"                                       expectedResult="ValidationError" errorNumber="20157" />
     <Row path="Oasis_TestFiles\core\invalid\bad_CopyOfWithBadReference.xlf"                                     expectedResult="ValidationError" errorNumber="20004" />
     <Row path="Oasis_TestFiles\core\invalid\bad_CopyOfWithNoCopyReference.xlf"                                  expectedResult="ValidationError" errorNumber="20012" />
     <Row path="Oasis_TestFiles\core\invalid\bad_CopyOfWithOriginalData.xlf"                                     expectedResult="ValidationError" errorNumber="20111" />
@@ -110,7 +110,7 @@
     <Row path="Oasis_TestFiles\core\invalid\bad_NoFile.xlf"                                                     expectedResult="ValidationError" errorNumber="20025" />
     <Row path="Oasis_TestFiles\core\invalid\bad_NonEmptySkeletonWithHref.xlf"                                   expectedResult="ValidationError" errorNumber="20075" />
     <Row path="Oasis_TestFiles\core\invalid\bad_NonIsolatedEcWithoutStartRef.xlf"                               expectedResult="ValidationError" errorNumber="20081" />
-    <Row path="Oasis_TestFiles\core\invalid\bad_NonIsolatedEcWithStartRef.xlf"                                  expectedResult="ValidationError" errorNumber="20080" />
+    <Row path="Oasis_TestFiles\core\invalid\bad_NonIsolatedEcWithStartRef.xlf"                                  expectedResult="ValidationError" errorNumber="20157" />
     <Row path="Oasis_TestFiles\core\invalid\bad_NotesWithoutNote.xlf"                                           expectedResult="BadFormat" />
     <Row path="Oasis_TestFiles\core\invalid\bad_NoTrgLang.xlf"                                                  expectedResult="ValidationError" errorNumber="20026" />
     <Row path="Oasis_TestFiles\core\invalid\bad_NoTrgLangWithIgnorable.xlf"                                     expectedResult="ValidationError" errorNumber="20026" />

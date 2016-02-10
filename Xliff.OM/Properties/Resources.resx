@@ -325,7 +325,7 @@
     <value>(Type:'{0}', Id:'{1}'),</value>
   </data>
   <data name="StandardValidator_MarkedSpanReferenceAndValueSpecified" xml:space="preserve">
-    <value>The Match must have either a valid Reference or a Value, but not both.</value>
+    <value>The marked span must have either a valid Reference or a Value, but not both.</value>
   </data>
   <data name="StandardValidator_InvalidMarkedSpanReference_Format" xml:space="preserve">
     <value>The Reference ({0}) must refer to a valid {1} within the enclosing Unit.</value>
@@ -455,5 +455,11 @@
   </data>
   <data name="XliffElement_InnerTextNotSupported_Format" xml:space="preserve">
     <value>The {0} does not support inner text.</value>
+  </data>
+  <data name="StandardValidator_SpanningCodeEndStartRefAndId" xml:space="preserve">
+    <value>The SpanningCodeEnd cannot have both a StartReference and an Id.</value>
+  </data>
+  <data name="StandardValidator_OutputResolverFailed_Format" xml:space="preserve">
+    <value>A value for {0} must be specified.</value>
   </data>
 </root>

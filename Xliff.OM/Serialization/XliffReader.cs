@@ -279,6 +279,10 @@
                 this.elementStack.Push(this.currentElementState);
                 this.currentElementState = new ElementState(newElement);
             }
+            else
+            {
+                this.ValidateElementState(new ElementState(newElement));
+            }
         }
 
         /// <summary>
@@ -566,6 +570,19 @@
                             message = string.Format(
                                             Properties.Resources.StandardValidator_ExplicitDependencyMissing_Format,
                                             dependant.LocalName,
+                                            attribute.LocalName);
+                            throw new FormatException(message);
+                        }
+                    }
+
+                    if (attribute.OutputResolver != null)
+                    {
+                        if (attribute.OutputResolver.IsOutputRequired(attribute.LocalName))
+                        {
+                            string message;
+
+                            message = string.Format(
+                                            Properties.Resources.StandardValidator_OutputResolverFailed_Format,
                                             attribute.LocalName);
                             throw new FormatException(message);
                         }

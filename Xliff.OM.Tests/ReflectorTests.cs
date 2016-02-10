@@ -130,7 +130,7 @@
             //
 
             Console.WriteLine("Test with no attributes.");
-            result = Reflector.GetSchemaAttributes(typeof(ClassWithNoSchemaAttributes), null);
+            result = Reflector.GetSchemaAttributes(typeof(ClassWithNoSchemaAttributes), null, null);
             Assert.IsNotNull(result, "No results were returned.");
             Assert.AreEqual(0, result.Count, "Count of results is incorrect.");
 
@@ -146,7 +146,7 @@
             //
 
             Console.WriteLine("Test with various attributes.");
-            result = Reflector.GetSchemaAttributes(typeof(ClassWithSchemaAttributes), null);
+            result = Reflector.GetSchemaAttributes(typeof(ClassWithSchemaAttributes), null, null);
             Assert.IsNotNull(result, "No results were returned.");
             Assert.AreEqual(5, result.Count, "Count of results is incorrect.");
 
@@ -205,7 +205,7 @@
             //
 
             Console.WriteLine("Test with duplicate attributes.");
-            result = Reflector.GetSchemaAttributes(typeof(ClassWithDuplicateSchemaAttributes), null);
+            result = Reflector.GetSchemaAttributes(typeof(ClassWithDuplicateSchemaAttributes), null, null);
 
             xmlName = "name";
             Console.WriteLine("Validating item {0}.", xmlName);

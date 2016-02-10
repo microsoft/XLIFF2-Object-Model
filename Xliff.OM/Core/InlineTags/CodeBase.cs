@@ -162,7 +162,7 @@
         /// Gets or sets the Id of the inline code.
         /// </summary>
         [SchemaEntity(AttributeNames.Id, Requirement.Required)]
-        public string Id
+        public virtual string Id
         {
             get
             {

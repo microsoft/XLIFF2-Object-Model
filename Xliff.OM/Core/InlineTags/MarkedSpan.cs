@@ -54,6 +54,7 @@
     public class MarkedSpan : ResourceStringContent,
                               IExtensible,
                               IFormatStyleAttributes,
+                              IOutputResolver,
                               IResourceStringContentContainer,
                               ISelectable,
                               ISizeRestrictionAttributes
@@ -249,7 +250,7 @@
             get
             {
                 string message;
-                
+
                 message = string.Format(
                                         Properties.Resources.XliffElement_PropertyNotSupported_Format,
                                         MarkedSpan.PropertyNames.SizeInfo);
@@ -281,7 +282,7 @@
             get
             {
                 string message;
-                
+
                 message = string.Format(
                                         Properties.Resources.XliffElement_PropertyNotSupported_Format,
                                         MarkedSpan.PropertyNames.SizeInfoReference);
@@ -409,6 +410,7 @@
         /// </summary>
         [Converter(typeof(BoolConverter))]
         [DefaultValue(true)]
+        [ExplicitOutputDependency]
         [InheritValue(Inheritance.AncestorType, typeof(MarkedSpan))]
         [InheritValue(Inheritance.AncestorType, typeof(Unit))]
         [SchemaEntity(AttributeNames.Translate, Requirement.Optional)]
@@ -430,8 +432,6 @@
         /// "prefix:value" where prefix must not be "xlf" and prefix and value must not be empty
         /// strings.</remarks>
         [DefaultValue(MarkedSpanTypes.Generic)]
-        [InheritValue(Inheritance.AncestorType, typeof(MarkedSpan))]
-        [InheritValue(Inheritance.AncestorType, typeof(Unit))]
         [SchemaEntity(AttributeNames.Type, Requirement.Optional)]
         public string Type
         {
@@ -464,6 +464,24 @@
             this.AddChildElementsToList(this.Text, ref result);
 
             return result;
+        }
+
+        /// <summary>
+        /// Returns a value indicating whether the specified property is required to be output to the XLIFF file. This
+        /// value is based on other property values.
+        /// </summary>
+        /// <param name="property">The property being inquired about whether it needs to be output.</param>
+        /// <returns>True if the property needs to be written to the XLIFF file, false if the property output is
+        /// optional.
+        /// </returns>
+        bool IOutputResolver.IsOutputRequired(string property)
+        {
+            if (property == AttributeNames.Translate)
+            {
+                return (this.Type != MarkedSpanTypes.Comment) && (this.Type != MarkedSpanTypes.Term);
+            }
+
+            return false;
         }
 
         /// <summary>

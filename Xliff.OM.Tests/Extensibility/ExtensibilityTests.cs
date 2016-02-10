@@ -1107,6 +1107,11 @@
                 result.SubFormatStyle.Add("key1", "value1");
                 result.SubFormatStyle.Add("key2", "value2");
             }
+            else
+            {
+                // Id and StartReference cannot both be present.
+                result.Id = null;
+            }
 
             return result;
         }

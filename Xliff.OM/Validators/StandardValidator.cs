@@ -585,6 +585,28 @@
                         unit = span.FindAncestor<Unit>();
                         note = unit.Select(span.Reference) as Note;
 
+                        // If the path is not a relative path to a note, check if it's a fully qualified path to a note
+                        // within the same unit.
+                        if (note == null)
+                        {
+                            XliffDocument document;
+
+                            document = span.FindAncestor<XliffDocument>();
+                            note = document.Select(span.Reference) as Note;
+                            if (note != null)
+                            {
+                                Unit referenceUnit;
+
+                                referenceUnit = note.FindAncestor<Unit>();
+                                if (!object.ReferenceEquals(unit, referenceUnit))
+                                {
+                                    // The reference refers to a valid Note, but that note is not within the same unit so
+                                    // is invalid.
+                                    note = null;
+                                }
+                            }
+                        }
+
                         if (note == null)
                         {
                             string message;
@@ -773,24 +795,95 @@
                 // The reference must refer to a valid note.
                 if (span.Reference != null)
                 {
-                    Note note;
-                    Unit unit;
-
-                    unit = span.FindAncestor<Unit>();
-                    note = unit.Select(span.Reference) as Note;
-
-                    if (note == null)
+                    if (span.Type == MarkedSpanTypes.Comment)
                     {
-                        string message;
+                        // The reference must refer to a valid note.
+                        Note note;
+                        Unit unit;
 
-                        message = string.Format(
-                                                Properties.Resources.StandardValidator_InvalidMarkedSpanReference_Format,
-                                                span.Reference,
-                                                "Note");
-                        throw new ValidationException(
-                                                  ValidationError.MarkedSpanStartInvalidReference,
-                                                  message,
-                                                  span.SelectorPath);
+                        unit = span.FindAncestor<Unit>();
+                        note = unit.Select(span.Reference) as Note;
+
+                        // If the path is not a relative path to a note, check if it's a fully qualified path to a note
+                        // within the same unit.
+                        if (note == null)
+                        {
+                            XliffDocument document;
+
+                            document = span.FindAncestor<XliffDocument>();
+                            note = document.Select(span.Reference) as Note;
+                            if (note != null)
+                            {
+                                Unit referenceUnit;
+
+                                referenceUnit = note.FindAncestor<Unit>();
+                                if (!object.ReferenceEquals(unit, referenceUnit))
+                                {
+                                    // The reference refers to a valid Note, but that note is not within the same unit so
+                                    // is invalid.
+                                    note = null;
+                                }
+                            }
+                        }
+
+                        if (note == null)
+                        {
+                            string message;
+
+                            message = string.Format(
+                                                    Properties.Resources.StandardValidator_InvalidMarkedSpanReference_Format,
+                                                    span.Reference,
+                                                    "Note");
+                            throw new ValidationException(
+                                                      ValidationError.MarkedSpanStartInvalidReference,
+                                                      message,
+                                                      span.SelectorPath);
+                        }
+                    }
+                    else if (span.Reference.StartsWith(Utilities.Constants.SelectorPathIndictator) &&
+                             (this.document.Select(span.Reference) == null))
+                    {
+                        // The reference may look like #/f=f1/u=u1/s1 or #/f=f1/u=u1/xyz=abc. If the path can be resolved
+                        // without modification, then all is good. Otherwise strip off the trailing fragment and find
+                        // the element without that fragment. Then validate that the fragment is well-formed. That
+                        // fragment is likely a reference to an extension or module that isn't resolved because extensions
+                        // aren't understood so selection can't be done with them.
+                        string fragment;
+                        string path;
+
+                        path = Utilities.RemoveLastFragment(span.Reference, out fragment);
+                        if (this.document.Select(path) == null)
+                        {
+                            string message;
+
+                            message = string.Format(
+                                                    Properties.Resources.StandardValidator_InvalidMarkedSpanReference_Format,
+                                                    span.Reference,
+                                                    "element");
+                            throw new ValidationException(
+                                                      ValidationError.MarkedSpanStartInvalidReference,
+                                                      message,
+                                                      span.SelectorPath);
+                        }
+                        else if (fragment != null)
+                        {
+                            // Assume the fragment refers to an extension or module so the prefix has restrictions.
+                            fragment = Utilities.MakeRelativeSelector(fragment);
+                            if (!Utilities.IsWellFormedSelectorPathExcludingResourceStrings(fragment, true))
+                            {
+                                // The reference must be a valid URI. If it looks like a selector path, then verify that it
+                                // is a well-formed selector path.
+                                string message;
+
+                                message = string.Format(
+                                                Properties.Resources.StandardValidator_InvalidMarkedSpanReferenceSelectorPath_Format,
+                                                span.Reference);
+                                throw new ValidationException(
+                                                            ValidationError.MarkedSpanStartInvalidReferenceSelectorPath,
+                                                            message,
+                                                            span.SelectorPath);
+                            }
+                        }
                     }
                 }
 
@@ -1138,6 +1231,15 @@
                                                       span.SelectorPath);
                     }
 
+                    if (!string.IsNullOrWhiteSpace(span.Id))
+                    {
+                        // Id cannot be used because StartReference is specified.
+                        throw new ValidationException(
+                                                      ValidationError.SpanningCodeEndStartRefAndIdSpecified,
+                                                      Properties.Resources.StandardValidator_SpanningCodeEndStartRefAndId,
+                                                      span.SelectorPath);
+                    }
+
                     spanningCodeStartToFind.Add(span.StartReference, span);
                 }
                 else if (!span.Isolated)
@@ -1145,6 +1247,14 @@
                     throw new ValidationException(
                                                   ValidationError.SpanningCodeEndNotIsolatedOrStartRef,
                                                   Properties.Resources.StandardValidator_SpanningCodeEndNotIslatedOrStartRef,
+                                                  span.SelectorPath);
+                }
+                else if (string.IsNullOrWhiteSpace(span.Id))
+                {
+                    // Id must not be null.
+                    throw new ValidationException(
+                                                  ValidationError.SpanningCodeEndIdNull,
+                                                  Properties.Resources.StandardValidator_IdNotSpecified,
                                                   span.SelectorPath);
                 }
             }

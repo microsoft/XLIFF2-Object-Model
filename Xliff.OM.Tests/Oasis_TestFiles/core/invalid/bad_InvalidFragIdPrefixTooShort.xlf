@@ -5,7 +5,7 @@
   <unit id="1">
    <my:elem id="myid1" xmlns:my="myNS">data</my:elem>
    <segment>
-    <source>He is my <mrk id="m1" type="my:term" ref="#/f=f1/u=1/z=myid1">doppelgänger</mrk>.</source>
+    <source>He is my <mrk id="m1" translate="yes" type="my:term" ref="#/f=f1/u=1/z=myid1">doppelgänger</mrk>.</source>
    </segment>
   </unit>
  </file>

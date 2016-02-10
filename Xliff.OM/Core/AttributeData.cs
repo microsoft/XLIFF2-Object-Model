@@ -104,6 +104,11 @@
         public Dictionary<string, AttributeData> ExplicitOutputDependencies { get; private set; }
 
         /// <summary>
+        /// Gets or sets a resolver that determines whether properties need to be written to an XLIFF file.
+        /// </summary>
+        public IOutputResolver OutputResolver { get; set; }
+
+        /// <summary>
         /// Gets a value indicating whether the attribute has a value.
         /// </summary>
         public bool HasValue

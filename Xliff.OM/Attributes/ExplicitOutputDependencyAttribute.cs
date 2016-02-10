@@ -12,6 +12,15 @@
         /// <summary>
         /// Initializes a new instance of the <see cref="ExplicitOutputDependencyAttribute"/> class.
         /// </summary>
+        /// <remarks>This constructor is used to indicate that the hosting type implements an IOutputResolver that
+        /// should be used to determine whether the property should be output explicitly.</remarks>
+        public ExplicitOutputDependencyAttribute()
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ExplicitOutputDependencyAttribute"/> class.
+        /// </summary>
         /// <param name="property">The name of the property the attributed property depends on.</param>
         public ExplicitOutputDependencyAttribute(string property)
         {

@@ -38,7 +38,7 @@
 
             result = new ElementInformationFromReflection();
             result.ChildMap = Reflector.GetSchemaChildren(element.GetType());
-            result.AttributeMap = Reflector.GetSchemaAttributes(element.GetType(), element as IInheritanceInfoProvider);
+            result.AttributeMap = Reflector.GetSchemaAttributes(element.GetType(), element as IInheritanceInfoProvider, element as IOutputResolver);
 
             return result;
         }

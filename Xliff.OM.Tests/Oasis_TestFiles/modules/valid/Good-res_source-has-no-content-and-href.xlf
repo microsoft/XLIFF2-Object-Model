@@ -16,8 +16,6 @@ trgLang="de">
 <file id="rd333b">
       <unit id="1">
          <res:resourceData>
-            <res:resourceItemRef ref="r1"/>
-            <res:resourceItemRef ref="rr1-temp" id="rr1"/>
             <res:resourceItem id="rr1-temp" mimeType="image/jpeg"
 context="yes">
                <res:source xml:lang="en-us"

@@ -1,6 +1,7 @@
 ﻿namespace Localization.Xliff.OM.Serialization.Tests
 {
     using System;
+    using System.Collections.Generic;
     using System.Xml;
     using Localization.Xliff.OM.Core;
     using Localization.Xliff.OM.Modules;
@@ -11,7 +12,7 @@
     using Localization.Xliff.OM.Modules.Validation;
     using Localization.Xliff.OM.Tests;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+    
     /// <summary>
     /// This class tests the <see cref="XliffReader"/> class.
     /// </summary>
@@ -656,6 +657,59 @@
             catch (XmlException)
             {
             }
+        }
+
+        /// <summary>
+        /// Tests that a <see cref="MarkedSpan"/> deserializes correctly.
+        /// </summary>
+        [TestMethod()]
+        [TestCategory(TestUtilities.UnitTestCategory)]
+        public void XliffReader_MarkedSpan()
+        {
+            List<MarkedSpan> spans;
+
+            Console.WriteLine("Test with missing translate.");
+            try
+            {                
+                this.Deserialize(TestData.MarkedSpanWithMissingTranslate);
+                Assert.Fail("Expected FormatException to be thrown.");
+            }
+            catch (FormatException)
+            {
+            }
+
+            Console.WriteLine("Test with valid values.");
+            this.Deserialize(TestData.MarkedSpanWithValidValues);
+
+            Console.WriteLine("Test with nested spans.");
+            this.Deserialize(TestData.MarkedSpanWithNestedMarkedSpan);
+            spans = this._document.Files[0].CollapseChildren<MarkedSpan>();            
+            Assert.AreEqual("mrk1", spans[0].Id);
+            Assert.AreEqual("comment", spans[0].Type);
+            Assert.AreEqual("this is a comment", spans[0].Value);
+            Assert.AreEqual(spans[0], spans[1].Parent); 
+            Assert.AreEqual("mrk2", spans[1].Id);
+            Assert.AreEqual("generic", spans[1].Type);
+            Assert.AreEqual(null, spans[1].Value);
+        }
+
+        /// <summary>
+        /// Tests that a <see cref="MarkedSpanStart"/> deserializes correctly.
+        /// </summary>
+        [TestMethod()]
+        [TestCategory(TestUtilities.UnitTestCategory)]
+        public void XliffReader_MarkedSpanStart()
+        {
+            try
+            {
+                this.Deserialize(TestData.MarkedSpanStartWithMissingTranslate);
+                Assert.Fail("Expected FormatException to be thrown.");
+            }
+            catch (FormatException)
+            {
+            }
+
+            this.Deserialize(TestData.MarkedSpanStartWithValidValues);
         }
 
         /// <summary>

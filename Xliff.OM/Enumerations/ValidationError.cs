@@ -14,7 +14,7 @@
         /// The last used offset from the ValidationError.BaseValue that was used. This value should be incremented each time a new
         /// error number is added.
         /// </summary>
-        internal const int LastUsedOffset = 156;
+        internal const int LastUsedOffset = 159;
 
         /// <summary>
         /// Indicates a ChangeTrack does not contain any RevisionContainers.
@@ -356,6 +356,11 @@
         internal const int MarkedSpanStartInvalidReference = ValidationError.BaseValue + 50;
 
         /// <summary>
+        /// Indicates a MarkedSpan Reference is not a well-formed selector path.
+        /// </summary>
+        internal const int MarkedSpanStartInvalidReferenceSelectorPath = ValidationError.BaseValue + 159;
+
+        /// <summary>
         /// Indicates a MarkedSpanStart has an invalid value for Type.
         /// </summary>
         internal const int MarkedSpanStartInvalidType = ValidationError.BaseValue + 51;
@@ -671,6 +676,11 @@
         internal const int SourceNull = ValidationError.BaseValue + 78;
 
         /// <summary>
+        /// Indicates a SpanningCodeEnd has a null Id.
+        /// </summary>
+        internal const int SpanningCodeEndIdNull = ValidationError.BaseValue + 158;
+
+        /// <summary>
         /// Indicates a SpanningCodeEnd has an invalid DataReference.
         /// </summary>
         internal const int SpanningCodeEndInvalidDataRef = ValidationError.BaseValue + 79;
@@ -689,6 +699,11 @@
         /// Indicates a SpanningCodeEnd has an invalid StartReference.
         /// </summary>
         internal const int SpanningCodeEndStartRefInvalid = ValidationError.BaseValue + 82;
+
+        /// <summary>
+        /// Indicates a SpanningCodeEnd has a value for StartReference and for Id.
+        /// </summary>
+        internal const int SpanningCodeEndStartRefAndIdSpecified = ValidationError.BaseValue + 157;
 
         /// <summary>
         /// Indicates a SpanningCodeEnd has an invalid SubFlows value.

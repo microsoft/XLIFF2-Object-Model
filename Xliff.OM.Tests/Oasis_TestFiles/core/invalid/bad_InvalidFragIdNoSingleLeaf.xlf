@@ -4,7 +4,7 @@
  <file id="f1">
   <unit id="u1">
    <segment>
-    <source><mrk id='m1' type='my:type' ref='#c1/c2'><pc id='c1'><ph id='c2'/></pc>text</mrk></source>
+    <source><mrk id='m1' translate="yes" type='my:type' ref='#c1/c2'><pc id='c1'><ph id='c2'/></pc>text</mrk></source>
    </segment>
   </unit>
  </file>

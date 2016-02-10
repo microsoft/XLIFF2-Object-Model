@@ -66,6 +66,14 @@
         }
 
         /// <summary>
+        /// Gets a resolver that determines whether properties need to be written to an XLIFF file.
+        /// </summary>
+        public IOutputResolver OutputResolver
+        {
+            get { return this.data.OutputResolver; }
+        }
+
+        /// <summary>
         /// Gets a value indicating whether the attribute has a value.
         /// </summary>
         public bool HasValue

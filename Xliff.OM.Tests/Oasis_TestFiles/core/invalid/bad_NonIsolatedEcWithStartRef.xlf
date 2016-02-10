@@ -6,7 +6,7 @@
     <source><sc id="1"/>text</source>
    </segment>
    <segment>
-    <source><ec id="2" isolated="yes" startRef="1"/>.</source>
+    <source><ec id="2" startRef="1"/>.</source>
    </segment>
   </unit>
  </file>

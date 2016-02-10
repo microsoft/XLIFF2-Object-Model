@@ -41,6 +41,7 @@
     public class MarkedSpanStart : ResourceStringContent,
                                    IExtensible,
                                    IFormatStyleAttributes,
+                                   IOutputResolver,
                                    ISelectable,
                                    ISizeRestrictionAttributes
     {
@@ -354,6 +355,7 @@
         /// </summary>
         [Converter(typeof(BoolConverter))]
         [DefaultValue(true)]
+        [ExplicitOutputDependency]
         [InheritValue(Inheritance.AncestorType, typeof(MarkedSpan))]
         [InheritValue(Inheritance.AncestorType, typeof(Unit))]
         [SchemaEntity(AttributeNames.Translate, Requirement.Optional)]
@@ -427,6 +429,26 @@
             get { return this.BuildSelectorPath(); }
         }
         #endregion ISelectable Implementation
+
+        #region Methods
+        /// <summary>
+        /// Returns a value indicating whether the specified property is required to be output to the XLIFF file. This
+        /// value is based on other property values.
+        /// </summary>
+        /// <param name="property">The property being inquired about whether it needs to be output.</param>
+        /// <returns>True if the property needs to be written to the XLIFF file, false if the property output is
+        /// optional.
+        /// </returns>
+        bool IOutputResolver.IsOutputRequired(string property)
+        {
+            if (property == AttributeNames.Translate)
+            {
+                return (this.Type != MarkedSpanTypes.Comment) && (this.Type != MarkedSpanTypes.Term);
+            }
+
+            return false;
+        }
+        #endregion Methods
 
         /// <summary>
         /// This class contains the names of properties in this class.

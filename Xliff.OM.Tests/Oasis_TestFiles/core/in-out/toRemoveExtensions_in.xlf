@@ -10,8 +10,8 @@
     <my:item>data2</my:item>
    </my:elem1>
    <segment id="s1">
-    <source><mrk id="m1" type="my:info" value="some info" fs:fs="u">text <sm id="m2" type="my:info" value="more info" fs:fs="b"/>part 1;</mrk></source>
-    <target><mrk id="m1" type="my:info" value="source target info" fs:fs="u">texte <sm id="m2" type="my:info" value="more target info" fs:fs="b"/>partie 1;</mrk></target>
+    <source><mrk id="m1" translate="yes" type="my:info" value="some info" fs:fs="u">text <sm id="m2" translate="yes" type="my:info" value="more info" fs:fs="b"/>part 1;</mrk></source>
+    <target><mrk id="m1" translate="yes" type="my:info" value="source target info" fs:fs="u">texte <sm id="m2" translate="yes" type="my:info" value="more target info" fs:fs="b"/>partie 1;</mrk></target>
    </segment>
    <ignorable>
     <source> </source>

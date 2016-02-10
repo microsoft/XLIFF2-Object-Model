@@ -571,6 +571,83 @@
         }
 
         /// <summary>
+        /// Tests that a <see cref="MarkedSpan"/> serializes correctly.
+        /// </summary>
+        [TestMethod()]
+        [TestCategory(TestUtilities.UnitTestCategory)]
+        public void XliffWriter_MarkedSpan()
+        {
+            MarkedSpan span1;
+            MarkedSpan span2;
+            Segment segment;
+            Unit unit;
+            string actualValue;
+
+            unit = new Unit("u1");
+            this._document.SourceLanguage = "en-us";
+            this._document.Files.Add(new File("f1"));
+            this._document.Files[0].Containers.Add(unit);
+
+            segment = new Segment("s1");
+            unit.Resources.Add(segment);
+            segment.Source = new Source();
+            span1 = new MarkedSpan("mrk1");
+            segment.Source.Text.Add(span1);
+
+            Console.WriteLine("Test with valid values.");
+            actualValue = this.Serialize();
+            // Translate value will be automatically written because type is generic (default).
+            Assert.AreEqual(TestUtilities.GetFileContents(TestData.MarkedSpanWithValidValues), actualValue);
+
+            Console.WriteLine("Test with term.");
+            span1.Type = MarkedSpanTypes.Term;
+            actualValue = this.Serialize();
+            Assert.AreEqual(TestUtilities.GetFileContents(TestData.MarkedSpanWithTerm), actualValue);
+            
+            Console.WriteLine("Test with nested spans.");
+            span1.Type = MarkedSpanTypes.Comment;
+            span1.Value = "this is a comment";
+            span2 = new MarkedSpan("mrk2");
+            span2.Translate = true;
+            span1.Text.Add(span2);
+            actualValue = this.Serialize();
+            Assert.AreEqual(TestUtilities.GetFileContents(TestData.MarkedSpanWithNestedMarkedSpan), actualValue);
+
+        }
+
+        /// <summary>
+        /// Tests that a <see cref="MarkedSpanStart"/> serializes correctly.
+        /// </summary>
+        [TestMethod()]
+        [TestCategory(TestUtilities.UnitTestCategory)]
+        public void XliffWriter_MarkedSpanStart()
+        {
+            MarkedSpanStart span;
+            Segment segment;
+            Unit unit;
+            string actualValue;
+
+            unit = new Unit("u1");
+            this._document.SourceLanguage = "en-us";
+            this._document.Files.Add(new File("f1"));
+            this._document.Files[0].Containers.Add(unit);
+
+            segment = new Segment("s1");
+            unit.Resources.Add(segment);
+            segment.Source = new Source();
+            span = new MarkedSpanStart("mrk1");
+            segment.Source.Text.Add(span);
+
+            actualValue = this.Serialize();
+            // Translate value will be automatically written because type is generic (default).
+            Assert.AreEqual(TestUtilities.GetFileContents(TestData.MarkedSpanStartWithValidValues), actualValue);
+
+            span.Type = MarkedSpanTypes.Term;
+            actualValue = this.Serialize();
+            Assert.AreEqual(TestUtilities.GetFileContents(TestData.MarkedSpanStartWithTerm), actualValue);
+        }
+
+        /// <summary>
         /// Tests that a <see cref="MetadataContainer"/> serializes correctly.
         /// </summary>
         [TestMethod()]
@@ -777,7 +854,7 @@
         }
 
         /// <summary>
-        /// Tests that a <see cref="Skeleton"/>serializes correctly.
+        /// Tests that a <see cref="Skeleton"/> serializes correctly.
         /// </summary>
         [TestMethod()]
         [TestCategory(TestUtilities.UnitTestCategory)]
@@ -805,6 +882,47 @@
             file.Skeleton.NonTranslatableText = "text";
             actualValue = this.Serialize();
             Assert.AreEqual(TestUtilities.GetFileContents(TestData.SkeletonWithValidValues), actualValue);
+        }
+
+        /// <summary>
+        /// Tests that a <see cref="SpanningCodeEnd"/> serializes correctly.
+        /// </summary>
+        [TestMethod()]
+        [TestCategory(TestUtilities.UnitTestCategory)]
+        public void XliffWriter_SpanningCodeEnd()
+        {
+            File file;
+            Segment segment;
+            SpanningCodeEnd span;
+            Unit unit;
+            string actualValue;
+
+            file = new File();
+            this._document.Files.Add(file);
+
+            unit = new Unit("unit1");
+            file.Containers.Add(unit);
+
+            segment = new Segment("seg1");
+            segment.Source = new Source();
+            span = new SpanningCodeEnd();
+            segment.Source.Text.Add(span);
+            unit.Resources.Add(segment);
+
+            Console.WriteLine("Test with null Id.");
+            actualValue = this.Serialize();
+            Assert.AreEqual(TestUtilities.GetFileContents(TestData.SpanningCodeEndWithNullId), actualValue);
+
+            Console.WriteLine("Test with empty Id.");
+            span.Id = string.Empty;
+            actualValue = this.Serialize();
+            Assert.AreEqual(TestUtilities.GetFileContents(TestData.SpanningCodeEndWithNullId), actualValue);
+
+            Console.WriteLine("Test with valid Id.");
+            span.Id = "span1";
+            actualValue = this.Serialize();
+            Assert.AreEqual(TestUtilities.GetFileContents(TestData.SpanningCodeEndWithValidId), actualValue);
+
         }
 
         /// <summary>
@@ -1066,6 +1184,7 @@
         /// <returns>The contents of the stream.</returns>
         private string Serialize()
         {
+            this._stream.SetLength(0);
             this._stream.Seek(0, System.IO.SeekOrigin.Begin);
             this._writer.Serialize(this._stream, this._document);
             return this.GetStreamContents();

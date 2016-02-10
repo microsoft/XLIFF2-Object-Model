@@ -15,24 +15,15 @@ xmlns:svg="http://www.w3.org/2000/svg" srcLang="en-us" version="2.0"
 trgLang="de">
 <file id="rd333b">
       <res:resourceData>
-         <res:resourceItem id="ri1" mimeType="image/jpeg" context="yes"
+         <res:resourceItem id="r1" mimeType="image/jpeg" context="yes"
 >
             <res:source xml:lang="en-us"
 href="resources\en\registryconfig1.resources.jpg"></res:source>
             <res:target xml:lang="de"
 href="resources\lb\registryconfig1.resources.jpg"></res:target>
-            <res:reference xml:lang="de"
+            <res:reference xml:lang="lb-lu"
 href="resources\de\registryconfig1.resources.jpg"/>
          </res:resourceItem>
-          <res:resourceItem id="ri1" mimeType="image/jpeg" context="yes"
->
-              <res:source xml:lang="en-us"
-  href="resources\en\registryconfig1.resources.jpg"></res:source>
-              <res:target xml:lang="de"
-  href="resources\lb\registryconfig1.resources.jpg"></res:target>
-              <res:reference xml:lang="de"
-  href="resources\de\registryconfig1.resources.jpg"/>
-          </res:resourceItem>
          <res:resourceItem id="r1" mimeType="image/jpeg" context="yes"
 > <!--
 5.5.4.3 resourceItemRef
@@ -57,14 +48,6 @@ href="resources\en\registryconfig2.resources.jpg"></res:source>
                <res:target xml:lang="de"
 href="resources\lb\registryconfig2.resources.jpg"></res:target>
             </res:resourceItem>
-             <res:resourceItem id="rr1" mimeType="image/jpeg"
-context="yes">
-                 <!-- violation not unique -->
-                 <res:source xml:lang="en-us"
-  href="resources\en\registryconfig2.resources.jpg"></res:source>
-                 <res:target xml:lang="de"
-  href="resources\lb\registryconfig2.resources.jpg"></res:target>
-             </res:resourceItem>
          </res:resourceData>
          <segment id="1" state="translated">
             <source>Remove Registry Config</source>

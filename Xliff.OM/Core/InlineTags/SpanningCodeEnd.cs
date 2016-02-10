@@ -145,6 +145,16 @@
         }
 
         /// <summary>
+        /// Gets or sets the Id of the inline code.
+        /// </summary>
+        [SchemaEntity(AttributeNames.Id, Requirement.Optional)]
+        public override string Id
+        {
+            get { return base.Id; }
+            set { base.Id = value; }
+        }
+
+        /// <summary>
         /// Gets or sets a value indicating whether the start or end marker of a spanning inline code is not in
         /// the same <see cref="Unit"/> as its corresponding end or start code.
         /// </summary>

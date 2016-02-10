@@ -520,7 +520,7 @@ namespace Localization.Xliff.OM.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The Match must have either a valid Reference or a Value, but not both..
+        ///   Looks up a localized string similar to The marked span must have either a valid Reference or a Value, but not both..
         /// </summary>
         internal static string StandardValidator_MarkedSpanReferenceAndValueSpecified {
             get {
@@ -561,6 +561,15 @@ namespace Localization.Xliff.OM.Properties {
         internal static string StandardValidator_NonPositiveIndex {
             get {
                 return ResourceManager.GetString("StandardValidator_NonPositiveIndex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A value for {0} must be specified..
+        /// </summary>
+        internal static string StandardValidator_OutputResolverFailed_Format {
+            get {
+                return ResourceManager.GetString("StandardValidator_OutputResolverFailed_Format", resourceCulture);
             }
         }
         
@@ -750,6 +759,15 @@ namespace Localization.Xliff.OM.Properties {
         internal static string StandardValidator_SpanningCodeEndNotIslatedOrStartRef {
             get {
                 return ResourceManager.GetString("StandardValidator_SpanningCodeEndNotIslatedOrStartRef", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The SpanningCodeEnd cannot have both a StartReference and an Id..
+        /// </summary>
+        internal static string StandardValidator_SpanningCodeEndStartRefAndId {
+            get {
+                return ResourceManager.GetString("StandardValidator_SpanningCodeEndStartRefAndId", resourceCulture);
             }
         }
         

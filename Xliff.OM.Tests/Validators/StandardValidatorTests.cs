@@ -854,6 +854,16 @@
             segment.Target.Text.Add(new MarkedSpan("bogus"));
             StandardValidatorTests._validator.Validate(this._document);
 
+            Console.WriteLine("Test with type like prefix:value.");
+            span = new MarkedSpan("spanId");
+            span.Value = "comment";
+            this.DeserializeDocument();
+            unit = (Unit)this._document.Files[0].Containers.First(c => c is Unit);
+            segment = (Segment)unit.Resources.First(r => r is Segment);
+            segment.Source.Text.Add(span);
+            span.Type = "my:type";
+            StandardValidatorTests._validator.Validate(this._document);
+
             Console.WriteLine("Test with type not like prefix:value.");
             span = new MarkedSpan("spanId");
             span.Value = "comment";
@@ -968,6 +978,16 @@
             Console.WriteLine("Test with item on target not matching source.");
             span.Id = "newSpanId";
             segment.Target.Text.Add(new MarkedSpan("bogus"));
+            StandardValidatorTests._validator.Validate(this._document);
+
+            Console.WriteLine("Test with type like prefix:value.");
+            span = new MarkedSpanStart("spanId");
+            span.Value = "comment";
+            this.DeserializeDocument();
+            unit = (Unit)this._document.Files[0].Containers.First(c => c is Unit);
+            segment = (Segment)unit.Resources.First(r => r is Segment);
+            segment.Source.Text.Add(span);
+            span.Type = "my:type";
             StandardValidatorTests._validator.Validate(this._document);
 
             Console.WriteLine("Test with type not like prefix:value.");

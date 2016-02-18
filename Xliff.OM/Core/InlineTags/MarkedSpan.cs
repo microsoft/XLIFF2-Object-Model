@@ -478,7 +478,7 @@
         {
             if (property == AttributeNames.Translate)
             {
-                return (this.Type != MarkedSpanTypes.Comment) && (this.Type != MarkedSpanTypes.Term);
+                return this.Type == MarkedSpanTypes.Generic;
             }
 
             return false;

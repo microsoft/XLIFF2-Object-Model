@@ -603,6 +603,11 @@
             span1.Type = MarkedSpanTypes.Term;
             actualValue = this.Serialize();
             Assert.AreEqual(TestUtilities.GetFileContents(TestData.MarkedSpanWithTerm), actualValue);
+
+            Console.WriteLine("Test with custom type.");
+            span1.Type = "my:type";
+            actualValue = this.Serialize();
+            Assert.AreEqual(TestUtilities.GetFileContents(TestData.MarkedSpanWithCustomType), actualValue);
             
             Console.WriteLine("Test with nested spans.");
             span1.Type = MarkedSpanTypes.Comment;
@@ -645,6 +650,10 @@
             span.Type = MarkedSpanTypes.Term;
             actualValue = this.Serialize();
             Assert.AreEqual(TestUtilities.GetFileContents(TestData.MarkedSpanStartWithTerm), actualValue);
+
+            span.Type = "my:type";
+            actualValue = this.Serialize();
+            Assert.AreEqual(TestUtilities.GetFileContents(TestData.MarkedSpanStartWithCustomType), actualValue);
         }
 
         /// <summary>

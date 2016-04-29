@@ -35,11 +35,9 @@ validation for constraints defined in the standard is only available for
 Core, Metadata, Glossary, and Translation Candidates Modules.  
 
 ##Contributing
-At the moment, we aren't accepting contributions through GitHub for features
-or enhancements.
-
-In the meantime, you can help us improve the XLIFF 2.0 Object Model by filing
-bugs or feature requests on this repo.
+Please help us improve the XLIFF 2.0 Object Model by filing
+bugs or feature requests on this repo. You are encouraged to fork
+and contribute a fix via a pull request.
 
 ###Bug Fixes
 If you believe you've found a bug, you're encouraged to file an issue

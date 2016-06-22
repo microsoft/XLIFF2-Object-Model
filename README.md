@@ -39,9 +39,12 @@ Please help us improve the XLIFF 2.0 Object Model by filing
 bugs or feature requests on this repo. You are encouraged to fork
 and contribute a fix via a pull request.
 
-###Bug Fixes
+### Bug Fixes
 If you believe you've found a bug, you're encouraged to file an issue
 on this repo.
 
 ## Licensing
 The XLIFF 2.0 Object Model is licensed under the MIT License.
+
+## Code of Conduct
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.

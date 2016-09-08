@@ -382,6 +382,7 @@
                         break;
 
                     case XmlNodeType.Text:
+                    case XmlNodeType.Whitespace:
                         {
                             int ordinal;
 
@@ -425,10 +426,6 @@
                             container.Text.Add(new PlainText(this.reader.Value));
                         }
 
-                        break;
-
-                    case XmlNodeType.Whitespace:
-                        // Whitespace was added by the Xml writer and is used between XmlElements so it should be ignored.
                         break;
                 }
             }

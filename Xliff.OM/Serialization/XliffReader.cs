@@ -382,7 +382,6 @@
                         break;
 
                     case XmlNodeType.Text:
-                    case XmlNodeType.Whitespace:
                         {
                             int ordinal;
 
@@ -415,6 +414,7 @@
 
                         break;
 
+                    case XmlNodeType.Whitespace:
                     case XmlNodeType.SignificantWhitespace:
                         // SignificantWhitespace is used when xml:space=preserve is added to an XmlElement and the
                         // whitespace wasn't added by the Xml writer.

@@ -414,6 +414,7 @@
 
                         break;
 
+                    case XmlNodeType.Whitespace:
                     case XmlNodeType.SignificantWhitespace:
                         // SignificantWhitespace is used when xml:space=preserve is added to an XmlElement and the
                         // whitespace wasn't added by the Xml writer.
@@ -425,10 +426,6 @@
                             container.Text.Add(new PlainText(this.reader.Value));
                         }
 
-                        break;
-
-                    case XmlNodeType.Whitespace:
-                        // Whitespace was added by the Xml writer and is used between XmlElements so it should be ignored.
                         break;
                 }
             }

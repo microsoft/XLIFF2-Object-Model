@@ -10,6 +10,7 @@
     using Localization.Xliff.OM.Modules.TranslationCandidates;
     using Localization.Xliff.OM.Serialization;
     using IO = System.IO;
+    using System.Text;
 
     /// <summary>
     /// This class contains the entry point to the application that demonstrates how to use the XLIFF 2.0 object model.
@@ -81,6 +82,7 @@
                 SampleCode.StoreMetadata();
                 SampleCode.ViewValidations(new XliffDocument("en-us"), path);
                 SampleCode.WriteDocument(document, path);
+                SampleCode.WhiteSpaces();
             }
             finally
             {
@@ -391,6 +393,31 @@
                 writer = new XliffWriter();
                 writer.Serialize(stream, document);
             }
+        }
+
+        public static void WhiteSpaces()
+        {
+            string data = "<xliff srcLang='en' version='2.0' xmlns='urn:oasis:names:tc:xliff:document:2.0'>"
+            + "<file id='f1'><unit id='u1'>"
+            + "<segment><source>Sentence 1.</source></segment>"
+            + "<ignorable><source> </source></ignorable>"
+            + "<segment><source>Sentence 2.</source></segment>"
+            + "</unit></file></xliff>";
+            using (IO.MemoryStream ms = new IO.MemoryStream(Encoding.UTF8.GetBytes(data)))
+            {
+                XliffReader reader = new XliffReader();
+                XliffDocument doc = reader.Deserialize(ms);
+                foreach (XliffElement e in doc.CollapseChildren<XliffElement>())
+                {
+                    Console.WriteLine("Type: " + e.GetType().ToString());
+                    if (e is PlainText)
+                    {
+                        PlainText pt = (PlainText)e;
+                        Console.WriteLine("Content: '" + pt.Text + "'");
+                    }
+                }
+            }
+            Console.ReadKey();
         }
     }
 }

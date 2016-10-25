@@ -12,7 +12,7 @@
     using Localization.Xliff.OM.Modules.Validation;
     using Localization.Xliff.OM.Tests;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-    
+
     /// <summary>
     /// This class tests the <see cref="XliffReader"/> class.
     /// </summary>
@@ -415,22 +415,24 @@
             Assert.IsNotNull(segment.Source, "Source is null.");
             Assert.AreEqual("en-us", segment.Source.Language, "Source.Language is incorrect.");
             Assert.AreEqual(Preservation.Default, segment.Source.Space, "Source.Space is incorrect.");
-            Assert.AreEqual(2, segment.Source.Text.Count, "Source.Text.Count is incorrect.");
-            Assert.IsInstanceOfType(segment.Source.Text[0], typeof(CodePoint), "Source.Text[0] is incorrect.");
-            Assert.AreEqual(1, ((CodePoint)segment.Source.Text[0]).Code, "CodePoint Code is incorrect.");
-            Assert.IsInstanceOfType(segment.Source.Text[1], typeof(PlainText), "Source.Text[1] is incorrect.");
-            Assert.AreEqual("text", ((PlainText)segment.Source.Text[1]).Text, "PlainText Text is incorrect.");
+            Assert.AreEqual(3, segment.Source.Text.Count, "Source.Text.Count is incorrect.");
+            Assert.IsInstanceOfType(segment.Source.Text[0], typeof(PlainText), "Source.Text[0] is incorrect.");
+            Assert.IsInstanceOfType(segment.Source.Text[1], typeof(CodePoint), "Source.Text[1] is incorrect.");
+            Assert.AreEqual(1, ((CodePoint)segment.Source.Text[1]).Code, "CodePoint Code is incorrect.");
+            Assert.IsInstanceOfType(segment.Source.Text[2], typeof(PlainText), "Source.Text[2] is incorrect.");
+            Assert.AreEqual("text", ((PlainText)segment.Source.Text[2]).Text, "PlainText Text is incorrect.");
             Assert.AreEqual(TranslationState.Reviewed, segment.State, "State is incorrect.");
             Assert.AreEqual("substate", segment.SubState, "SubState is incorrect.");
             Assert.IsNotNull(segment.Target, "Target is null.");
             Assert.AreEqual("en-us", segment.Target.Language, "Target.Language is incorrect.");
             Assert.AreEqual(100u, segment.Target.Order, "Target.Order is incorrect.");
             Assert.AreEqual(Preservation.Default, segment.Target.Space, "Target.Space is incorrect.");
-            Assert.AreEqual(2, segment.Target.Text.Count, "Target.Text.Count is incorrect.");
-            Assert.IsInstanceOfType(segment.Target.Text[0], typeof(CodePoint), "Target.Text[0] is incorrect.");
-            Assert.AreEqual(12, ((CodePoint)segment.Target.Text[0]).Code, "CodePoint Code is incorrect.");
-            Assert.IsInstanceOfType(segment.Target.Text[1], typeof(PlainText), "Target.Text[1] is incorrect.");
-            Assert.AreEqual("text2", ((PlainText)segment.Target.Text[1]).Text, "PlainText Text is incorrect.");
+            Assert.AreEqual(3, segment.Target.Text.Count, "Target.Text.Count is incorrect.");
+            Assert.IsInstanceOfType(segment.Target.Text[0], typeof(PlainText), "Target.Text[0] is incorrect.");
+            Assert.IsInstanceOfType(segment.Target.Text[1], typeof(CodePoint), "Target.Text[1] is incorrect.");
+            Assert.AreEqual(12, ((CodePoint)segment.Target.Text[1]).Code, "CodePoint Code is incorrect.");
+            Assert.IsInstanceOfType(segment.Target.Text[2], typeof(PlainText), "Target.Text[2] is incorrect.");
+            Assert.AreEqual("text2", ((PlainText)segment.Target.Text[2]).Text, "PlainText Text is incorrect.");
 
             Console.WriteLine("Verifying File.Notes[0]");
             note = file.Notes[0];
@@ -670,7 +672,7 @@
 
             Console.WriteLine("Test with missing translate.");
             try
-            {                
+            {
                 this.Deserialize(TestData.MarkedSpanWithMissingTranslate);
                 Assert.Fail("Expected FormatException to be thrown.");
             }
@@ -683,11 +685,11 @@
 
             Console.WriteLine("Test with nested spans.");
             this.Deserialize(TestData.MarkedSpanWithNestedMarkedSpan);
-            spans = this._document.Files[0].CollapseChildren<MarkedSpan>();            
+            spans = this._document.Files[0].CollapseChildren<MarkedSpan>();
             Assert.AreEqual("mrk1", spans[0].Id);
             Assert.AreEqual("comment", spans[0].Type);
             Assert.AreEqual("this is a comment", spans[0].Value);
-            Assert.AreEqual(spans[0], spans[1].Parent); 
+            Assert.AreEqual(spans[0], spans[1].Parent);
             Assert.AreEqual("mrk2", spans[1].Id);
             Assert.AreEqual("generic", spans[1].Type);
             Assert.AreEqual(null, spans[1].Value);

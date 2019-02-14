@@ -368,6 +368,7 @@
                 catch (ValidationException e)
                 {
                     Console.WriteLine("ValidationException Details:");
+                    Console.WriteLine(e.Message);
                     if (e.Data != null)
                     {
                         foreach (object key in e.Data.Keys)

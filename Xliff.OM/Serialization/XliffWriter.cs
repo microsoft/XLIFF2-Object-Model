@@ -825,7 +825,7 @@
                 if (!checkLocalOnly)
                 {
                     XmlConvert.VerifyNCName(prefix);
-                    XmlConvert.VerifyName(ns);
+                    new Uri(ns, UriKind.RelativeOrAbsolute);
                 }
 
                 XmlConvert.VerifyName(localName);

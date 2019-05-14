@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ArgValidator_ElementReused_Format" xml:space="preserve">
-    <value>The operation cannot be completed because the {0} element is already a child of another XliffElement. </value>
+    <value>The operation cannot be completed because the {0} element is already a child of another XliffElement.</value>
   </data>
   <data name="ArgValidator_InvalidId_Format" xml:space="preserve">
     <value>The Id '{0}' contains some invalid characters. The Id must be an NMTOKEN.</value>

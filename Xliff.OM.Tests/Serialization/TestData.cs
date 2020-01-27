@@ -14,6 +14,7 @@
         DocumentWithValidValues,
         DocumentWithExtensions,
         DocumentWithXmlPrefix,
+        DocumentWithTwoNamespaces,
         EmptyFile,
         FileNoteWithDefaultValues,
         FileNoteWithEmptyValues,
@@ -68,6 +69,7 @@
         UnitWithEmptyValues,
         UnitWithMetadata,
         UnitWithValidValues,
+        UnitWithAttributeHavingCustomNsPrefix,
         ValidDocument
     }
 }

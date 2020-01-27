@@ -978,6 +978,9 @@
     <None Include="TestData.Xliff.OM.Tests\DocumentWithExtensions.xlf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="TestData.Xliff.OM.Tests\DocumentWithTwoNamespaces.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="TestData.Xliff.OM.Tests\DocumentWithXmlPrefix.xlf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -1044,6 +1047,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="TestData.Xliff.OM.Tests\SpanningCodeEndWithNullId.xlf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TestData.Xliff.OM.Tests\UnitWithAttributeHavingCustomNsPrefix.xlf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="TestData.Xliff.OM.Tests\UnitWithMetadata.xlf">

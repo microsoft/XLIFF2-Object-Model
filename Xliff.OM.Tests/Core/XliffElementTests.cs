@@ -142,6 +142,19 @@
                 get { return (int)this.GetPropertyValue("Property"); }
                 set { this.SetPropertyValue(value, "Property"); }
             }
+
+            /// <summary>
+            /// Gets or sets a value that is used to verify attribute matching with namespaces
+            /// </summary>
+            [Converter(typeof(HexConverter))]
+            [DefaultValue(100)]
+            [SchemaEntity("ns1", "namespace1", "PropertyFromNamespace", Requirement.Optional)]
+            public int PropertyFromNamespace
+            {
+                get { return (int)this.GetPropertyValue("PropertyFromNamespace"); }
+                set { this.SetPropertyValue(value, "PropertyFromNamespace"); }
+            }
+
             #endregion Properties
 
             /// <summary>
@@ -830,6 +843,33 @@
             Assert.AreEqual("#/f=f1/g=g1/u=u1", span.SelectorPath, "SelectorPath is incorrect.");
         }
 
+        /// <summary>
+        /// Tests wether attribute value can be set regardless of differences in namespace prefix naming
+        /// </summary>
+        [TestMethod()]
+        [TestCategory(TestUtilities.UnitTestCategory)]
+        public void XliffElement_TrySetAttributeValue()
+        {
+            TestXliffElement element = new TestXliffElement();
+            const string propertyName = "PropertyFromNamespace";
+
+            Console.WriteLine("Test with default namespace prefix.");
+            var defaultNameInfo = new XmlNameInfo("ns1", "namespace1", "PropertyFromNamespace");
+            var result1 = ((IXliffDataConsumer) element).TrySetAttributeValue(defaultNameInfo, "A");
+            Assert.AreEqual(SetAttributeResult.Success, result1);
+            Assert.AreEqual(10, element.PropertyFromNamespace);
+
+            Console.WriteLine("Test with customized namespace prefix.");
+            var customizedXmlNameInfo = new XmlNameInfo("ns2", "namespace1", "PropertyFromNamespace");
+            var result2 = ((IXliffDataConsumer)element).TrySetAttributeValue(customizedXmlNameInfo, "B");
+            Assert.AreEqual(SetAttributeResult.Success, result2);
+            Assert.AreEqual(11, element.PropertyFromNamespace);
+
+            Console.WriteLine("Test with another namespace");
+            var anotherXmlNameInfo = new XmlNameInfo("ns3", "namespace3", "PropertyFromNamespace");
+            var result3 = ((IXliffDataConsumer)element).TrySetAttributeValue(anotherXmlNameInfo, "C");
+            Assert.AreEqual(SetAttributeResult.PossibleExtension, result3);
+        }
 
         #endregion Test Methods
     }

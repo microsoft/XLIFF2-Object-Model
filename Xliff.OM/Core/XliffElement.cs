@@ -637,7 +637,7 @@
                                 if (key.IsInstanceOfType(ancestor))
                                 {
                                     string newProperty;
-                                    
+
                                     // Get a different property Name if specified.
                                     newProperty = inheritanceMap[key] ?? property;
 
@@ -958,9 +958,12 @@
             foreach (AttributeData attribute in this.attributes.Values)
             {
                 if (attribute.IsSupported &&
-                    (name.Prefix == attribute.Prefix) &&
+                    (name.Prefix != NamespacePrefixes.XmlNamespace) &&
                     (name.LocalName == attribute.LocalName) &&
-                    (attribute.IgnoreNamespace || (name.Namespace == attribute.Namespace)))
+                    (
+                        name.Namespace == attribute.Namespace ||
+                        attribute.IgnoreNamespace && name.Prefix == NamespacePrefixes.Xml
+                    ))
                 {
                     attribute.SetValue(value);
                     result = true;

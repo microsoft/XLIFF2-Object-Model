@@ -1,4 +1,7 @@
-﻿namespace Localization.Xliff.OM.Serialization.Tests
+﻿using System.Linq;
+using Localization.Xliff.OM.Extensibility;
+
+namespace Localization.Xliff.OM.Serialization.Tests
 {
     using System;
     using System.Collections.Generic;
@@ -171,6 +174,24 @@
             Assert.AreEqual(1, segment.Source.Text.Count, "Source text count is incorrect.");
             Assert.IsInstanceOfType(segment.Source.Text[0], typeof(PlainText), "Text[0] type is incorrect.");
             Assert.AreEqual("text", ((PlainText)segment.Source.Text[0]).Text, "Text[0].Text is incorrect.");
+        }
+
+        /// <summary>
+        /// Tests a document can have attributes from different namespaces on the same element.
+        /// </summary>
+        [TestMethod()]
+        [TestCategory(TestUtilities.UnitTestCategory)]
+        public void XliffReader_DocumentWithTwoNamespaces()
+        {
+            Deserialize(TestData.DocumentWithTwoNamespaces);
+
+            Assert.AreEqual("2.0", _document.Version);
+
+            var itsVersionAttribute = ((IExtensible) _document).Extensions.Single().GetAttributes().Single();
+            Assert.AreEqual("version", itsVersionAttribute.LocalName);
+            Assert.AreEqual("its", itsVersionAttribute.Prefix);
+            Assert.AreEqual("http://www.w3.org/2005/11/its", itsVersionAttribute.Namespace);
+            Assert.AreEqual("3.0", itsVersionAttribute.Value);
         }
 
         /// <summary>
@@ -1020,6 +1041,13 @@
                             "TargetDirectionality is incorrect.");
             Assert.IsTrue(unit.Translate, "Translate is incorrect.");
             Assert.AreEqual("type", unit.Type, "Type is incorrect.");
+
+            Console.WriteLine("Test for attribute with custom namespace prefix");
+            this.Deserialize(TestData.UnitWithAttributeHavingCustomNsPrefix);
+            unit = this._document.Files[0].Containers[0] as Unit;
+            Assert.IsNotNull(unit, "Unit is null.");
+            Assert.AreEqual(String.Empty, unit.Id, "Id is incorrect.");
+            Assert.AreEqual("100", unit.StorageRestriction, "StorageRestriction is incorrect");
         }
 
         /// <summary>
